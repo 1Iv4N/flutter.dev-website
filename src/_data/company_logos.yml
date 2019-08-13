@@ -1,23 +1,23 @@
 - name: Alibaba
-  src: showcase/logo-alibaba.png
+  logo_src: showcase/logo-alibaba.png
   alt_text: Alibaba logo
 
-- name: Apple
-  logo_src: showcase/logo-alibaba.png
-  alt_text: Apple logo
+- name: Google Ads
+  logo_src: showcase/logo-ads.svg
+  alt_text: Google Ads logo
 
-- name: Google
-  logo_src: showcase/logo-alibaba.png
-  alt_text: Google logo
+- name: AppTree
+  logo_src: showcase/logo-app_tree.png
+  alt_text: App Tree logo
 
-- name: Amazon
-  logo_src: showcase/logo-alibaba.png
-  alt_text: Amazon logo
+- name: Reflecty
+  logo_src: showcase/logo-reflectly.png
+  alt_text: Reflecty logo
 
-- name: Android
-  logo_src: showcase/logo-alibaba.png
-  alt_text: Android logo
+- name: Hamilton Musical
+  logo_src: showcase/logo-hamilton.png
+  alt_text: Hamilton Musical logo
 
-- name: Music
-  logo_src: showcase/logo-alibaba.png
-  alt_text: Music logo
+- name: Google Greentea
+  logo_src: showcase/logo-greentea.png
+  alt_text: Google Greentea logo

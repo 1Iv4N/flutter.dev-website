@@ -13,7 +13,7 @@ body_class: landing-page showcase
 
 <section class="landing-page__hero showcase__company-logos">
     {% for logo in site.data.company_logos %}
-        <img src="{{logo.src}}" alt="{{logo.alt_text}}">
+        {% asset '{{ logo.logo_src }}' class='landing-page__case-studies__logo' %}
     {% endfor %}
 </section>
 
