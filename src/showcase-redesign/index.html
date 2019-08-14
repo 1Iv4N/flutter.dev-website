@@ -11,10 +11,16 @@ body_class: landing-page showcase
     </header>
 </section>
 
-<section class="landing-page__hero showcase__company-logos">
-    {% for logo in site.data.company_logos %}
-        {% asset '{{ logo.logo_src }}' class='landing-page__case-studies__logo' %}
-    {% endfor %}
+<section class="showcase__company-logos showcase__section">
+    <div>
+        <ul class="row">
+            {% for logo in site.data.company_logos %}
+                <li class="align-items-center col-6 col-lg-2 col-md-4 d-flex justify-content-center">
+                    {% asset '{{ logo.logo_src }}' class='landing-page__case-studies__logo' %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
 <section class="landing-page__hero showcase__company-cases">
@@ -34,19 +40,19 @@ body_class: landing-page showcase
     </div>
 </section>
 
-<section class="landing-page__hero showcase__company-logos">
+<section class="landing-page__hero showcase__company-logos showcase__section">
    <p>
        "Lorem ipsum dolor sit amet"
    </p>
 </section>
 
-<section class="landing-page__hero showcase__company-cases">
+<section class="landing-page__hero showcase__company-cases showcase__section">
     <div class="card-body">
         Devices section
     </div>
 </section>
 
-<section class="landing-page__hero showcase__company-logos">
+<section class="landing-page__hero showcase__company-logos showcase__section">
     <p>
         More info / Learn more
     </p>
