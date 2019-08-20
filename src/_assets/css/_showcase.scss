@@ -5,7 +5,10 @@
     padding: 1.12rem;
   }
 
-  .container, .col-12, .card-body, &__company-cases .card.card--case-study {
+  .container,
+  .col-12, .card-body,
+  &__company-cases .card.card--case-study,
+  &__more-company-cases .card.card--case-study {
     padding: 0;
   }
 
@@ -45,8 +48,9 @@
 
     .btn.btn-cta {
       margin: 0 auto 30px;
-      padding: 0.4rem 1.5rem;
-      width: 160px;
+      padding: 0.6rem 1.5rem;
+      min-width: 170px;
+      width: 170px;
     }
   }
 
