@@ -1,73 +1,68 @@
 .showcase {
-  &__company-logos {
-    background-color: lightgray;
+  background-color: #FFF;
+
+  .card--case-container-info {
+    padding: 1.12rem;
+  }
+
+  .container, .col-12, .card-body, &__company-cases .card.card--case-study {
+    padding: 0;
+  }
+
+  &__company-cases .card.card--case-study .card-body {
+    min-height: 96px;
+  }
+
+  &__company-cases {
+    margin-bottom: 60px;
+  }
+
+  &__hero-section {
+    margin: 70px 0;
+
+    h1 {
+      color: #000;
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+    }
+
+    span {
+      color: #3E89F5;
+    }
+  }
+
+  &__learn-more-section {
     padding: 40px 0;
 
-    div {
-      margin: 0 auto;
-      max-width: 1200px;
-      padding: 0 30px;
+    h2 {
+      font-size: 2.5rem;
+      margin: 0 0 25px 0;
     }
 
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: start;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    a {
+      display: block;
     }
 
-    li {
-      margin: 14px 0;
+    .btn.btn-cta {
+      margin: 0 auto 30px;
+      padding: 0.4rem 1.5rem;
+      width: 160px;
+    }
+  }
+
+  &__more-company-cases {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 60px;
       text-align: center;
-    }
-
-    img {
-      height: auto;
-      max-height: 40px;
-      max-width: 40%;
-    }
-
-    @include media-breakpoint-up(md) {
-      margin: 0;
-    }
-
-    @include media-breakpoint-up(lg) {
-      img {
-        max-width: 100%;
-      }
     }
   }
 
   &__section {
-    left: 50%;
-    margin-bottom: 40px;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    position: relative;
-    right: 50%;
-    width: 100vw;
-  }
 
-  &__static-banner {
-    align-items: center;
-    background-color: white;
-    display: flex;
-    height: 350px;
-    justify-content: center;
-    margin-bottom: 0;
-    position: relative;
-    text-align: center;
-
-    h1 {
-      margin-bottom: 10px;
+    .card-body {
+      padding: 0;
     }
-  }
-
-  &__company-cases {
-    background-color: white;
-    justify-content: center;
   }
 
   &__carousel {
