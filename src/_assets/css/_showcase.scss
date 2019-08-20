@@ -56,6 +56,10 @@
       margin-bottom: 60px;
       text-align: center;
     }
+
+    .card-body + a {
+      margin: 50px 0;
+    }
   }
 
   &__section {
