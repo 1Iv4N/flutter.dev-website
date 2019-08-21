@@ -4,14 +4,14 @@ layout: landing
 body_class: landing-page showcase
 ---
 
-<section id="showcaseCarousel" class="d-flex align-items-center justify-content-center text-center showcase__hero-section">
+<section class="d-flex align-items-center justify-content-center text-center showcase__hero-section showcase__section">
     <header>
         <h1>Apps take flight with <span>Flutter.</span></h1>
         <p>See how developers have used Flutter to make beautiful cross-platform apps.</p>
     </header>
 </section>
 
-<section class="showcase__company-cases">
+<section class="showcase__company-cases showcase__section">
     <div class="card-body">
         {% for case in site.data.showcases_redesign %}
             {% if case.featured %}
@@ -111,7 +111,7 @@ body_class: landing-page showcase
     <a class="d-block text-center" href="#">Get in touch with the Flutter community</a>
 </section>
 
-<section class="d-flex align-items-center justify-content-center text-center showcase__learn-more-section">
+<section class="d-flex align-items-center justify-content-center text-center showcase__learn-more-section showcase__section">
     <div>
         <h2>Ready to take flight?</h2>
         <a class="btn btn-primary btn-cta" href="/docs/get-started/install">Get Started</a>
