@@ -88,19 +88,57 @@
 
     @include reset-carousel-animation;
 
+    .carousel-indicators {
+      bottom: 30px;
+
+      li {
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+      }
+    }
+
     &__slide {
+      background-color: #232C33;
+      color: $site-color-white;
       min-height: 75vh;
       padding: 40px 0;
       position: relative;
       @include media-breakpoint-up(md) {
-        min-height: 640px;
-        padding: 80px 0;
+        min-height: 520px;
+        padding: 60px 0;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .container {
+        q {
+          font-size: 1.4rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin: 0;
+        }
+
+        .row {
+          div:nth-child(2) {
+            padding: 0;
+          }
+        }
       }
 
       .card {
         h3 {
           margin-top: 0;
         }
+      }
+
+     .carousel-control-next, .carousel-control-prev {
+        width: 9%;
       }
 
       &__background {

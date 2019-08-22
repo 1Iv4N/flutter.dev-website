@@ -56,10 +56,47 @@ body_class: landing-page showcase
     </div>
 </section>
 
-<section class="landing-page__hero showcase__company-logos showcase__section">
-   <p>
-       "Lorem ipsum dolor sit amet"
-   </p>
+<section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide" data-interval=8000 data-ride="carousel" data-pause="false">
+    <ol class="carousel-indicators">
+        {% for case in site.data.showcases_redesign %}
+        {% if case.quote_testimonial %}
+        {% capture loopCount %}{% increment showcaseCounter %}{% endcapture %}
+        <li data-target="#showcaseCarousel" data-slide-to="{{ loopCount }}" {% if loopCount == '0' %}class="active"{% endif %}></li>
+        {% endif %}
+        {% endfor %}
+    </ol>
+    <div class="carousel-inner">
+        {% for case in site.data.showcases_redesign %}
+        {% if case.quote_testimonial %}
+        <div class="showcase__carousel__slide carousel-item {% if forloop.first == true %}active{% endif %}">
+            <div class="showcase__carousel__slide__background"></div>
+            <div class="container">
+                <h2 class="text-center">Learn from developers</h2>
+                <div class="row">
+                    <div class="col-md-5 col-xl-4">
+                        <q class="d-block">{{ case.quote }}</q>
+                        <p><strong>{{ case.quote_writer }},</strong></p>
+                        <p>{{ case.name }}</p>
+                    </div>
+                    <div class="col-md-6 offset-md-1">
+                        <div class="embedded-video-wrapper">
+                            <iframe class="embedded-video-wrapper__frame" width="auto" height="auto" src="https://www.youtube.com/embed/{{case.video_id}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+        <a class="carousel-control-prev" href="#showcaseCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next aaa" href="#showcaseCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 </section>
 
 <section class="showcase__more-company-cases showcase__section">
