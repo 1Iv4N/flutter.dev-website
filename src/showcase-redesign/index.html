@@ -126,10 +126,10 @@ body_class: landing-page showcase
                                 {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
                                 {% if case.play_store_link or case.app_store_link %}
                                 <span class="dropdown">
-                            <a href="#" class="dropdown-toggle" id="dropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a href="#" class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Download
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton{{ forloop.index }}">
+                            <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
                                 {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
                                 {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
                             </div>
@@ -151,8 +151,8 @@ body_class: landing-page showcase
 <section class="d-flex align-items-center justify-content-center text-center showcase__learn-more-section showcase__section">
     <div>
         <h2>Ready to take flight?</h2>
-        <a class="btn btn-primary btn-cta" href="/docs/get-started/install">Get Started</a>
-        <a href="">Explore documentation</a>
+        <a class="btn btn-primary btn-cta d-block" href="/docs/get-started/install">Get Started</a>
+        <a class="d-block" href="">Explore documentation</a>
     </div>
 </section>
 

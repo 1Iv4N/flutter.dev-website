@@ -1,83 +1,15 @@
 .showcase {
-  background-color: #FFF;
+  background-color: $site-color-white;
 
-  .card--case-container-info {
-    padding: 1.12rem;
-  }
-
-  .col-12, .card-body,
+  .card-body,
+  .col-12,
   &__company-cases .card.card--case-study,
   &__more-company-cases .card.card--case-study {
     padding: 0;
   }
 
-  &__company-cases .card.card--case-study .card-body {
-    min-height: 96px;
-  }
-
-  &__more-company-cases .card.card--case-study .card-body {
-    min-height: 144px;
-  }
-
-  &__company-cases {
-    margin-bottom: 60px;
-  }
-
-  &__hero-section {
-    margin: 70px 0;
-
-    h1 {
-      color: #000;
-      font-size: 3.2rem;
-      margin-bottom: 12px;
-    }
-
-    span {
-      color: #3E89F5;
-    }
-  }
-
-  &__learn-more-section {
-    h2 {
-      font-size: 2.5rem;
-      margin: 50px 0 25px 0;
-    }
-
-    a {
-      display: block;
-      margin-bottom: 50px;
-    }
-
-    .btn.btn-cta {
-      margin: 0 auto 30px;
-      padding: 0.6rem 1.5rem;
-      min-width: 170px;
-      width: 170px;
-    }
-  }
-
-  &__more-company-cases {
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 60px;
-      text-align: center;
-    }
-
-    .card-body + a {
-      margin: 50px 0;
-    }
-  }
-
-  &__section {
-    padding: 0 50px;
-
-    .card-body {
-      padding: 0;
-    }
-
-    @include media-breakpoint-up(md) {
-      padding: 0;
-    }
+  .card--case-container-info {
+    padding: 1.12rem;
   }
 
   &__carousel {
@@ -137,7 +69,7 @@
         }
       }
 
-     .carousel-control-next, .carousel-control-prev {
+      .carousel-control-next, .carousel-control-prev {
         width: 9%;
       }
 
@@ -168,6 +100,74 @@
           animation: $carousel-animation-in-duration $carousel-animation-ease $carousel-animation-fill-mode carousel-card-out;
         }
       }
+    }
+  }
+
+  &__company-cases {
+    margin-bottom: 60px;
+  }
+
+  &__company-cases .card.card--case-study .card-body {
+    min-height: 96px;
+  }
+
+  &__hero-section {
+    margin: 70px 0;
+
+    h1 {
+      color: $site-color-black;
+      font-size: 3.2rem;
+      margin-bottom: 12px;
+    }
+
+    span {
+      color: #3E89F5;
+    }
+  }
+
+  &__learn-more-section {
+    a {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 50px 0 25px 0;
+    }
+
+    .btn.btn-cta {
+      margin: 0 auto 30px;
+      min-width: 170px;
+      padding: 0.6rem 1.5rem;
+      width: 170px;
+    }
+  }
+
+  &__more-company-cases {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .card-body + a {
+      margin: 50px 0;
+    }
+  }
+
+  &__more-company-cases .card.card--case-study .card-body {
+    min-height: 144px;
+  }
+
+  &__section {
+    padding: 0 50px;
+
+    .card-body {
+      padding: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding: 0;
     }
   }
 }
