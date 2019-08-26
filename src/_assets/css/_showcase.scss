@@ -1,6 +1,14 @@
 .showcase {
   background-color: $site-color-white;
 
+  &__card {
+    padding: 0 20px;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 12px;
+    }
+  }
+
   &__company-cases .card.card--case-study,
   &__more-company-cases .card.card--case-study {
     padding: 0;
