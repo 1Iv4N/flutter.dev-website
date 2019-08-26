@@ -24,6 +24,10 @@
         height: 8px;
         width: 8px;
       }
+
+      .active {
+        background-color: $blue-600;
+      }
     }
 
     .carousel-control-next, .carousel-control-prev {
@@ -117,7 +121,7 @@
     }
 
     span {
-      color: #3E89F5;
+      color: $blue-600;
     }
   }
 
