@@ -13,6 +13,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Jhon Doe
+  thumbnail_image: homepage/news-2.png
 
 - name: Hamilton Video
   featured: true
@@ -31,6 +32,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Ivan Guevara
+  thumbnail_image: homepage/news-2.png
 
 - name: Alibaba2
   featured: true
@@ -47,6 +49,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Ivonne Clajivo
+  thumbnail_image: homepage/news-2.png
 
 - name: Hamilton Musical
   featured: true
@@ -65,6 +68,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Juan Gómez
+  thumbnail_image: homepage/news-2.png
 
 - name: Abbey Road Studios
   featured: true
@@ -78,6 +82,7 @@
   learn_more_link: https://www.abbeyroad.com/apps
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
+  thumbnail_image: homepage/news-2.png
 
 - name: Google Ads
   description: >

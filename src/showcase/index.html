@@ -68,12 +68,17 @@ body_class: landing-page showcase
                 <div class="row">
                     <div class="col-md-5 col-lg-5">
                         <q class="d-block">{{ case.quote }}</q>
-                        <p><strong>{{ case.quote_writer }},</strong></p>
+                        <p><strong>{{ case.quote_writer }}</strong></p>
                         <p>{{ case.name }}</p>
                     </div>
                     <div class="col-md-6 offset-md-1">
-                        <div class="embedded-video-wrapper">
-                            <iframe class="embedded-video-wrapper__frame" width="auto" height="auto" src="https://www.youtube.com/embed/{{case.video_id}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="carousel__thumbnail_image">
+                            {% asset '{{ case.thumbnail_image }}' class='' %}
+                            {% if case.video_id %}
+                            <button class="btn btn-link btn-icon carousel__watch-video_link d-inline-flex" type="button" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal">
+                                <i class="material-icons">play_circle_filled</i> Watch the video
+                            </button>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
