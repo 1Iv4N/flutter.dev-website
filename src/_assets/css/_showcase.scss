@@ -18,6 +18,17 @@
     padding: 1.12rem;
   }
 
+  &__company-logos {
+    margin-bottom: 80px;
+
+    li {
+      list-style: none;
+      margin-bottom: 20px;
+      max-height: 40px;
+      padding: 40px 0;
+    }
+  }
+
   .carousel__thumbnail_image {
     height: 100%;
     max-height: 300px;
@@ -146,7 +157,7 @@
   }
 
   &__company-cases .card.card--case-study .card-body {
-    min-height: 96px;
+    min-height: 120px;
   }
 
   &__hero-section {
@@ -164,6 +175,9 @@
   }
 
   &__learn-more-section {
+    padding: 40px 0;
+    margin: 80px -15px;
+
     a {
       margin-bottom: 50px;
     }
@@ -188,13 +202,30 @@
       text-align: center;
     }
 
+    > a {
+      margin-top: 40px;
+    }
+
     .card-body + a {
       margin: 50px 0;
     }
   }
 
+  &__more-company-logos {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+  }
+
   &__more-company-cases .card.card--case-study .card-body {
-    min-height: 144px;
+    @include media-breakpoint-up(md) {
+      min-height: 168px;
+    }
+  }
+
+  &__more-company-cases .card.card--case-study .card-footer {
+    @include media-breakpoint-up(lg) {
+      min-height: 48px;
+    }
   }
 
   &__section {

@@ -2,17 +2,25 @@
   logo_src: showcase/logo-alibaba.png
   alt_text: Alibaba logo
 
-- name: Google Ads
-  logo_src: showcase/logo-ads.svg
-  alt_text: Google Ads logo
-
 - name: AppTree
   logo_src: showcase/logo-app_tree.png
   alt_text: App Tree logo
 
+- name: Hamilton Musical
+  logo_src: showcase/logo-hamilton.png
+  alt_text: Hamilton Musical logo
+
 - name: Reflecty
   logo_src: showcase/logo-reflectly.png
   alt_text: Reflecty logo
+
+- name: Google Ads
+  logo_src: showcase/logo-ads.svg
+  alt_text: Google Ads logo
+
+- name: Google Greentea
+  logo_src: showcase/logo-greentea.png
+  alt_text: Google Greentea logo
 
 - name: Hamilton Musical
   logo_src: showcase/logo-hamilton.png
