@@ -19,7 +19,10 @@
   }
 
   &__company-logos {
-    margin-bottom: 80px;
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 48px;
+    }
 
     li {
       list-style: none;
@@ -244,11 +247,6 @@
     }
   }
 
-  &__more-company-logos {
-    font-size: 1.2rem;
-    margin-bottom: 60px;
-  }
-
   &__more-company-cases .card.card--case-study .card-body {
     @include media-breakpoint-up(md) {
       min-height: 168px;
@@ -263,6 +261,7 @@
 
   &__section {
     padding: 0;
+    margin-bottom: 100px;
 
     .card-body {
       padding: 0;
