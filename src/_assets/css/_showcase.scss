@@ -197,12 +197,24 @@
   }
 
   &__hero-section {
-    margin: 70px 0;
+    margin: 100px -15px 80px -15px;
+
+    @include media-breakpoint-only(lg) {
+      margin-top: 140px;
+    }
 
     h1 {
       color: $site-color-black;
-      font-size: 3.2rem;
-      margin-bottom: 12px;
+      font-size: 3rem;
+      margin-bottom: 24px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 4rem;
+      }
+    }
+
+    p {
+      font-size: 1.25rem;
     }
 
     span {
