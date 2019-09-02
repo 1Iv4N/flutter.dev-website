@@ -14,8 +14,12 @@
     padding: 0;
   }
 
-  .card--case-container-info {
-    padding: 1.12rem;
+  .card--case-image_container {
+    height: 320px;
+  }
+
+  .card--case-info_container {
+    padding: 24px;
   }
 
   &__company-logos {
@@ -275,8 +279,9 @@
     padding: 0;
     margin-bottom: 100px;
 
-    .card-body {
+    .card-body, .card-header {
       padding: 0;
+      margin-bottom: 24px;
     }
   }
 }

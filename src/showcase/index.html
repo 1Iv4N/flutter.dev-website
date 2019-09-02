@@ -15,10 +15,10 @@ body_class: landing-page showcase
         {% if case.featured %}
         <div class="{% if forloop.index0 < 2 %}col-lg-6 {% else %}col-lg-4  {% endif %}col-md-12 col-sm-12 showcase__card">
             <div class="card card--case-study">
-                <div>
-                    {% asset 'homepage/news-2.png' class='w-100' %}
+                <div class="card--case-image_container">
+                    {% asset 'homepage/news-2.png' class='h-100 w-100' %}
                 </div>
-                <div class="card--case-container-info">
+                <div class="card--case-info_container">
                     <div class="card-header">
                         {% if case.logo_src %}
                         {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
@@ -51,7 +51,7 @@ body_class: landing-page showcase
 
 <section class="showcase__company-logos showcase__section">
     <p class="text-center">Join the growing list of organizations building beautiful apps with Flutter.</p>
-    <div class="">
+    <div>
         <ul class="d-flex justify-content-md-center flex-wrap align-content-stretch">
             {% for logo in site.data.company_logos %}
             <li class="align-items-center d-flex col-6 col-md-4 {% if forloop.index0 < 4 %}col-lg-3{% else %} col-lg-2 {% endif %} justify-content-center">
@@ -119,7 +119,7 @@ body_class: landing-page showcase
                 <div>
                     {% asset 'homepage/news-2.png' class='w-100' %}
                 </div>
-                <div class="card--case-container-info">
+                <div class="card--case-info_container">
                     <div class="card-header">
                         {% if case.logo_src %}
                         {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
