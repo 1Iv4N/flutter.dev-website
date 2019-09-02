@@ -31,12 +31,13 @@
 
   .carousel__thumbnail_image {
     height: 100%;
-    max-height: 300px;
-    max-width: 550px;
-    min-width: 300px;
-    min-height: 280px;
     position: relative;
     width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      max-height: 300px;
+      max-width: 550px;
+    }
 
     img {
       height: 100%;
@@ -48,7 +49,9 @@
     background: $blue-600;
     bottom: 0;
     color: $site-color-white;
+    height: 44px;
     position: absolute;
+    width: 190px;
   }
 
   &__carousel {
@@ -58,12 +61,26 @@
     $carousel-animation-fill-mode: both;
 
     h2 {
-      margin-bottom: 70px;
+      margin-bottom: 40px;
+
+      @include media-breakpoint-only(md) {
+        margin-bottom: 60px;
+      }
+
+      @include media-breakpoint-only(lg) {
+        margin-bottom: 80px;
+      }
+    }
+
+    @include media-breakpoint-only(md) {
+      margin-bottom: 60px;
     }
 
     @include reset-carousel-animation;
 
     .carousel-indicators {
+      bottom: 70px;
+
       li {
         border-radius: 50%;
         height: 8px;
@@ -76,37 +93,53 @@
     }
 
     .carousel-control-next, .carousel-control-prev {
-      width: 4%;
+      width: 10%;
+    }
+
+    &__carousel-video {
+      padding: 0;
     }
 
     &__slide {
       background-color: #232C33;
       color: $site-color-white;
-      min-height: 75vh;
-      padding: 40px 0;
+      padding: 70px 30px;
       position: relative;
+
       @include media-breakpoint-up(md) {
         min-height: 620px;
-        padding: 80px 0;
+        padding: 100px 0;
       }
 
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
 
       .container {
+        padding: 0 10%;
+
         q {
-          font-size: 1.9rem;
-          margin-bottom: 20px;
+          font-size: 1.3rem;
+          margin-bottom: 24px;
+
+          @include media-breakpoint-up(lg) {
+            font-size: 1.88rem;
+            margin-bottom: 2rem;
+          }
         }
 
         p {
-          font-size: 1.1rem;
+          font-size: 1rem;
           margin: 0;
         }
 
         p:nth-child(3) {
           color: $blue-600;
+          margin-bottom: 60px;
+
+          @include media-breakpoint-up(lg) {
+            margin-bottom: 80px;
+          }
         }
 
         .row {
