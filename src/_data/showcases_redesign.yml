@@ -101,7 +101,7 @@
   description: >
     AppTree provides an enterprise app platform for brands like McDonalds, Stanford, Wayfair & Fermilab.
   logo_src: showcase/logo-app_tree.png
-  learn_more_cta: Developer website
+  learn_more_cta: Website
   learn_more_link: https://www.apptreerevolution.com/
   play_store_link: https://play.google.com/store/apps/details?id=com.apptreesoftware.revolution.enterpriseedition&hl=en_US&e=-EnableAppDetailsPageRedesign
   logo_has_name: false
@@ -127,7 +127,7 @@
   description: >
     NOW Live is Tencent’s video streaming service with tens of millions of MAU.
   logo_src: showcase/logo-tencent.png
-  learn_more_cta: Developer website
+  learn_more_cta: Website
   learn_more_link: https://now.qq.com
   app_store_link: https://itunes.apple.com/cn/app/now%E7%9B%B4%E6%92%AD-%E8%85%BE%E8%AE%AF%E6%97%97%E4%B8%8B%E5%85%A8%E6%B0%91%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0/id1097492828?mt=8
   logo_has_name: true
@@ -136,7 +136,7 @@
   description: >
     JD Finance is a leading digital technology company. The company covers fintech, digital enterprise services and urban computing.
   logo_src: showcase/logo-jd.png
-  learn_more_cta: Developer website
+  learn_more_cta: Website
   learn_more_link: https://jr.jd.com/
   app_store_link: https://itunes.apple.com/cn/app/id895682747
   play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
@@ -146,7 +146,7 @@
   description: >
     JD Finance is a leading digital technology company. The company covers fintech, digital enterprise services and urban computing.
   logo_src: showcase/logo-jd.png
-  learn_more_cta: Developer website
+  learn_more_cta: Website
   learn_more_link: https://jr.jd.com/
   app_store_link: https://itunes.apple.com/cn/app/id895682747
   play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024

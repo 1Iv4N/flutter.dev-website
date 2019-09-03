@@ -201,10 +201,12 @@
     .card--case-image_container {
       height: 320px;
     }
-  }
 
-  &__company-cases .card.card--case-study .card-body {
-    min-height: 120px;
+    .card.card--case-study {
+      .card-body {
+        min-height: 144px;
+      }
+    }
   }
 
   &__hero-section {
@@ -265,24 +267,36 @@
       margin-top: 40px;
     }
 
+    .card.card--case-study {
+      .card-body {
+        @include media-breakpoint-up(md) {
+          min-height: 216px;
+        }
+
+        @include media-breakpoint-only(md) {
+          min-height: 120px;
+        }
+      }
+
+      .card-footer {
+        @include media-breakpoint-up(lg) {
+          min-height: 48px;
+        }
+      }
+
+      .card-footer--links {
+        @include media-breakpoint-up(md) {
+          min-height: 24px;
+        }
+      }
+    }
+
     .card-body + a {
       margin: 50px 0;
     }
 
     .card--case-image_container {
       height: 200px;
-    }
-  }
-
-  &__more-company-cases .card.card--case-study .card-body {
-    @include media-breakpoint-up(md) {
-      min-height: 168px;
-    }
-  }
-
-  &__more-company-cases .card.card--case-study .card-footer {
-    @include media-breakpoint-up(lg) {
-      min-height: 48px;
     }
   }
 
