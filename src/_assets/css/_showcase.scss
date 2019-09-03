@@ -14,12 +14,15 @@
     padding: 0;
   }
 
-  .card--case-image_container {
-    height: 320px;
-  }
-
   .card--case-info_container {
     padding: 24px;
+
+    .card-header {
+      span {
+        color: #122c34;
+        margin-left: 12px;
+      }
+    }
   }
 
   &__company-logos {
@@ -194,6 +197,10 @@
 
   &__company-cases {
     margin-bottom: 60px;
+
+    .card--case-image_container {
+      height: 320px;
+    }
   }
 
   &__company-cases .card.card--case-study .card-body {
@@ -260,6 +267,10 @@
 
     .card-body + a {
       margin: 50px 0;
+    }
+
+    .card--case-image_container {
+      height: 200px;
     }
   }
 

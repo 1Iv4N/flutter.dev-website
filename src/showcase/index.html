@@ -21,7 +21,8 @@ body_class: landing-page showcase
                 <div class="card--case-info_container">
                     <div class="card-header">
                         {% if case.logo_src %}
-                        {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
+                            {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
+                            {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span>{% endunless -%}
                         {% endif %}
                     </div>
                     <div class="card-body">
@@ -116,13 +117,14 @@ body_class: landing-page showcase
         {% for case in site.data.showcases_redesign %}
         <div class="col-lg-3 col-md-6 col-sm-12 showcase__card">
             <div class="card card--case-study">
-                <div>
-                    {% asset 'homepage/news-2.png' class='w-100' %}
+                <div class="card--case-image_container">
+                    {% asset 'homepage/news-2.png' class='h-100 w-100' %}
                 </div>
                 <div class="card--case-info_container">
                     <div class="card-header">
                         {% if case.logo_src %}
-                        {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
+                            {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
+                            {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span>{% endunless -%}
                         {% endif %}
                     </div>
                     <div class="card-body">

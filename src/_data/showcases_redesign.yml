@@ -14,6 +14,7 @@
     as soon as possible.
   quote_writer: Jhon Doe
   thumbnail_image: homepage/news-2.png
+  logo_has_name: true
 
 - name: Hamilton Video
   featured: true
@@ -33,6 +34,7 @@
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Ivan Guevara
   thumbnail_image: homepage/news-2.png
+  logo_has_name: false
 
 - name: Alibaba2
   featured: true
@@ -50,6 +52,7 @@
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Ivonne Clajivo
   thumbnail_image: homepage/news-2.png
+  logo_has_name: true
 
 - name: Hamilton Musical
   featured: true
@@ -69,6 +72,7 @@
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   quote_writer: Juan Gómez
   thumbnail_image: homepage/news-2.png
+  logo_has_name: false
 
 - name: Abbey Road Studios
   featured: true
@@ -83,6 +87,7 @@
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
   thumbnail_image: homepage/news-2.png
+  logo_has_name: true
 
 - name: Google Ads
   description: >
@@ -90,6 +95,7 @@
   logo_src: showcase/logo-ads.svg
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
 
 - name: AppTree
   description: >
@@ -98,6 +104,7 @@
   learn_more_cta: Developer website
   learn_more_link: https://www.apptreerevolution.com/
   play_store_link: https://play.google.com/store/apps/details?id=com.apptreesoftware.revolution.enterpriseedition&hl=en_US&e=-EnableAppDetailsPageRedesign
+  logo_has_name: false
 
 - name: Reflectly
   description: >
@@ -107,12 +114,14 @@
   learn_more_link: https://medium.com/reflectly-engineering/reflectly-from-react-native-to-flutter-2e3dffced2ea
   app_store_link: https://itunes.apple.com/us/app/reflectly-mindfulness-journal/id1241229134
   play_store_link: https://play.google.com/store/apps/details?id=com.reflectlyApp&e=-EnableAppDetailsPageRedesign
+  logo_has_name: false
 
 - name: Google Greentea
   description: >
     An internal customer management app used widely by Google sales that provides rich visualizations for tracking sales
     targets.
   logo_src: showcase/logo-greentea.png
+  logo_has_name: true
 
 - name: Tencent
   description: >
@@ -121,6 +130,7 @@
   learn_more_cta: Developer website
   learn_more_link: https://now.qq.com
   app_store_link: https://itunes.apple.com/cn/app/now%E7%9B%B4%E6%92%AD-%E8%85%BE%E8%AE%AF%E6%97%97%E4%B8%8B%E5%85%A8%E6%B0%91%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0/id1097492828?mt=8
+  logo_has_name: true
 
 - name: JD Finance
   description: >
@@ -130,6 +140,7 @@
   learn_more_link: https://jr.jd.com/
   app_store_link: https://itunes.apple.com/cn/app/id895682747
   play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
+  logo_has_name: false
 
 - name: JD Finance22
   description: >
@@ -139,3 +150,4 @@
   learn_more_link: https://jr.jd.com/
   app_store_link: https://itunes.apple.com/cn/app/id895682747
   play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
+  logo_has_name: false
