@@ -81,10 +81,10 @@ body_class: landing-page showcase
                 <h2 class="text-center">Learn from developers</h2>
                 <div class="row">
                     <div class="col-lg-6 offset-lg-1 p-0 mb-10 order-lg-last">
-                        <div class="carousel__thumbnail_image">
+                        <div class="showcase__carousel__thumbnail_image">
                             {% asset '{{ case.thumbnail_image }}' class='' %}
                             {% if case.video_id %}
-                            <button class="btn btn-link btn-icon carousel__watch-video_link d-inline-flex" type="button" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal">
+                            <button class="btn btn-link btn-icon showcase__carousel__watch-video_link d-inline-flex" type="button" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal">
                                 <i class="material-icons">play_circle_filled</i> Watch the video
                             </button>
                             {% endif %}
