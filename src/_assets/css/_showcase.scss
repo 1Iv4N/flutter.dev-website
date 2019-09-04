@@ -51,6 +51,7 @@
   }
 
   &__carousel {
+    background-color: #232C33;
     h2 {
       margin-bottom: 40px;
 
@@ -65,6 +66,11 @@
 
     @include media-breakpoint-only(md) {
       margin-bottom: 60px;
+    }
+
+    .carousel-inner {
+      margin: 0 auto;
+      max-width: 1330px;
     }
 
     .carousel-indicators {
@@ -82,7 +88,17 @@
     }
 
     .carousel-control-next, .carousel-control-prev {
-      width: 10%;
+      @include media-breakpoint-up(xl) {
+        width: 8%;
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 14%;
+      }
+
+      @include media-breakpoint-down(md) {
+        width: 9%;
+      }
     }
 
     &__carousel-video {
