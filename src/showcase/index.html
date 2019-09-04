@@ -63,7 +63,7 @@ body_class: landing-page showcase
     </div>
 </section>
 
-<section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide" data-interval=8000 data-ride="carousel" data-pause="false">
+<section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide" data-interval=8000 data-ride="carousel">
     <ol class="carousel-indicators">
         {% for case in site.data.showcases_redesign %}
         {% if case.quote_testimonial %}
@@ -76,7 +76,6 @@ body_class: landing-page showcase
         {% for case in site.data.showcases_redesign %}
         {% if case.quote_testimonial %}
         <div class="showcase__carousel__slide carousel-item {% if forloop.first == true %}active{% endif %}">
-            <div class="showcase__carousel__slide__background"></div>
             <div class="container">
                 <h2 class="text-center">Learn from developers</h2>
                 <div class="row">

@@ -30,8 +30,8 @@
   play_store_link: https://play.google.com/store/apps/details?id=com.hamilton.app&e=-EnableAppDetailsPageRedesign
   quote_testimonial: true
   quote: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
+    ensure feature parity for digital touchpoints.
   quote_writer: Ivan Guevara
   thumbnail_image: homepage/news-2.png
   logo_has_name: false
@@ -48,8 +48,8 @@
   play_store_link: https://2.taobao.com/
   quote_testimonial: true
   quote: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    We wanted to democratize music making. It was really important for us to have both versions of the app available
+    as soon as possible.
   quote_writer: Ivonne Clajivo
   thumbnail_image: homepage/news-2.png
   logo_has_name: true
@@ -68,8 +68,8 @@
   play_store_link: https://play.google.com/store/apps/details?id=com.hamilton.app&e=-EnableAppDetailsPageRedesign
   quote_testimonial: true
   quote: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
+    ensure feature parity for digital touchpoints.
   quote_writer: Juan Gómez
   thumbnail_image: homepage/news-2.png
   logo_has_name: false
