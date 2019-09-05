@@ -12,6 +12,10 @@
   &__company-cases .card.card--case-study,
   &__more-company-cases .card.card--case-study {
     padding: 0;
+
+    img {
+      object-fit: cover;
+    }
   }
 
   &__company-cases .card.card--case-study .card-body,
@@ -52,6 +56,7 @@
 
   &__carousel {
     background-color: #232C33;
+
     h2 {
       margin-bottom: 40px;
 
@@ -62,6 +67,10 @@
       @include media-breakpoint-only(lg) {
         margin-bottom: 80px;
       }
+    }
+
+    img {
+      object-fit: cover;
     }
 
     @include media-breakpoint-only(md) {
