@@ -51,6 +51,11 @@
       margin-bottom: 20px;
       max-height: 40px;
       padding: 40px 0;
+
+      img {
+        max-height: none;
+        max-width: none;
+      }
     }
 
     ul {
