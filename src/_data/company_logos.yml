@@ -1,31 +1,44 @@
-- name: Alibaba
-  logo_src: showcase/logo-alibaba.png
+- name: Google
+  logo_src: showcase/logo-google-grey.svg
   alt_text: Alibaba logo
 
 - name: AppTree
-  logo_src: showcase/logo-app_tree.png
+  logo_src: showcase/logo-groupon-grey.svg
   alt_text: App Tree logo
 
 - name: Hamilton Musical
-  logo_src: showcase/logo-hamilton.png
+  logo_src: showcase/logo-alibaba-grey.svg
   alt_text: Hamilton Musical logo
 
 - name: Reflecty
-  logo_src: showcase/logo-reflectly.png
+  logo_src: showcase/logo-capital-one-grey.svg
   alt_text: Reflecty logo
 
 - name: Google Ads
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-tencent-grey.svg
   alt_text: Google Ads logo
 
 - name: Google Greentea
-  logo_src: showcase/logo-greentea.png
+  logo_src: showcase/logo-square-grey.svg
   alt_text: Google Greentea logo
 
 - name: Hamilton Musical
-  logo_src: showcase/logo-hamilton.png
+  logo_src: showcase/logo-ebay-grey.svg
   alt_text: Hamilton Musical logo
 
 - name: Google Greentea
-  logo_src: showcase/logo-greentea.png
+  logo_src: showcase/logo-bmw-grey.svg
   alt_text: Google Greentea logo
+
+- name: Google Greentea
+  logo_src: showcase/logo-dream11-grey.svg
+  alt_text: Google Greentea logo
+
+- name: Google Greentea
+  logo_src: showcase/logo-sonos-grey.svg
+  alt_text: Google Greentea logo
+
+- name: Google Greentea
+  logo_src: showcase/logo-nubank-grey.svg
+  alt_text: Google Greentea logo
+
