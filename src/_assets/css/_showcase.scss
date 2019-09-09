@@ -316,4 +316,34 @@
       margin-bottom: 24px;
     }
   }
+
+  @keyframes showcase-pageload-animation {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .animate {
+    animation: .4s showcase-pageload-animation;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+
+    $steps-delays: (
+      .1s,
+      .4s,
+      .8s,
+      .95s,
+    );
+
+    @for $index from 1 to length($steps-delays) + 1 {
+      &.step-#{$index} {
+        animation-delay: nth($steps-delays, $index);
+      }
+    }
+  }
 }
