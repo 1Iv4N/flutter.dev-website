@@ -5,8 +5,8 @@ body_class: landing-page showcase
 ---
 
 <section class="showcase__hero-section text-center ">
-    <h1>Apps take flight with <span>Flutter.</span></h1>
-    <p>See how developers have used Flutter to make beautiful apps in record time.</p>
+    <h1 class="animate step-1">Apps take flight with <span>Flutter.</span></h1>
+    <p class="animate step-2">See how developers have used Flutter to make beautiful apps in record time.</p>
 </section>
 
 <section class="showcase__company-cases showcase__section">
@@ -14,7 +14,7 @@ body_class: landing-page showcase
         {% for case in site.data.showcases_redesign %}
         {% if case.featured %}
         <div class="{% if forloop.index0 < 2 %}col-lg-6 {% else %}col-lg-4  {% endif %}col-md-12 col-sm-12 showcase__card">
-            <div class="card card--case-study">
+            <div class="card card--case-study{% if forloop.index0 < 2 %} animate step-{{forloop.index | plus: 2}}{% endif %}">
                 <div class="card--case-image_container">
                     {% asset '{{ case.card_image }}' class='h-100 w-100' %}
                 </div>
