@@ -121,26 +121,29 @@
       margin-bottom: 48px;
     }
 
-    li {
+    ul {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .logo {
       list-style: none;
-      margin-bottom: 20px;
-      max-height: 40px;
-      padding: 40px 0;
+      text-align: right;
+      margin-bottom: 32px;
 
       img {
         height: 48px;
         width: 124px;
+      }
+    }
 
-        @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(md) {
+      .logo {
+        img {
           height: 56px;
           width: 145px;
         }
       }
-    }
-
-    ul {
-      margin: 0 auto;
-      padding: 0;
     }
   }
 

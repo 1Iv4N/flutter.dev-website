@@ -49,13 +49,15 @@ body_class: showcase
 
 <section class="showcase__company-logos showcase__section">
     <p class="text-center">Join the growing list of organizations building beautiful apps with Flutter.</p>
-    <ul class="col-sm-12 col-lg-8 d-flex flex-wrap align-content-stretch">
-        {% for logo in site.data.company_logos %}
-            <li class="col-sm-6 col-md-3 align-items-center d-flex justify-content-center justify-content-lg-end">
-                {% asset '{{ logo.logo_src }}' class='' %}
-            </li>
-        {% endfor %}
-    </ul>
+    <div class="row">
+        <ul class="col-12 d-flex flex-wrap">
+            {% for logo in site.data.company_logos %}
+                <li class="logo col-sm-6 col-md-3">
+                    {% asset '{{ logo.logo_src }}' %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>
 
 <section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide" data-interval=8000 data-ride="carousel">
