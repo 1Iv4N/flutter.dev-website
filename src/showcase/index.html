@@ -53,9 +53,9 @@ body_class: landing-page showcase
 <section class="showcase__company-logos showcase__section">
     <p class="text-center">Join the growing list of organizations building beautiful apps with Flutter.</p>
     <div>
-        <ul class="d-flex flex-wrap align-content-stretch col-8">
+        <ul class="d-flex flex-wrap align-content-stretch col-lg-8 col-md-12 col-sm-12">
             {% for logo in site.data.company_logos %}
-            <li class="align-items-center d-flex col-sm-6 col-md-3 justify-content-center">
+            <li class="align-items-center d-flex col-6 col-md-3 justify-content-center justify-content-lg-end">
                 {% asset '{{ logo.logo_src }}' class='landing-page__case-studies__logo' %}
             </li>
             {% endfor %}
