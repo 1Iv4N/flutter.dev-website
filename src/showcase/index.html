@@ -1,50 +1,47 @@
 ---
 title: Showcase
 layout: landing
-body_class: landing-page showcase
+body_class: showcase
 ---
 
-<section class="showcase__hero-section text-center ">
+<section class="showcase__hero-section showcase__section">
     <h1 class="animate step-1">Apps take flight with <span>Flutter.</span></h1>
     <p class="animate step-2">See how developers have used Flutter to make beautiful apps in record time.</p>
 </section>
+
 
 <section class="showcase__company-cases showcase__section">
     <div class="row">
         {% for case in site.data.showcases_redesign %}
         {% if case.featured %}
-        <div class="{% if forloop.index0 < 2 %}col-lg-6 {% else %}col-lg-4  {% endif %}col-md-12 col-sm-12 showcase__card">
-            <div class="card card--case-study{% if forloop.index0 < 2 %} animate step-{{forloop.index | plus: 2}}{% endif %}">
-                <div class="card--case-image_container">
-                    {% asset '{{ case.card_image }}' class='h-100 w-100' %}
-                </div>
-                <div class="card--case-info_container">
-                    <div class="card-header">
-                        {% if case.logo_src %}
-                            {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
-                            {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span>{% endunless -%}
-                        {% endif %}
-                    </div>
+            <div class="showcase__company-cases-col col-sm-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %}">
+                <div class="card{% if forloop.index0 < 2 %} animate step-{{forloop.index | plus: 2}}{% endif %}">
+                    {% asset '{{ case.card_image }}' class='card-img-top' %}
                     <div class="card-body">
-                        <p>{{ case.description }}</p>
+                        <div class="card-title">
+                            {% if case.logo_src %}
+                                {% asset '{{ case.logo_src }}' class='' %}
+                                {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span>{% endunless -%}
+                            {% endif %}
+                        </div>
+                        <p class="card-text">{{ case.description | truncate: 160 }}</p>
                     </div>
                     <div class="card-footer card-footer--transparent card-footer--links">
                         {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
                         {% if case.play_store_link or case.app_store_link %}
-                        <span class="dropdown">
-                        <a href="#" class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Download
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
-                            {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
-                            {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
-                        </div>
-                    </span>
+                            <span class="dropdown">
+                                <a href="#" class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Download
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
+                                    {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
+                                    {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
+                                </div>
+                            </span>
                         {% endif %}
                     </div>
                 </div>
             </div>
-        </div>
         {% endif %}
         {% endfor %}
     </div>
@@ -52,15 +49,13 @@ body_class: landing-page showcase
 
 <section class="showcase__company-logos showcase__section">
     <p class="text-center">Join the growing list of organizations building beautiful apps with Flutter.</p>
-    <div>
-        <ul class="d-flex flex-wrap align-content-stretch col-lg-8 col-md-12 col-sm-12">
-            {% for logo in site.data.company_logos %}
-            <li class="align-items-center d-flex col-6 col-md-3 justify-content-center justify-content-lg-end">
-                {% asset '{{ logo.logo_src }}' class='landing-page__case-studies__logo' %}
+    <ul class="col-sm-12 col-lg-8 d-flex flex-wrap align-content-stretch">
+        {% for logo in site.data.company_logos %}
+            <li class="col-sm-6 col-md-3 align-items-center d-flex justify-content-center justify-content-lg-end">
+                {% asset '{{ logo.logo_src }}' class='' %}
             </li>
-            {% endfor %}
-        </ul>
-    </div>
+        {% endfor %}
+    </ul>
 </section>
 
 <section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide" data-interval=8000 data-ride="carousel">
@@ -122,7 +117,7 @@ body_class: landing-page showcase
                 <div class="card--case-info_container">
                     <div class="card-header">
                         {% if case.logo_src %}
-                            {% asset '{{ case.logo_src }}' class='landing-page__case-studies__logo' %}
+                            {% asset '{{ case.logo_src }}' class='' %}
                             {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span>{% endunless -%}
                         {% endif %}
                     </div>
