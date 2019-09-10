@@ -1,7 +1,7 @@
-- name: Reflecty
+- name: Reflectly
   featured: true
   description: An award-winning mindfulness app built with Flutter.
-  logo_src: showcase/icon-reflecty.png
+  logo_src: showcase/logo-reflectly.png
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://2.taobao.com/
@@ -10,9 +10,9 @@
     We wanted to democratize music making. It was really important for us to have both versions of the app available
     as soon as possible.
   quote_writer: Jhon Doe
-  thumbnail_image: showcase/reflecty-card-image.jpg
+  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: false
-  card_image: showcase/reflecty-card-image.jpg
+  card_image: showcase/card-featured-reflectly.jpg
 
 - name: Tencent
   featured: true
@@ -28,14 +28,14 @@
     By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
     ensure feature parity for digital touchpoints.
   quote_writer: Ivan Guevara
-  thumbnail_image: showcase/reflecty-card-image.jpg
+  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: true
-  card_image: showcase/tencent-card-image.jpg
+  card_image: showcase/card-featured-tencent.jpg
 
 - name: Google Ads
   featured: true
   description: Keep your ad campaigns running smoothly wherever you are.
-  logo_src: showcase/icon-ads.png
+  logo_src: showcase/logo-ads.png
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://2.taobao.com/
@@ -44,14 +44,14 @@
     We wanted to democratize music making. It was really important for us to have both versions of the app available
     as soon as possible.
   quote_writer: Ivonne Clajivo
-  thumbnail_image: showcase/reflecty-card-image.jpg
+  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: false
-  card_image: showcase/ads-card-image.jpg
+  card_image: showcase/card-featured-ads.jpg
 
 - name: Insight Timer
   featured: true
   description: The largest free library of guided meditations.
-  logo_src: showcase/icon-insight-timer.png
+  logo_src: showcase/logo-insight-timer.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
   learn_more_link: https://blog.goposse.com/rise-up-the-story-of-how-the-hamilton-app-uses-flutter-to-do-more-for-its-fans-1d9cd76f95f1
@@ -62,26 +62,26 @@
     By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
     ensure feature parity for digital touchpoints.
   quote_writer: Juan Gómez
-  thumbnail_image: showcase/reflecty-card-image.jpg
+  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: false
-  card_image: showcase/insight-timer-card-image.jpg
+  card_image: showcase/card-featured-insight-timer.jpg
 
 - name: Hamilton
   featured: true
   description: The Hamilton app gets a Standing O.
-  logo_src: showcase/icon-hamilton.png
+  logo_src: showcase/logo-hamilton.png
   video_id: _ACWeGGBP4E
   learn_more_cta: Website
   learn_more_link: https://www.abbeyroad.com/apps
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
-  thumbnail_image: showcase/reflecty-card-image.jpg
+  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: false
-  card_image: showcase/hamilton-card-image.jpg
+  card_image: showcase/card-featured-hamilton.jpg
 
 - name: Realtor.com
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-realtor.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
@@ -89,23 +89,23 @@
 
 - name: Square
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-square.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-square.jpg
 
 - name: Grab
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-grab.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-grab.jpg
 
 - name: Abbey Road Studios
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-abbey-road-studios.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
@@ -113,15 +113,15 @@
 
 - name: Alibaba
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-alibaba.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-alibaba.jpg
 
 - name: Baidu
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-baidu.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
@@ -129,23 +129,23 @@
 
 - name: Byte Dance
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-byte-dance.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-byte-dance.jpg
 
 - name: Dream 11
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-dream11.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-dream11.jpg
 
 - name: Emaar
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-dream11.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
@@ -153,23 +153,23 @@
 
 - name: Green Tea
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-green-tea.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-green-tea.jpg
 
 - name: Groupon
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-groupon.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-groupon.jpg
 
 - name: JD
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-jd-com.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
@@ -177,24 +177,24 @@
 
 - name: Nubank
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-nubank.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-nubank.jpg
 
-- name: Nyt
+- name: The New York Times
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-tnyt.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
-  card_image: showcase/card-nyt.jpg
+  logo_has_name: true
+  card_image: showcase/card-tnyt.jpg
 
 - name: Philips Hue
   description: Lorem ipsum dolor sit amet Flutter app description.
-  logo_src: showcase/logo-ads.svg
+  logo_src: showcase/logo-hue-philips.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  logo_has_name: false
+  logo_has_name: true
   card_image: showcase/card-philips-hue.jpg
