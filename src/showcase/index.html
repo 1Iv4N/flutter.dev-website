@@ -30,10 +30,10 @@ body_class: showcase
                         {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
                         {% if case.play_store_link or case.app_store_link %}
                             <span class="dropdown">
-                                <a href="#" class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="dropdown-toggle" id="showcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Download
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="showcasesDropdownMenuButton{{ forloop.index }}">
                                     {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
                                     {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
                                 </div>
@@ -112,34 +112,30 @@ body_class: showcase
     <div class="row">
         {% for case in site.data.showcases_redesign %}
         <div class="col-lg-3 col-md-6 col-sm-12 showcase__card">
-            <div class="card card--case-study">
-                <div class="card--case-image_container">
-                    {% asset '{{ case.card_image }}' class='h-100 w-100' %}
-                </div>
-                <div class="card--case-info_container">
-                    <div class="card-header">
+            <div class="card">
+                {% asset '{{ case.card_image }}' class='card-img-top' %}
+                <div class="card-body">
+                    <div class="card-title">
                         {% if case.logo_src %}
                             {% asset '{{ case.logo_src }}' class='' %}
-                            {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span>{% endunless -%}
+                            {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span> {% endunless -%}
                         {% endif %}
                     </div>
-                    <div class="card-body">
-                        <p>{{ case.description }}</p>
-                    </div>
-                    <div class="card-footer card-footer--transparent card-footer--links">
-                        {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
-                        {% if case.play_store_link or case.app_store_link %}
-                        <span class="dropdown">
-                        <a href="#" class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Download
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
-                            {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
-                            {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
-                        </div>
-                    </span>
-                        {% endif %}
-                    </div>
+                    <p class="card-text">{{ case.description | truncate: 160 }}</p>
+                </div>
+                <div class="card-footer card-footer--transparent card-footer--links">
+                    {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
+                    {% if case.play_store_link or case.app_store_link %}
+                    <span class="dropdown">
+                                <button class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Download
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
+                                    {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
+                                    {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
+                                </div>
+                            </span>
+                    {% endif %}
                 </div>
             </div>
         </div>

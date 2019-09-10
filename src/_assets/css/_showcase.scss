@@ -1,6 +1,14 @@
 .showcase {
   background-color: $site-color-codeblock-bg;
 
+  &__card {
+    margin-bottom: 32px;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 40px;
+    }
+  }
+
   // General styles
   &__section {
     // padding: 0;
@@ -15,9 +23,7 @@
     // large?
   }
 
-
   // Section specific styles
-
   &__hero-section {
     margin-top: 100px;
     text-align: center;
@@ -59,6 +65,28 @@
       &-img-top {
         height: 240px;
         object-fit: cover;
+      }
+
+      &-body {
+        margin-bottom: 24px;
+
+        .card-title {
+          margin-bottom: 24px;
+
+          img {
+            max-height: 48px;
+            max-width: 110px;
+            min-width: 48px;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &-footer {
+        margin-bottom: 24px;
       }
     }
 
@@ -317,7 +345,34 @@
       margin-top: 36px;
     }
 
-    .card.card--case-study {
+    .card {
+      height: 100%;
+      margin-bottom: 40px;
+
+      &-body {
+        margin-bottom: 24px;
+
+        .card-title {
+          margin-bottom: 24px;
+
+          img {
+            max-height: 48px;
+            max-width: 110px;
+            min-width: 48px;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &-footer {
+        margin-bottom: 24px;
+      }
+    }
+
+    /*.card.card--case-study {
       .card-body {
         @include media-breakpoint-up(md) {
           min-height: 216px;
@@ -347,7 +402,7 @@
 
     .card--case-image_container {
       height: 200px;
-    }
+    }*/
   }
 
   // Animation setup
