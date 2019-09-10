@@ -2,42 +2,34 @@
   background-color: $site-color-codeblock-bg;
   font-family: "Google Sans", "Roboto", sans-serif;
 
-  &__card {
-    margin-bottom: 32px;
-
-    @include media-breakpoint-up(md) {
-      margin-bottom: 40px;
-    }
-  }
-
   // General styles
   &__section {
-    // padding: 0;
     margin-bottom: 100px;
-
-    // .card-body, .card-header {
-    //   padding: 0;
-    //   margin-bottom: 24px;
-    // }
-
-    // medium?
-    // large?
   }
 
+  // .card {
+  //   // margin-bottom: 32px;
+
+  //   @include media-breakpoint-up(md) {
+  //     margin-bottom: 40px;
+  //   }
+  // }
+
   // Section specific styles
-  &__hero-section {
+  &__hero {
     margin: 60px 0;
     text-align: center;
 
     h1 {
       color: $site-color-title;
-      font-size: 2rem;
+      font-size: 32px;
+      letter-spacing: -.4px;
       margin-bottom: 24px;
     }
 
     p {
       color: $site-color-paragraph;
-      font-size: 1rem;
+      font-size: 16px;
     }
 
     span {
@@ -48,11 +40,12 @@
       margin: 100px 0 80px;
 
       h1 {
-        font-size: 3rem;
+        font-size: 48px;
+        letter-spacing: -.6px;
       }
 
       p {
-        font-size: 1.25rem;
+        font-size: 20px;
       }
     }
 
@@ -60,60 +53,78 @@
       margin: 140px 0 100px;
 
       h1 {
-        font-size: 4rem;
+        font-size: 64px;
+        letter-spacing: -.8px;
       }
     }
   }
 
   &__company-cases {
-    &-col {
-      margin-bottom: 32px;
-    }
-
     .card {
-      height: 100%;
-
       &-img-top {
-        height: 240px;
+        height: 200px;
         object-fit: cover;
       }
 
       &-body {
-        margin-bottom: 24px;
-
-        p {
-          font-size: 1.5rem;
-        }
+        padding: 24px;
 
         .card-title {
-          margin-bottom: 24px;
+          align-items: center;
+          display: flex;
+          height: 40px;
+          margin-bottom: 16px;
 
-          img {
-            margin-right: 12px;
-            max-height: 48px;
-            max-width: 240px;
-            min-width: 48px;
+          .logo {
+            height: 100%;
+            object-fit: contain;
           }
 
-          span {
-            font-size: 1rem;
+          .name {
+            font-size: 16px;
+            margin-left: 12px;
           }
         }
       }
 
       &-footer {
-        margin-bottom: 24px;
+        padding: 0 24px 24px;
       }
     }
 
-    // override for featured cards
-    .col-lg-6 .card .card-img-top {
-      height: 320px;
+    @include media-breakpoint-up(md) {
+      .card {
+        height: 100%;
+
+        &-img-top {
+          height: 320px;
+        }
+
+        &-body {
+          padding: 24px 40px 24px 24px;
+
+          .card-title {
+            height: 48px;
+            margin-bottom: 24px;
+          }
+        }
+
+        &-footer {
+          padding: 0 24px 24px;
+        }
+      }
     }
 
     @include media-breakpoint-up(md) {
-      &-col {
-        margin-bottom: 40px;
+      .card {
+        &-img-top {
+          height: 240px;
+        }
+      }
+
+      // override for featured cards
+      .col-lg-6 .card .card-img-top {
+        height: 320px;
       }
     }
   }
