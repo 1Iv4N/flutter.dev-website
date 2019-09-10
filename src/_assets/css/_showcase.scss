@@ -81,6 +81,10 @@
       &-body {
         margin-bottom: 24px;
 
+        p {
+          font-size: 2rem;
+        }
+
         .card-title {
           margin-bottom: 24px;
 
@@ -167,7 +171,7 @@
 
     .logo {
       list-style: none;
-      text-align: right;
+      text-align: center;
       margin-bottom: 32px;
 
       img {
@@ -178,6 +182,8 @@
 
     @include media-breakpoint-up(md) {
       .logo {
+        text-align: right;
+
         img {
           height: 56px;
           width: 145px;

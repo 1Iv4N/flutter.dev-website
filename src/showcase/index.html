@@ -14,7 +14,7 @@ body_class: showcase
     <div class="row">
         {% for case in site.data.showcases_redesign %}
         {% if case.featured %}
-            <div class="showcase__company-cases-col col-sm-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %}">
+            <div class="showcase__company-cases-col col-sm-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4">
                 <div class="card{% if forloop.index0 < 2 %} animate step-{{forloop.index | plus: 2}}{% endif %}">
                     {% asset '{{ case.card_image }}' class='card-img-top' %}
                     <div class="card-body">
@@ -52,7 +52,7 @@ body_class: showcase
     <div class="row">
         <ul class="col-12 d-flex flex-wrap">
             {% for logo in site.data.company_logos %}
-                <li class="logo col-sm-6 col-md-3">
+                <li class="logo col-6 col-md-3">
                     {% asset '{{ logo.logo_src }}' %}
                 </li>
             {% endfor %}
@@ -111,7 +111,7 @@ body_class: showcase
     <h2>More apps made with Flutter</h2>
     <div class="row">
         {% for case in site.data.showcases_redesign %}
-        <div class="col-lg-3 col-md-6 col-sm-12 showcase__card">
+        <div class="col-lg-3 col-md-6 col-sm-12 showcase__card px-4">
             <div class="card">
                 {% asset '{{ case.card_image }}' class='card-img-top' %}
                 <div class="card-body">
