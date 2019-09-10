@@ -1,10 +1,7 @@
-- name: Alibaba
+- name: Reflecty
   featured: true
-  description: >
-    Alibaba, the world's biggest online commerce company, used Flutter to create a beautiful app experience for iOS and
-    Android on their Xianyu app, which has 50M+ downloads.
-  logo_src: showcase/logo-alibaba.png
-  hero_src: showcase/hero-alibaba.jpg
+  description: An award-winning mindfulness app built with Flutter.
+  logo_src: showcase/icon-reflecty.png
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://2.taobao.com/
@@ -13,17 +10,14 @@
     We wanted to democratize music making. It was really important for us to have both versions of the app available
     as soon as possible.
   quote_writer: Jhon Doe
-  thumbnail_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
-  logo_has_name: true
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  thumbnail_image: showcase/reflecty-card-image.jpg
+  logo_has_name: false
+  card_image: showcase/reflecty-card-image.jpg
 
-- name: Hamilton Video
+- name: Tencent
   featured: true
-  description: >
-    Official app of the hit Broadway musical, Hamilton. Includes daily lotteries, exclusive news and videos, a trivia
-    game, merchandise store, and more.
-  logo_src: showcase/logo-hamilton.png
-  hero_src: showcase/hero-hamilton.jpg
+  description: NOW Live is Tencent’s video streaming service with tens of millions of MAU.
+  logo_src: showcase/logo-tencent.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
   learn_more_link: https://blog.goposse.com/rise-up-the-story-of-how-the-hamilton-app-uses-flutter-to-do-more-for-its-fans-1d9cd76f95f1
@@ -34,36 +28,30 @@
     By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
     ensure feature parity for digital touchpoints.
   quote_writer: Ivan Guevara
-  thumbnail_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
-  logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  thumbnail_image: showcase/reflecty-card-image.jpg
+  logo_has_name: true
+  card_image: showcase/tencent-card-image.jpg
 
-- name: Alibaba2
+- name: Google Ads
   featured: true
-  description: >
-    Alibaba, the world's biggest online commerce company, used Flutter to create a beautiful app experience for iOS and
-    Android on their Xianyu app, which has 50M+ downloads.
-  logo_src: showcase/logo-alibaba.png
-  hero_src: showcase/hero-alibaba.jpg
+  description: Keep your ad campaigns running smoothly wherever you are.
+  logo_src: showcase/icon-ads.png
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://2.taobao.com/
-  quote_testimonial: true
+  quote_testimonial: false
   quote: >
     We wanted to democratize music making. It was really important for us to have both versions of the app available
     as soon as possible.
   quote_writer: Ivonne Clajivo
-  thumbnail_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
-  logo_has_name: true
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  thumbnail_image: showcase/reflecty-card-image.jpg
+  logo_has_name: false
+  card_image: showcase/ads-card-image.jpg
 
-- name: Hamilton Musical
+- name: Insight Timer
   featured: true
-  description: >
-    Official app of the hit Broadway musical, Hamilton. Includes daily lotteries, exclusive news and videos, a trivia
-    game, merchandise store, and more.
-  logo_src: showcase/logo-hamilton.png
-  hero_src: showcase/hero-hamilton.jpg
+  description: The largest free library of guided meditations.
+  logo_src: showcase/icon-insight-timer.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
   learn_more_link: https://blog.goposse.com/rise-up-the-story-of-how-the-hamilton-app-uses-flutter-to-do-more-for-its-fans-1d9cd76f95f1
@@ -74,25 +62,22 @@
     By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
     ensure feature parity for digital touchpoints.
   quote_writer: Juan Gómez
-  thumbnail_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  thumbnail_image: showcase/reflecty-card-image.jpg
   logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/insight-timer-card-image.jpg
 
-- name: Abbey Road Studios
+- name: Hamilton
   featured: true
-  description: >
-    Abbey Road’s Topline app helps artists record songs. You can share files, sing over imported tracks, add lyrics and
-    more.
-  logo_src: showcase/logo-abbey_road_studios.png
-  hero_src: showcase/hero-abbey-road.jpg
+  description: The Hamilton app gets a Standing O.
+  logo_src: showcase/icon-hamilton.png
   video_id: _ACWeGGBP4E
   learn_more_cta: Website
   learn_more_link: https://www.abbeyroad.com/apps
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
-  thumbnail_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
-  logo_has_name: true
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  thumbnail_image: showcase/reflecty-card-image.jpg
+  logo_has_name: false
+  card_image: showcase/hamilton-card-image.jpg
 
 - name: Google Ads
   description: >
@@ -101,7 +86,7 @@
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
 
 - name: AppTree
   description: >
@@ -111,7 +96,7 @@
   learn_more_link: https://www.apptreerevolution.com/
   play_store_link: https://play.google.com/store/apps/details?id=com.apptreesoftware.revolution.enterpriseedition&hl=en_US&e=-EnableAppDetailsPageRedesign
   logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
 
 - name: Reflectly
   description: >
@@ -122,7 +107,7 @@
   app_store_link: https://itunes.apple.com/us/app/reflectly-mindfulness-journal/id1241229134
   play_store_link: https://play.google.com/store/apps/details?id=com.reflectlyApp&e=-EnableAppDetailsPageRedesign
   logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
 
 - name: Google Greentea
   description: >
@@ -130,7 +115,7 @@
     targets.
   logo_src: showcase/logo-greentea.png
   logo_has_name: true
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
 
 - name: Tencent
   description: >
@@ -140,7 +125,7 @@
   learn_more_link: https://now.qq.com
   app_store_link: https://itunes.apple.com/cn/app/now%E7%9B%B4%E6%92%AD-%E8%85%BE%E8%AE%AF%E6%97%97%E4%B8%8B%E5%85%A8%E6%B0%91%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0/id1097492828?mt=8
   logo_has_name: true
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
 
 - name: JD Finance
   description: >
@@ -151,7 +136,7 @@
   app_store_link: https://itunes.apple.com/cn/app/id895682747
   play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
   logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
 
 - name: JD Finance22
   description: >
@@ -162,4 +147,4 @@
   app_store_link: https://itunes.apple.com/cn/app/id895682747
   play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
   logo_has_name: false
-  card_image: showcase/FeaturedCard_Reflectly_Desktop.jpg
+  card_image: showcase/reflecty-card-image.jpg
