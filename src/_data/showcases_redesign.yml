@@ -79,72 +79,122 @@
   logo_has_name: false
   card_image: showcase/hamilton-card-image.jpg
 
-- name: Google Ads
-  description: >
-    The Google Ads app helps you keep your ad campaigns running smoothly — no matter where your business takes you.
+- name: Realtor.com
+  description: Lorem ipsum dolor sit amet Flutter app description.
   logo_src: showcase/logo-ads.svg
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/reflecty-card-image.jpg
+  card_image: showcase/card-realtor.jpg
 
-- name: AppTree
-  description: >
-    AppTree provides an enterprise app platform for brands like McDonalds, Stanford, Wayfair & Fermilab.
-  logo_src: showcase/logo-app_tree.png
-  learn_more_cta: Website
-  learn_more_link: https://www.apptreerevolution.com/
-  play_store_link: https://play.google.com/store/apps/details?id=com.apptreesoftware.revolution.enterpriseedition&hl=en_US&e=-EnableAppDetailsPageRedesign
+- name: Square
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/reflecty-card-image.jpg
+  card_image: showcase/card-square.jpg
 
-- name: Reflectly
-  description: >
-    A beautiful journal and mindfulness app driven by artificial intelligence.
-  logo_src: showcase/logo-reflectly.png
-  learn_more_cta: Learn more
-  learn_more_link: https://medium.com/reflectly-engineering/reflectly-from-react-native-to-flutter-2e3dffced2ea
-  app_store_link: https://itunes.apple.com/us/app/reflectly-mindfulness-journal/id1241229134
-  play_store_link: https://play.google.com/store/apps/details?id=com.reflectlyApp&e=-EnableAppDetailsPageRedesign
+- name: Grab
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/reflecty-card-image.jpg
+  card_image: showcase/card-grab.jpg
 
-- name: Google Greentea
-  description: >
-    An internal customer management app used widely by Google sales that provides rich visualizations for tracking sales
-    targets.
-  logo_src: showcase/logo-greentea.png
-  logo_has_name: true
-  card_image: showcase/reflecty-card-image.jpg
-
-- name: Tencent
-  description: >
-    NOW Live is Tencent’s video streaming service with tens of millions of MAU.
-  logo_src: showcase/logo-tencent.png
-  learn_more_cta: Website
-  learn_more_link: https://now.qq.com
-  app_store_link: https://itunes.apple.com/cn/app/now%E7%9B%B4%E6%92%AD-%E8%85%BE%E8%AE%AF%E6%97%97%E4%B8%8B%E5%85%A8%E6%B0%91%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0/id1097492828?mt=8
-  logo_has_name: true
-  card_image: showcase/reflecty-card-image.jpg
-
-- name: JD Finance
-  description: >
-    JD Finance is a leading digital technology company. The company covers fintech, digital enterprise services and urban computing.
-  logo_src: showcase/logo-jd.png
-  learn_more_cta: Website
-  learn_more_link: https://jr.jd.com/
-  app_store_link: https://itunes.apple.com/cn/app/id895682747
-  play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
+- name: Abbey Road Studios
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/reflecty-card-image.jpg
+  card_image: showcase/card-abbey.jpg
 
-- name: JD Finance22
-  description: >
-    JD Finance is a leading digital technology company. The company covers fintech, digital enterprise services and urban computing.
-  logo_src: showcase/logo-jd.png
-  learn_more_cta: Website
-  learn_more_link: https://jr.jd.com/
-  app_store_link: https://itunes.apple.com/cn/app/id895682747
-  play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
+- name: Alibaba
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/reflecty-card-image.jpg
+  card_image: showcase/card-alibaba.jpg
+
+- name: Baidu
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-baidu.jpg
+
+- name: Byte Dance
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-byte-dance.jpg
+
+- name: Dream 11
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-dream11.jpg
+
+- name: Emaar
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-emaar.jpg
+
+- name: Green Tea
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-green-tea.jpg
+
+- name: Groupon
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-groupon.jpg
+
+- name: JD
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-jd.jpg
+
+- name: Nubank
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-nubank.jpg
+
+- name: Nyt
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-nyt.jpg
+
+- name: Philips Hue
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/logo-ads.svg
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/card-philips-hue.jpg

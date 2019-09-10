@@ -111,6 +111,7 @@ body_class: showcase
     <h2>More apps made with Flutter</h2>
     <div class="row">
         {% for case in site.data.showcases_redesign %}
+        {% unless case.featured %}
         <div class="col-lg-3 col-md-6 col-sm-12 showcase__card px-4">
             <div class="card">
                 {% asset '{{ case.card_image }}' class='card-img-top' %}
@@ -139,6 +140,7 @@ body_class: showcase
                 </div>
             </div>
         </div>
+        {% endunless %}
         {% endfor %}
     </div>
     <a class="d-block text-center" href="#">Explore more Flutter-powered apps</a>
