@@ -10,7 +10,7 @@
     We wanted to democratize music making. It was really important for us to have both versions of the app available
     as soon as possible.
   quote_writer: Jhon Doe
-  thumbnail_image: showcase/card-featured-reflectly.jpg
+  video_frame_image: showcase/video-frame-reflectly.jpg
   logo_has_name: false
   card_image: showcase/card-featured-reflectly.jpg
 
@@ -23,12 +23,6 @@
   learn_more_link: https://blog.goposse.com/rise-up-the-story-of-how-the-hamilton-app-uses-flutter-to-do-more-for-its-fans-1d9cd76f95f1
   app_store_link: https://itunes.apple.com/us/app/hamilton-the-official-app/id1255231054?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.hamilton.app&e=-EnableAppDetailsPageRedesign
-  quote_testimonial: true
-  quote: >
-    By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
-    ensure feature parity for digital touchpoints.
-  quote_writer: Ivan Guevara
-  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: true
   card_image: showcase/card-featured-tencent.jpg
 
@@ -39,12 +33,6 @@
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://2.taobao.com/
-  quote_testimonial: false
-  quote: >
-    We wanted to democratize music making. It was really important for us to have both versions of the app available
-    as soon as possible.
-  quote_writer: Ivonne Clajivo
-  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: false
   card_image: showcase/card-featured-ads.jpg
 
@@ -57,12 +45,6 @@
   learn_more_link: https://blog.goposse.com/rise-up-the-story-of-how-the-hamilton-app-uses-flutter-to-do-more-for-its-fans-1d9cd76f95f1
   app_store_link: https://itunes.apple.com/us/app/hamilton-the-official-app/id1255231054?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.hamilton.app&e=-EnableAppDetailsPageRedesign
-  quote_testimonial: true
-  quote: >
-    By combining Dart and Flutter we have the first true cross platform mobile tool kit, and it's a game changer to
-    ensure feature parity for digital touchpoints.
-  quote_writer: Juan Gómez
-  thumbnail_image: showcase/card-featured-reflectly.jpg
   logo_has_name: false
   card_image: showcase/card-featured-insight-timer.jpg
 
@@ -75,7 +57,12 @@
   learn_more_link: https://www.abbeyroad.com/apps
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
-  thumbnail_image: showcase/card-featured-reflectly.jpg
+  video_frame_image: showcase/video-frame-hamilton.jpg
+  quote_testimonial: true
+  quote: >
+    We wanted to democratize music making. It was really important for us to have both versions of the app available
+    as soon as possible.
+  quote_writer: Jhon Doe
   logo_has_name: false
   card_image: showcase/card-featured-hamilton.jpg
 
@@ -108,6 +95,12 @@
   logo_src: showcase/logo-abbey-road-studios.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  video_frame_image: showcase/video-frame-abbey-road.jpg
+  quote_testimonial: true
+  quote: >
+    We wanted to democratize music making. It was really important for us to have both versions of the app available
+    as soon as possible.
+  quote_writer: Jhon Doe
   logo_has_name: false
   card_image: showcase/card-abbey.jpg
 
@@ -116,6 +109,12 @@
   logo_src: showcase/logo-alibaba.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  video_frame_image: showcase/video-frame-alibaba.jpg
+  quote_testimonial: true
+  quote: >
+    We wanted to democratize music making. It was really important for us to have both versions of the app available
+    as soon as possible.
+  quote_writer: Jhon Doe
   logo_has_name: true
   card_image: showcase/card-alibaba.jpg
 
@@ -140,6 +139,12 @@
   logo_src: showcase/logo-dream11.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  video_frame_image: showcase/video-frame-dream11.jpg
+  quote_testimonial: true
+  quote: >
+    We wanted to democratize music making. It was really important for us to have both versions of the app available
+    as soon as possible.
+  quote_writer: Jhon Doe
   logo_has_name: true
   card_image: showcase/card-dream11.jpg
 
