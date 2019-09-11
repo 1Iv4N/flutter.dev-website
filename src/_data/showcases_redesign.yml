@@ -10,7 +10,7 @@
     Reflectly was started in January 2017. Fast forward to August 2017 – after an extensive period of user testing
     – we launched a MVP of Reflectly, built entirely in React Native.
   quote_writer: Jhon Doe
-  video_frame_image: showcase/video-frame-reflectly.jpg
+  video_frame_image: showcase/video-frames/reflectly.jpg
   logo_has_name: false
   card_image: showcase/cards/reflectly.jpg
 
@@ -63,7 +63,7 @@
   learn_more_link: https://www.abbeyroad.com/apps
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
-  video_frame_image: showcase/video-frame-hamilton.jpg
+  video_frame_image: showcase/video-frames/hamilton.jpg
   quote_testimonial: true
   quote: >
     Official app of the hit Broadway musical, Hamilton. Includes daily lotteries, exclusive news and videos, a trivia
@@ -113,7 +113,7 @@
   logo_src: showcase/cards/logo-abbey-road.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  video_frame_image: showcase/video-frame-abbey-road.jpg
+  video_frame_image: showcase/video-frames/abbey-road.jpg
   quote_testimonial: true
   quote: >
     Lorem ipsum, Abbey road studios needs testimonial.
@@ -128,7 +128,7 @@
   logo_src: showcase/cards/logo-alibaba.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  video_frame_image: showcase/video-frame-alibaba.jpg
+  video_frame_image: showcase/video-frames/alibaba.jpg
   quote_testimonial: true
   quote: >
     Flutter significantly reduced the time we need to develop for new feature from 1 month down to 2 weeks.
@@ -159,7 +159,7 @@
   logo_src: showcase/cards/logo-dream11.png
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-  video_frame_image: showcase/video-frame-dream11.jpg
+  video_frame_image: showcase/video-frames/dream11.jpg
   quote_testimonial: true
   quote: >
     We wanted to democratize music making. It was really important for us to have both versions of the app available
