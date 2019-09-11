@@ -230,3 +230,16 @@
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: true
   card_image: showcase/cards/philips-hue.jpg
+
+- name: Google Assistant
+  description: >
+    Perhaps one of the most pervasive embedded platforms where Flutter is already running is on the smart display
+    operating system that powers the likes of Google Home Hub. Within Google, some Google-built features for the Smart
+    Display platform are powered by Flutter today. And the Assistant team is excited to continue to expand the portfolio
+    of features built with Flutter for the Smart Display in the coming months; the goal this year is to use Flutter to
+    drive the overall system UI.
+  logo_src: showcase/cards/logo-g-assistant.png
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/cards/g-assistant.png
