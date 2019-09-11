@@ -10,12 +10,12 @@ body_class: showcase
     <p class="animate step-2">See how developers have used Flutter to make beautiful apps in record time.</p>
 </section>
 
-<section class="showcase__company-cases showcase__section">
-    <div class="row">
+<section class="showcase__featured-company-cases showcase__section">
+    <div class="row mb-n8">
         {% for case in site.data.showcases_redesign %}
         {% if case.featured %}
             <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-lg-10">
-                <div class="card{% if forloop.index0 < 2 %} animate step-{{forloop.index | plus: 2}}{% endif %}">
+                <div class="card animate{% if forloop.index0 < 2 %} step-{{forloop.index | plus: 2}}{% else %} step-last{% endif %}">
                     {% asset '{{ case.card_image }}' class='card-img-top' %}
                     <div class="card-body">
                         <div class="card-title">
@@ -27,7 +27,7 @@ body_class: showcase
                         <p class="card-text">{{ case.description | truncate: 160 }}</p>
                     </div>
                     <div class="card-footer card-footer--transparent card-footer--links">
-                        {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
+                        {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}<i class="fas fa-external-link-alt"></i></a>{% endif %}
                         {% if case.play_store_link or case.app_store_link %}
                             <span class="dropdown">
                                 <a href="#" class="dropdown-toggle" id="showcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,10 +47,10 @@ body_class: showcase
     </div>
 </section>
 
-<section class="showcase__logos-garden showcase__section">
+<section class="showcase__logos-garden showcase__section animate step-last">
     <p class="intro">Join the growing list of organizations building beautiful apps with Flutter.</p>
     <div class="row">
-        <ul class="logo-list col-12 col-lg-10 d-flex flex-wrap">
+        <ul class="logo-list col-12 col-lg-10 d-flex flex-wrap mb-n8">
             {% for logo in site.data.company_logos %}
                 <li class="logo col-6 col-md-3 mb-8 mb-lg-10">
                     {% asset '{{ logo.logo_src }}' %}
@@ -60,7 +60,7 @@ body_class: showcase
     </div>
 </section>
 
-<section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide" data-interval=8000 data-ride="carousel">
+<section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide animate step-last" data-interval=8000 data-ride="carousel">
     <ol class="carousel-indicators">
         {% for case in site.data.showcases_redesign %}
         {% if case.quote_testimonial %}
@@ -75,7 +75,7 @@ body_class: showcase
         <div class="showcase__carousel__slide carousel-item {% if forloop.first == true %}active{% endif %}">
             <div class="container">
                 <h2 class="text-center">Learn from developers</h2>
-                <div class="row">
+                <div class="row mb-n8">
                     <div class="col-lg-6 offset-lg-1 p-0 mb-10 order-lg-last">
                         <div class="showcase__carousel__thumbnail_image">
                             {% asset '{{ case.video_frame_image }}' class='' %}
@@ -107,7 +107,7 @@ body_class: showcase
     </div>
 </section>
 
-<section class="showcase__more-company-cases showcase__section">
+<section class="showcase__company-cases showcase__section animate step-last">
     <h2 class="title">More apps made with Flutter</h2>
     <div class="row">
         {% for case in site.data.showcases_redesign %}
@@ -143,13 +143,15 @@ body_class: showcase
         {% endunless %}
         {% endfor %}
     </div>
-    <a class="cta d-block text-center" href="#">Explore more Flutter-powered apps</a>
+    <a class="cta d-block text-center" href="#">Explore more Flutter-powered apps<i class="fas fa-external-link-alt"></i></a>
 </section>
 
-<section class="showcase__learn-more-section border text-center showcase__section">
-    <h2>Ready to take flight?</h2>
-    <a class="btn btn-primary btn-cta d-block" href="/docs/get-started/install">Get Started</a>
+<section class="showcase__learn-more card showcase__section mx-n2 animate step-last">
+  <div class="card-body">
+    <h2 class="showcase__learn-more__title">Ready to take flight?</h2>
+    <a class="showcase__learn-more__cta btn btn-primary btn-cta px-12" href="/docs/get-started/install">Get Started</a>
     <a class="d-block" href="">Read documentation</a>
+  </div>
 </section>
 
 <div class="modal fade" data-video-modal id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -157,7 +159,9 @@ body_class: showcase
     <div class="modal-content">
       <div class="modal-body">
         <div class="embedded-video-wrapper">
-            <iframe id="video-player-iframe" class="embedded-video-wrapper__frame" width="auto" height="auto" src="https://www.youtube.com/embed/jtYk3gWRSw0?cc_lang_pref=en&cc_load_policy=1&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <iframe id="video-player-iframe" class="embedded-video-wrapper__frame" width="auto" height="auto"
+            src="https://www.youtube.com/embed/jtYk3gWRSw0?cc_lang_pref=en&cc_load_policy=1&enablejsapi=1"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
