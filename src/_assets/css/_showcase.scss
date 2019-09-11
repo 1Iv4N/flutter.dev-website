@@ -15,36 +15,58 @@
     }
   }
 
-  .card {
-    &-img-top {
-      height: 200px;
-      object-fit: cover;
-    }
-
-    &-body {
-      padding: 24px;
-
-      .card-title {
-        align-items: center;
-        display: flex;
-        height: 40px;
-        margin-bottom: 16px;
-
-        .logo {
-          height: 100%;
-          object-fit: contain;
+  &__featured-company-cases,
+  &__company-cases {
+    .card {
+      &-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+  
+      &-body {
+        padding: 24px;
+  
+        .card-title {
+          align-items: center;
+          display: flex;
+          height: 40px;
+          margin-bottom: 16px;
+  
+          .logo {
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+          }
+  
+          .name {
+            color: $site-color-title;
+            font-size: 16px;
+            margin-left: 12px;
+          }
         }
-
-        .name {
+  
+        .card-text {
+          color: $site-color-paragraph;
           font-size: 16px;
-          margin-left: 12px;
         }
       }
+  
+      &-footer {
+        padding: 0 24px 24px;
+      }
+  
+      @include media-breakpoint-up(md) {
+        height: 100%;
+      }
     }
+  }
 
-    &-footer {
-      padding: 0 24px 24px;
-    }
+  // Page specific overrides
+  .fa-external-link-alt:before {
+    font-size: 1em;
+    margin-left: .5em;
+    opacity: .8;
+    vertical-align: initial;
   }
 
   // Section specific styles
@@ -91,11 +113,9 @@
     }
   }
 
-  &__company-cases {
+  &__featured-company-cases {
     @include media-breakpoint-up(md) {
       .card {
-        height: 100%;
-
         &-img-top {
           height: 320px;
         }
@@ -106,6 +126,11 @@
           .card-title {
             height: 48px;
             margin-bottom: 24px;
+          }
+
+          .card-text {
+            font-size: 24px;
+            letter-spacing: -.2px;
           }
         }
 
@@ -312,42 +337,53 @@
     }
   }
 
-  &__more-company-cases {
+  &__company-cases {
     .title {
-      font-size: 1.5rem;
-      margin-bottom: 60px;
+      font-size: 24px;
+      margin: 0 0 40px;
       text-align: center;
     }
 
     .cta {
-      margin-top: 36px;
+      margin: 40px 0 0;
+      font-weight: bold;
+    }
+
+    @include media-breakpoint-up(md) {
+      .title {
+        margin-bottom: 60px;
+      }
+
+      .cta {
+        margin-top: 60px;
+      }
     }
   }
 
-  &__learn-more-section {
+  &__learn-more {
     background-color: $site-color-white;
     padding: 60px 0;
+    text-align: center;
 
-    h2 {
+    &__title {
       color: $site-color-title;
       font-size: 24px;
       margin: 0 0 32px;
     }
 
-    .btn.btn-cta {
+    &__cta {
       margin: 0 auto 20px;
-      width: 170px;
     }
 
     @include media-breakpoint-up(md) {
       padding: 80px 0;
 
-      h2 {
+      &__title {
         font-size: 48px;
         margin: 0 0 40px;
       }
 
-      .btn.btn-cta {
+      &__cta {
         margin: 0 auto 32px;
       }
     }
@@ -381,6 +417,10 @@
       &.step-#{$index} {
         animation-delay: nth($steps-delays, $index);
       }
+    }
+
+    &.step-last {
+      animation-delay: 1.3s;
     }
   }
 }
