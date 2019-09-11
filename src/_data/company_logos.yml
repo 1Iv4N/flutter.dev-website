@@ -1,44 +1,48 @@
 - name: Google
-  logo_src: showcase/logo-google-grey.svg
+  logo_src: showcase/garden-logos/google.svg
+  alt_text: Google logo
+
+- name: Groupon
+  logo_src: showcase/garden-logos/groupon.svg
+  alt_text: Groupon logo
+
+- name: Alibaba
+  logo_src: showcase/garden-logos/alibaba.svg
   alt_text: Alibaba logo
 
-- name: AppTree
-  logo_src: showcase/logo-groupon-grey.svg
-  alt_text: App Tree logo
+- name: Capital one
+  logo_src: showcase/garden-logos/capital-one.svg
+  alt_text: Capital one logo
 
-- name: Hamilton Musical
-  logo_src: showcase/logo-alibaba-grey.svg
-  alt_text: Hamilton Musical logo
+- name: Tencent
+  logo_src: showcase/garden-logos/tencent.svg
+  alt_text: Tencent logo
 
-- name: Reflecty
-  logo_src: showcase/logo-capital-one-grey.svg
-  alt_text: Reflecty logo
+- name: Square
+  logo_src: showcase/garden-logos/square.svg
+  alt_text: Square logo
 
-- name: Google Ads
-  logo_src: showcase/logo-tencent-grey.svg
-  alt_text: Google Ads logo
+- name: Ebay
+  logo_src: showcase/garden-logos/ebay.svg
+  alt_text: Ebay logo
 
-- name: Google Greentea
-  logo_src: showcase/logo-square-grey.svg
-  alt_text: Google Greentea logo
+- name: bmw
+  logo_src: showcase/garden-logos/bmw.svg
+  alt_text: BMW logo
 
-- name: Hamilton Musical
-  logo_src: showcase/logo-ebay-grey.svg
-  alt_text: Hamilton Musical logo
+- name: Dream 11
+  logo_src: showcase/garden-logos/dream11.svg
+  alt_text: Dream 11 logo
 
-- name: Google Greentea
-  logo_src: showcase/logo-bmw-grey.svg
-  alt_text: Google Greentea logo
+- name: Sonos
+  logo_src: showcase/garden-logos/sonos.svg
+  alt_text: Sonos
 
-- name: Google Greentea
-  logo_src: showcase/logo-dream11-grey.svg
-  alt_text: Google Greentea logo
+- name: NuBank
+  logo_src: showcase/garden-logos/nubank.svg
+  alt_text: NuBank logo
 
-- name: Google Greentea
-  logo_src: showcase/logo-sonos-grey.svg
-  alt_text: Google Greentea logo
-
-- name: Google Greentea
-  logo_src: showcase/logo-nubank-grey.svg
-  alt_text: Google Greentea logo
+- name: Emaar
+  logo_src: showcase/garden-logos/emaar.svg
+  alt_text: Emaar logo
 
