@@ -4,7 +4,7 @@ layout: landing
 body_class: showcase
 ---
 
-<section class="showcase__hero">
+<section class="showcase__hero showcase__section">
     <h1 class="animate step-1">Apps take flight with <span>Flutter!</span></h1>
     <p class="animate step-2">See how developers have used Flutter to make beautiful apps in record time.</p>
 </section>
@@ -46,12 +46,12 @@ body_class: showcase
     </div>
 </section>
 
-<section class="showcase__company-logos showcase__section">
-    <p class="text-center">Join the growing list of organizations building beautiful apps with Flutter.</p>
+<section class="showcase__logos-garden showcase__section">
+    <p class="intro">Join the growing list of organizations building beautiful apps with Flutter.</p>
     <div class="row">
-        <ul class="col-12 d-flex flex-wrap">
+        <ul class="logo-list col-12 col-lg-10 d-flex flex-wrap">
             {% for logo in site.data.company_logos %}
-                <li class="logo col-6 col-md-3">
+                <li class="logo col-6 col-md-3 mb-8 mb-lg-10">
                     {% asset '{{ logo.logo_src }}' %}
                 </li>
             {% endfor %}
@@ -107,7 +107,7 @@ body_class: showcase
 </section>
 
 <section class="showcase__more-company-cases showcase__section">
-    <h2>More apps made with Flutter</h2>
+    <h2 class="title">More apps made with Flutter</h2>
     <div class="row">
         {% for case in site.data.showcases_redesign %}
         {% unless case.featured %}
@@ -117,8 +117,8 @@ body_class: showcase
                 <div class="card-body">
                     <div class="card-title">
                         {% if case.logo_src %}
-                            {% asset '{{ case.logo_src }}' class='' %}
-                            {% unless case.logo_has_name %} <span class="d-inline-block">{{ case.name }}</span> {% endunless -%}
+                            {% asset '{{ case.logo_src }}' class='logo' %}
+                            {% unless case.logo_has_name %} <span class="name">{{ case.name }}</span>{% endunless -%}
                         {% endif %}
                     </div>
                     <p class="card-text">{{ case.description | truncate: 160 }}</p>
@@ -126,15 +126,15 @@ body_class: showcase
                 <div class="card-footer card-footer--transparent card-footer--links">
                     {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}">{{ case.learn_more_cta }}</a>{% endif %}
                     {% if case.play_store_link or case.app_store_link %}
-                    <span class="dropdown">
-                                <a href="#" class="dropdown-toggle" id="moreShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Download
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="moreShowcasesDropdownMenuButton{{ forloop.index }}">
-                                    {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
-                                    {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
-                                </div>
-                            </span>
+                        <span class="dropdown">
+                            <a href="#" class="dropdown-toggle" id="showcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Download
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="showcasesDropdownMenuButton{{ forloop.index }}">
+                                {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
+                                {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
+                            </div>
+                        </span>
                     {% endif %}
                 </div>
             </div>
@@ -142,10 +142,10 @@ body_class: showcase
         {% endunless %}
         {% endfor %}
     </div>
-    <a class="d-block text-center" href="#">Explore more Flutter-powered apps</a>
+    <a class="cta d-block text-center" href="#">Explore more Flutter-powered apps</a>
 </section>
 
-<section class="border showcase__learn-more-section text-center">
+<section class="showcase__learn-more-section border text-center showcase__section">
     <h2>Ready to take flight?</h2>
     <a class="btn btn-primary btn-cta d-block" href="/docs/get-started/install">Get Started</a>
     <a class="d-block" href="">Read documentation</a>
