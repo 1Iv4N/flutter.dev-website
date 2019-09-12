@@ -22,39 +22,39 @@
         height: 200px;
         object-fit: cover;
       }
-  
+
       &-body {
         padding: 24px;
-  
+
         .card-title {
           align-items: center;
           display: flex;
           height: 40px;
           margin-bottom: 16px;
-  
+
           .logo {
             height: 100%;
             max-width: 100%;
             object-fit: contain;
           }
-  
+
           .name {
             color: $site-color-title;
             font-size: 16px;
             margin-left: 12px;
           }
         }
-  
+
         .card-text {
           color: $site-color-paragraph;
           font-size: 16px;
         }
       }
-  
+
       &-footer {
         padding: 0 24px 24px;
       }
-  
+
       @include media-breakpoint-up(md) {
         height: 100%;
       }
@@ -403,7 +403,7 @@
 
   .animate {
     animation: .4s showcase-pageload-animation;
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
     animation-timing-function: ease;
 
     $steps-delays: (
