@@ -1,83 +1,209 @@
-- name: Alibaba
+- name: Reflectly
   featured: true
   description: >
-    Alibaba, the world's biggest online commerce company, used Flutter to create a beautiful app experience for iOS and
-    Android on their Xianyu app, which has 50M+ downloads.
-  logo_src: showcase/logo-alibaba.png
-  hero_src: showcase/hero-alibaba.jpg
+    An award-winning mindfulness app built with Flutter.
+    Artificial intelligence powers Reflectly’s beautiful mindfulness and journal app.
+  logo_src: showcase/cards/logo-reflectly_2x.png
   video_id: jtYk3gWRSw0
-  app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
-  play_store_link: https://2.taobao.com/
-
-- name: Google Ads
-  description: >
-    The Google Ads app helps you keep your ad campaigns running smoothly — no matter where your business takes you.
-  logo_src: showcase/logo-ads.svg
-  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
-  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
-
-- name: AppTree
-  description: >
-    AppTree provides an enterprise app platform for brands like McDonalds, Stanford, Wayfair & Fermilab.
-  logo_src: showcase/logo-app_tree.png
-  learn_more_cta: Developer website
-  learn_more_link: https://www.apptreerevolution.com/
-  play_store_link: https://play.google.com/store/apps/details?id=com.apptreesoftware.revolution.enterpriseedition&hl=en_US&e=-EnableAppDetailsPageRedesign
-
-- name: Reflectly
-  description: >
-    A beautiful journal and mindfulness app driven by artificial intelligence.
-  logo_src: showcase/logo-reflectly.png
   learn_more_cta: Learn more
   learn_more_link: https://medium.com/reflectly-engineering/reflectly-from-react-native-to-flutter-2e3dffced2ea
   app_store_link: https://itunes.apple.com/us/app/reflectly-mindfulness-journal/id1241229134
   play_store_link: https://play.google.com/store/apps/details?id=com.reflectlyApp&e=-EnableAppDetailsPageRedesign
+  quote_testimonial: true
+  quote: >
+    As a former web and native app developer, getting started with Flutter was truly awesome. I know it’s been said
+    before, but the huge power and productivity you get with instant stateful Hot Reload was mind-blowing to me.
+  quote_writer: TBD
+  video_frame_image: showcase/video-frames/reflectly_2x.jpg
+  logo_has_name: false
+  card_image: showcase/cards/reflectly_2x.jpg
 
-- name: Hamilton Musical
+- name: Tencent
+  featured: true
+  description: The smoothest way to stream video to tens of millions of MAU.
+  logo_src: showcase/cards/logo-tencent_2x.png
+  app_store_link: https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%8B%B1%E8%AF%AD%E5%90%9B-%E5%B0%8F%E5%AD%A6%E8%8B%B1%E8%AF%AD%E6%99%BA%E8%83%BD%E8%BE%85%E5%AF%BC/id1428413271?l=en
+  play_store_link: https://play.google.com/store/apps/details?id=com.tencent.now
+  logo_has_name: true
+  card_image: showcase/cards/tencent_2x.png
+
+- name: Google Ads
+  featured: true
+  description: >
+    The Google Ads app helps users manage, optimize and track ad campaigns all from the convenience of an android device.
+  logo_src: showcase/cards/logo-g-ads_2x.png
+  app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
+  logo_has_name: false
+  card_image: showcase/cards/g-adds_2x.jpg
+
+- name: Insight Timer
+  featured: true
+  description: The Insight timer app provides access to the largest free library of guided meditations on earth.
+  logo_src: showcase/cards/logo-insight-timer_2x.png
+  video_id: kfd-oLypqFI
+  learn_more_cta: Learn more
+  learn_more_link: https://insighttimer.com/about
+  app_store_link: https://insig.ht/showcase_ios
+  play_store_link: https://insig.ht/showcase_android
+  logo_has_name: false
+  card_image: showcase/cards/insight-timer_2x.jpg
+
+- name: Hamilton
   featured: true
   description: >
     Official app of the hit Broadway musical, Hamilton. Includes daily lotteries, exclusive news and videos, a trivia
     game, merchandise store, and more.
-  logo_src: showcase/logo-hamilton.png
-  hero_src: showcase/hero-hamilton.jpg
+  logo_src: showcase/cards/logo-hamilton_2x.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
   learn_more_link: https://blog.goposse.com/rise-up-the-story-of-how-the-hamilton-app-uses-flutter-to-do-more-for-its-fans-1d9cd76f95f1
   app_store_link: https://itunes.apple.com/us/app/hamilton-the-official-app/id1255231054?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.hamilton.app&e=-EnableAppDetailsPageRedesign
+  quote_testimonial: true
+  quote: >
+    We knew that this app needed to be rock solid both in terms of performance and visual fidelity, and really represent
+    the amazing experience that the Hamilton show itself provides.
+  quote_writer: Jhon Doe
+  video_frame_image: showcase/video-frames/hamilton_2x.jpg
+  logo_has_name: false
+  card_image: showcase/cards/hamilton_2x.jpg
 
-- name: Google Greentea
+- name: Realtor.com
+  description: >
+    With listings updated in real time, Realtor.com’s award-winning app helps users find the home of their dreams.
+  logo_src: showcase/cards/logo-realtor_2x.png
+  app_store_link: https://apps.apple.com/us/app/realtor-com-real-estate-search/id336698281
+  play_store_link: https://play.google.com/store/apps/details?id=com.move.realtor
+  logo_has_name: false
+  card_image: showcase/cards/realtor_2x.jpg
+
+- name: Square
+  description: >
+    The Flutter plugin for in-app Payments SDK lets developers build consumer apps that take payments directly
+    from buyers.
+  logo_src: showcase/cards/logo-square_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/square_2x.jpg
+
+- name: Grab
+  description: Flutter helped the growing food delivery service manage the entire lifecycle of their orders.
+  logo_src: showcase/cards/logo-grab_2x.png
+  app_store_link: https://apps.apple.com/cn/app/grab-app/id647268330?l=en
+  play_store_link: https://play.google.com/store/apps/details?id=com.grab.merchant&hl=en
+  logo_has_name: true
+  card_image: showcase/cards/grab_2x.jpg
+
+- name: Abbey Road Studios
+  description: Abbey Road Studio’s Topline app continues the studio’s tradition of innovation.
+  logo_src: showcase/cards/logo-abbey-road_2x.png
+  video_id: _ACWeGGBP4E
+  app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
+  video_frame_image: showcase/video-frames/abbey-road_2x.jpg
+  quote_testimonial: true
+  quote: >
+    We wanted to democratize music making. It was really important for us to have both versions of the app available as
+    soon as possible.
+  quote_writer: Dom Dronska
+  logo_has_name: false
+  card_image: showcase/cards/abbey-road_2x.jpg
+
+- name: Alibaba
+  description: Flutter helped bring new app for the world’s biggest online marketplace to life.
+  logo_src: showcase/cards/logo-alibaba_2x.png
+  vide_id: jtYk3gWRSw0
+  app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
+  play_store_link: https://play.google.com/store/apps/details?id=com.taobao.idlefish&e=-EnableAppDetailsPageRedesign
+  video_frame_image: showcase/video-frames/alibaba_2x.jpg
+  quote_testimonial: true
+  quote: >
+    Flutter significantly reduced the time we need to develop for new feature from 1 month down to 2 weeks.
+  quote_writer: Bruce Chen - Senior Development Engineer
+  logo_has_name: true
+  card_image: showcase/cards/alibaba_2x.jpg
+
+- name: Baidu
+  description: Baidu Tieba is the largest Chinese communication platform hosted by Chinese search engine company Baidu.
+  logo_src: showcase/cards/logo-baidu_2x.png
+  app_store_link: https://apps.apple.com/cn/app/id1464625444
+  logo_has_name: false
+  card_image: showcase/cards/baidu_2x.jpg
+
+- name: Byte Dance
+  description: >
+    TikTok, Helo, Topbuzz, Watermelon Video, and many other apps that are used by hundreds of millions of users every
+    day are being developed with Flutter.
+  logo_src: showcase/cards/logo-byte-dance_2x.png
+  app_store_link: https://apps.apple.com/cn/app/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/id529092160?l=en
+  play_store_link: https://play.google.com/store/apps/details?id=com.ss.android.article.master&hl=en_US
+  logo_has_name: true
+  card_image: showcase/cards/byte-dance_2x.jpg
+
+- name: Dream 11
+  description: Dream 11 made its fantasy sports app a reality with Flutter.
+  logo_src: showcase/cards/logo-dream11_2x.png
+  video_id: lCeRZhoqEP8
+  app_store_link: https://apps.apple.com/in/app/dream11-fantasy-sports/id1077286074
+  play_store_link: https://play.google.com/store/apps/details?id=com.powerpredictorapp&hl=en_US
+  video_frame_image: showcase/video-frames/dream11_2x.jpg
+  quote_testimonial: true
+  quote: With flutter the iOS version of our app was up and running in two days, which was really amazing.
+  quote_writer: Amit Sharma, CTO
+  logo_has_name: true
+  card_image: showcase/cards/dream11_2x.jpg
+
+- name: Emaar
+  description: Lorem ipsum dolor sit amet Flutter app description.
+  logo_src: showcase/cards/logo-emaar_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/emaar_2x.jpg
+
+- name: Green Tea
   description: >
     An internal customer management app used widely by Google sales that provides rich visualizations for tracking sales
     targets.
-  logo_src: showcase/logo-greentea.png
+  logo_src: showcase/cards/logo-green-tea_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/green-tea_2x.jpg
 
-- name: Abbey Road Studios
-  featured: true
+- name: Groupon
   description: >
-    Abbey Road’s Topline app helps artists record songs. You can share files, sing over imported tracks, add lyrics and
-    more.
-  logo_src: showcase/logo-abbey_road_studios.png
-  hero_src: showcase/hero-abbey-road.jpg
-  video_id: _ACWeGGBP4E
-  learn_more_cta: Website
-  learn_more_link: https://www.abbeyroad.com/apps
-  app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
-  play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
+    The Groupon Merchant app is used by Groupon’s merchants globally to redeem vouchers, view reports, view payment
+    details, respond to customer feedback and so on. Groupon used Flutter to build new functionality in an existing 5
+    year old application used by our merchants.
+  logo_src: showcase/cards/logo-groupon_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/groupon_2x.jpg
 
-- name: Tencent
-  description: >
-    NOW Live is Tencent’s video streaming service with tens of millions of MAU.
-  logo_src: showcase/logo-tencent.png
-  learn_more_cta: Developer website
-  learn_more_link: https://now.qq.com
-  app_store_link: https://itunes.apple.com/cn/app/now%E7%9B%B4%E6%92%AD-%E8%85%BE%E8%AE%AF%E6%97%97%E4%B8%8B%E5%85%A8%E6%B0%91%E7%9B%B4%E6%92%AD%E5%B9%B3%E5%8F%B0/id1097492828?mt=8
+- name: JD
+  description: JD Finance is JD.com’s finance and investment mobile app with hundreds of millions of users.
+  logo_src: showcase/cards/logo-jd_2x.png
+  app_store_link: https://itunes.apple.com/cn/app/jing-dong-jin-rong-hui-li/id895682747?mt=8
+  play_store_link: http://storage.jd.com/jdmobile/JDMALL-PC2.apk
+  logo_has_name: false
+  card_image: showcase/cards/jd_2x.jpg
 
-- name: JD Finance
-  description: >
-    JD Finance is a leading digital technology company. The company covers fintech, digital enterprise services and urban computing.
-  logo_src: showcase/logo-jd.png
-  learn_more_cta: Developer website
-  learn_more_link: https://jr.jd.com/
-  app_store_link: https://itunes.apple.com/cn/app/id895682747
-  play_store_link: https://m.jr.jd.com/spe/downloadApp/index.html?id=1024
+- name: Nubank
+  description: lorem ipsum
+  logo_src: showcase/cards/logo-nubank_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/nubank_2x.jpg
+
+- name: The New York Times
+  description: Flutter helped bring the popular Ken Ken puzzle to life on Android, iOS, Mac, Windows, and the Web.
+  logo_src: showcase/cards/logo-tnyt_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/tnyt_2x.jpg
+
+- name: Philips Hue
+  description: Flutter helped bring intuitive controls to the Philips Hue smart lights app.
+  logo_src: showcase/cards/logo-hue-phillips_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/philips-hue_2x.jpg
+
+- name: Google Assistant
+  description: Flutter helps power an ever-growing number of Google Assistant apps.
+  logo_src: showcase/cards/logo-g-assistant_2x.png
+  logo_has_name: false
+  card_image: showcase/cards/g-assistant_2x.png

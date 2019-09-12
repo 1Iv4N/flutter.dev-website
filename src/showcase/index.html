@@ -12,7 +12,7 @@ body_class: showcase
 
 <section class="showcase__featured-company-cases showcase__section">
     <div class="row mb-n8">
-        {% for case in site.data.showcases_redesign %}
+        {% for case in site.data.showcases %}
         {% if case.featured %}
             <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-lg-10">
                 <div class="card animate{% if forloop.index0 < 2 %} step-{{forloop.index | plus: 2}}{% else %} step-last{% endif %}">
@@ -62,7 +62,7 @@ body_class: showcase
 
 <section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide animate step-last" data-interval=8000 data-ride="carousel">
     <ol class="carousel-indicators">
-        {% for case in site.data.showcases_redesign %}
+        {% for case in site.data.showcases %}
         {% if case.quote_testimonial %}
         {% capture loopCount %}{% increment showcaseCounter %}{% endcapture %}
         <li data-target="#showcaseCarousel" data-slide-to="{{ loopCount }}" {% if loopCount == '0' %}class="active"{% endif %}></li>
@@ -70,7 +70,7 @@ body_class: showcase
         {% endfor %}
     </ol>
     <div class="carousel-inner">
-        {% for case in site.data.showcases_redesign %}
+        {% for case in site.data.showcases %}
         {% if case.quote_testimonial %}
         <div class="showcase__carousel__slide carousel-item {% if forloop.first == true %}active{% endif %}">
             <div class="container">
@@ -110,7 +110,7 @@ body_class: showcase
 <section class="showcase__company-cases showcase__section animate step-last">
     <h2 class="title">More apps made with Flutter</h2>
     <div class="row">
-        {% for case in site.data.showcases_redesign %}
+        {% for case in site.data.showcases %}
         {% unless case.featured %}
         <div class="col-12 col-md-6 col-lg-3 px-4 mb-8 mb-lg-10 showcase__card">
             <div class="card">
