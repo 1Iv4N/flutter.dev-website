@@ -30,10 +30,10 @@ body_class: showcase
                         {% if case.learn_more_link %}<a href="{{ case.learn_more_link }}" target="_blank">{{ case.learn_more_cta }}<i class="fas fa-external-link-alt"></i></a>{% endif %}
                         {% if case.play_store_link or case.app_store_link %}
                             <span class="dropdown">
-                                <a href="#" class="dropdown-toggle" id="showcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a href="#" class="dropdown-toggle" id="featuredShowcasesDropdownMenuButton{{ forloop.index }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Download
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="showcasesDropdownMenuButton{{ forloop.index }}">
+                                <div class="dropdown-menu" aria-labelledby="featuredShowcasesDropdownMenuButton{{ forloop.index }}">
                                     {% if case.play_store_link %}<a class="dropdown-item" href="{{ case.play_store_link }}" target="_blank" rel="noopener">Android</a>{% endif %}
                                     {% if case.app_store_link %}<a class="dropdown-item" href="{{ case.app_store_link }}" target="_blank" rel="noopener">iOS</a>{% endif %}
                                 </div>
