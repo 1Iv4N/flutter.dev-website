@@ -6,7 +6,7 @@ title: Technical overview
 
 Flutter is an app SDK for building high-performance,
 high-fidelity apps for iOS, Android, and web
-([early access][]) from a single codebase.
+([tech preview][]) from a single codebase.
 
 The goal is to enable developers to deliver high-performance
 apps that feel natural on different platforms.
@@ -181,7 +181,7 @@ and store their mutable state in a subclass of [`State`][].
 
 Whenever you mutate a `State` object
 (for example, by incrementing the counter), you must call
-[`setState()`] to signal the framework to update the user
+[`setState()`][] to signal the framework to update the user
 interface by calling the `State`'s build method again.
 For an example of managing state, see the [MyApp template][]
 that's created with each new Flutter project.
@@ -245,7 +245,7 @@ Flutter's [code of conduct][].
 [Dart]: {{site.dart-site}}
 [`DecoratedBox`]: {{site.api}}/flutter/widgets/DecoratedBox-class.html
 [Discord]: https://discord.gg/N7Yshp4
-[early access]: /web
+[tech preview]: /web
 [examples]: {{site.github}}/flutter/samples/blob/master/INDEX.md
 [@flutterdev]: https://twitter.com/flutterdev
 [fully concrete widgets]: {{site.api}}/flutter/widgets/RenderObjectWidget-class.html
