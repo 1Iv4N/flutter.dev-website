@@ -52,8 +52,8 @@
 - name: Hamilton
   featured: true
   description: >
-    We knew that this app needed to be rock solid both in terms of performance and visual fidelity, and really represent
-    the amazing experience that the Hamilton show itself provides.
+    Official app of the hit Broadway musical, Hamilton. Includes daily lotteries, exclusive news and videos, a trivia
+    game, merchandise store, and more.
   logo_src: showcase/cards/logo-hamilton.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
@@ -62,8 +62,8 @@
   play_store_link: https://play.google.com/store/apps/details?id=com.hamilton.app&e=-EnableAppDetailsPageRedesign
   quote_testimonial: true
   quote: >
-    Official app of the hit Broadway musical, Hamilton. Includes daily lotteries, exclusive news and videos, a trivia
-    game, merchandise store, and more.
+    We knew that this app needed to be rock solid both in terms of performance and visual fidelity, and really represent
+    the amazing experience that the Hamilton show itself provides.
   quote_writer: Jhon Doe
   video_frame_image: showcase/video-frames/hamilton.jpg
   logo_has_name: false
@@ -185,15 +185,8 @@
   card_image: showcase/cards/jd.jpg
 
 - name: Nubank
-  description: Lorem ipsum dolor sit amet Flutter app description.
+  description: lorem ipsum
   logo_src: showcase/cards/logo-nubank.png
-  quote: >
-    When faced with the challenge of enabling all Nubank engineers to contribute to our app, regardless of
-    specialization, we embarked on a 3 month R&D project and evaluated many hybrid platform alternatives including
-    Flutter. What really sold the team was the usability tests: engineers regardless of seniority thought that the
-    development experience on Flutter was simpler, with better error messages, quick hot reloads and safer type checking.
-    I’m really excited about the progress we’ve made so far and the feedback from teams migrating their features to our
-    new architecture” -alexandre freire.
   logo_has_name: true
   card_image: showcase/cards/nubank.jpg
 
