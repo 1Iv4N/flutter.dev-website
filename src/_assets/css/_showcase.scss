@@ -53,10 +53,21 @@
 
       &-footer {
         padding: 0 24px 24px;
+
+        a:first-child {
+          display: inline-block;
+          margin-bottom: 12px;
+        }
       }
 
       @include media-breakpoint-up(md) {
         height: 100%;
+
+        .card-footer {
+          a:first-child {
+            margin-right: 32px;
+          }
+        }
       }
     }
   }
