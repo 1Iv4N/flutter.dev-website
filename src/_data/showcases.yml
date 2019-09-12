@@ -169,9 +169,8 @@
 
 - name: Groupon
   description: >
-    The Groupon Merchant app is used by Groupon’s merchants globally to redeem vouchers, view reports, view payment
-    details, respond to customer feedback and so on. Groupon used Flutter to build new functionality in an existing 5
-    year old application used by our merchants.
+    Groupon used Flutter to build new functionality, like voucher redemption and detailed payment viewing into an
+    existing app used by its merchants.
   logo_src: showcase/cards/logo-groupon_2x.png
   logo_has_name: true
   card_image: showcase/cards/groupon_2x.jpg
@@ -185,7 +184,9 @@
   card_image: showcase/cards/jd_2x.jpg
 
 - name: Nubank
-  description: lorem ipsum
+  description: >
+    Flutter helped Nubank in its mission to end the complexity of traditional banks and put financial control
+    back in the hands of the user.
   logo_src: showcase/cards/logo-nubank_2x.png
   logo_has_name: true
   card_image: showcase/cards/nubank_2x.jpg
