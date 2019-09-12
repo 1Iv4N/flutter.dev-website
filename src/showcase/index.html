@@ -14,7 +14,7 @@ body_class: showcase
     <div class="row mb-n8">
         {% for case in site.data.showcases %}
         {% if case.featured %}
-            <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-lg-10">
+            <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-md-10">
                 <div class="card animate{% if forloop.index0 < 2 %} step-{{forloop.index | plus: 2}}{% else %} step-last{% endif %}">
                     {% asset '{{ case.card_image }}' class='card-img-top' %}
                     <div class="card-body">
@@ -112,7 +112,7 @@ body_class: showcase
     <div class="row">
         {% for case in site.data.showcases %}
         {% unless case.featured %}
-        <div class="col-12 col-md-6 col-lg-3 px-4 mb-8 mb-lg-10 showcase__card">
+        <div class="col-12 col-md-6 col-lg-3 px-4 mb-8 mb-md-10 showcase__card">
             <div class="card">
                 {% asset '{{ case.card_image }}' class='card-img-top' %}
                 <div class="card-body">
