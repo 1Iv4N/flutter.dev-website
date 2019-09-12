@@ -26,7 +26,7 @@
   app_store_link: https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%8B%B1%E8%AF%AD%E5%90%9B-%E5%B0%8F%E5%AD%A6%E8%8B%B1%E8%AF%AD%E6%99%BA%E8%83%BD%E8%BE%85%E5%AF%BC/id1428413271?l=en
   play_store_link: https://play.google.com/store/apps/details?id=com.tencent.now
   logo_has_name: true
-  card_image: showcase/cards/tencent.jpg
+  card_image: showcase/cards/tencent.png
 
 - name: Google Ads
   featured: true
