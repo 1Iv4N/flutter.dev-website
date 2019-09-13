@@ -64,7 +64,7 @@
   quote: >
     We knew that this app needed to be rock solid both in terms of performance and visual fidelity, and really represent
     the amazing experience that the Hamilton show itself provides.
-  quote_writer: Jhon Doe
+  quote_writer: Jessica Wagner, Manager, Posse
   video_frame_image: showcase/video-frames/hamilton_2x.jpg
   logo_has_name: false
   card_image: showcase/cards/hamilton_2x.jpg
@@ -148,7 +148,7 @@
   play_store_link: https://play.google.com/store/apps/details?id=com.powerpredictorapp&hl=en_US
   video_frame_image: showcase/video-frames/dream11_2x.jpg
   quote_testimonial: true
-  quote: With flutter the iOS version of our app was up and running in two days, which was really amazing.
+  quote: With flutter, the iOS version of our app was up and running in two days, which was really amazing.
   quote_writer: Amit Sharma, CTO
   logo_has_name: true
   card_image: showcase/cards/dream11_2x.jpg
