@@ -105,10 +105,10 @@ body_class: showcase
 
 <section class="showcase__company-cases showcase__section animate step-last">
     <h2 class="title">More apps made with Flutter</h2>
-    <div class="row">
+    <div class="row mb-n8 mb-md-n10">
         {% for case in site.data.showcases %}
         {% unless case.featured %}
-        <div class="col-12 col-md-6 col-lg-3 px-4 mb-8 mb-md-10 showcase__card">
+        <div class="col-12 col-md-6 col-xl-3 px-4 mb-8 mb-md-10 showcase__card">
             <div class="card">
                 {% asset '{{ case.card_image }}' class='card-img-top' %}
                 <div class="card-body">
