@@ -60,51 +60,47 @@ body_class: showcase
     </div>
 </section>
 
-<section id="showcaseCarousel" class="landing-page__hero showcase__carousel carousel slide animate step-last" data-interval=8000 data-ride="carousel">
-    <ol class="carousel-indicators">
-        {% for case in site.data.showcases %}
-        {% if case.quote_testimonial %}
-        {% capture loopCount %}{% increment showcaseCounter %}{% endcapture %}
-        <li data-target="#showcaseCarousel" data-slide-to="{{ loopCount }}" {% if loopCount == '0' %}class="active"{% endif %}></li>
-        {% endif %}
-        {% endfor %}
-    </ol>
-    <div class="carousel-inner">
-        {% for case in site.data.showcases %}
-        {% if case.quote_testimonial %}
-        <div class="showcase__carousel__slide carousel-item {% if forloop.first == true %}active{% endif %}">
-            <div class="container">
-                <h2 class="text-center">Learn from developers</h2>
-                <div class="row mb-n8">
-                    <div class="col-lg-6 offset-lg-1 p-0 mb-10 order-lg-last">
-                        <div class="showcase__carousel__thumbnail_image">
-                            {% asset '{{ case.video_frame_image }}' class='' %}
-                            {% if case.video_id %}
-                            <button class="btn btn-link btn-icon showcase__carousel__watch-video_link d-inline-flex" type="button" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal">
-                                <i class="material-icons">play_circle_filled</i> Watch the video
-                            </button>
-                            {% endif %}
-                        </div>
+<section class="xcarousel showcase__section animate step-last">
+  {% assign testimonials = site.data.showcases | where: "quote_testimonial", true %}
+  <div class="xcarousel__bg" style="background-image: url({% asset 'showcase/video-frames/bg_texture_2x.png' @path %})"></div>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <h2 class="title">Learn from developers</h2>
+
+      <div id="showcaseCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner">
+            {% for case in testimonials %}
+              <div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
+                <div class="quote-wrapper">
+                  <div class="quote__image">
+                      {% asset '{{ case.video_frame_image }}' class='' %}
+                      <button class="quote__image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
                     </div>
-                    <div class="col-lg-5 order-lg-first">
-                        <q class="d-block">{{ case.quote }}</q>
-                        <p><strong>{{ case.quote_writer }}</strong></p>
-                        <p>{{ case.name }}</p>
-                    </div>
+
+                    <blockquote class="quote__copy">
+                      <p class="quote__copy-text">{{ case.quote }}</p>
+                      <footer class="quote__copy-footer">{{ case.quote_writer }}<cite class="d-block" title="{{case.name}}">{{case.name}}</cite></footer>
+                    </blockquote>
                 </div>
-            </div>
-        </div>
-        {% endif %}
-        {% endfor %}
-        <a class="carousel-control-prev d-md-flex" href="#showcaseCarousel" role="button" data-slide="prev">
+              </div>
+            {% endfor %}
+          </div>
+          <ol class="carousel-indicators">
+            {% for case in testimonials %}
+              <li data-target="#showcaseCarousel" data-slide-to="{{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+            {% endfor %}
+          </ol>
+          <a class="carousel-control-prev" href="#showcaseCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next d-md-flex" href="#showcaseCarousel" role="button" data-slide="next">
+          </a>
+          <a class="carousel-control-next" href="#showcaseCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
+          </a>
+        </div>
     </div>
+  </div>
 </section>
 
 <section class="showcase__company-cases showcase__section animate step-last">
