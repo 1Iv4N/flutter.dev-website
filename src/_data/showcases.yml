@@ -11,8 +11,8 @@
   play_store_link: https://play.google.com/store/apps/details?id=com.reflectlyApp&e=-EnableAppDetailsPageRedesign
   quote_testimonial: true
   quote: >
-    As a former web and native app developer, getting started with Flutter was truly awesome. I know it’s been said
-    before, but the huge power and productivity you get with instant stateful Hot Reload was mind-blowing to me.
+    Getting started with Flutter was truly awesome. The huge power and productivity you get with instant stateful
+    Hot Reload was mind-blowing.
   quote_writer: TBD
   video_frame_image: showcase/video-frames/reflectly_2x.jpg
   logo_has_name: false
