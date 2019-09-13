@@ -154,15 +154,17 @@
   card_image: showcase/cards/dream11_2x.jpg
 
 - name: Emaar
-  description: Lorem ipsum dolor sit amet Flutter app description.
+  description: >
+    Global property developer, Emaar built a new app designed for mobile-first interaction with unique
+    blockchain-based features.
   logo_src: showcase/cards/logo-emaar_2x.png
   logo_has_name: true
   card_image: showcase/cards/emaar_2x.jpg
 
 - name: Green Tea
   description: >
-    An internal customer management app used widely by Google sales that provides rich visualizations for tracking sales
-    targets.
+    An internal customer management app used widely by Google sales that provides rich visualizations
+    for tracking sales targets.
   logo_src: showcase/cards/logo-green-tea_2x.png
   logo_has_name: true
   card_image: showcase/cards/green-tea_2x.jpg
