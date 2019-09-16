@@ -4,7 +4,7 @@
     An award-winning mindfulness app built with Flutter.
     Artificial intelligence powers Reflectly’s beautiful mindfulness and journal app.
   logo_src: showcase/cards/logo-reflectly_2x.png
-  video_id: jtYk3gWRSw0
+  video_id: 6ZpETbJjipQ
   learn_more_cta: Learn more
   learn_more_link: https://medium.com/reflectly-engineering/reflectly-from-react-native-to-flutter-2e3dffced2ea
   app_store_link: https://itunes.apple.com/us/app/reflectly-mindfulness-journal/id1241229134
@@ -13,17 +13,25 @@
   quote: >
     Getting started with Flutter was truly awesome. The huge power and productivity you get with instant stateful
     Hot Reload was mind-blowing.
-  quote_writer: TBD
+  quote_writer: Jacob Kristensen, Co-Founder
   video_frame_image: showcase/video-frames/reflectly_2x.jpg
   logo_has_name: false
   card_image: showcase/cards/reflectly_2x.jpg
 
 - name: Tencent
   featured: true
-  description: The smoothest way to stream video to tens of millions of MAU.
+  description: >
+    Tencent uses Flutter throughout the company for several apps including AITeacher, Now Live, K12, Mr. Translator,
+    QiDian, and DingDang.
   logo_src: showcase/cards/logo-tencent_2x.png
-  app_store_link: https://apps.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%8B%B1%E8%AF%AD%E5%90%9B-%E5%B0%8F%E5%AD%A6%E8%8B%B1%E8%AF%AD%E6%99%BA%E8%83%BD%E8%BE%85%E5%AF%BC/id1428413271?l=en
-  play_store_link: https://play.google.com/store/apps/details?id=com.tencent.now
+  video_id: DVGIBU109nI
+  learn_more_cta: Learn more
+  learn_more_link: https://www.youtube.com/watch?v=DVGIBU109nI
+  video_frame_image: showcase/video-frames/alibaba_2x.jpg
+  quote_testimonial: true
+  quote: >
+    Lorem ipsum, video image, quote and quote write TBD.
+  quote_writer: TBD
   logo_has_name: true
   card_image: showcase/cards/tencent_2x.png
 
@@ -43,9 +51,7 @@
   logo_src: showcase/cards/logo-insight-timer_2x.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
-  learn_more_link: https://insighttimer.com/about
-  app_store_link: https://insig.ht/showcase_ios
-  play_store_link: https://insig.ht/showcase_android
+  learn_more_link: https://insighttimer.com/
   logo_has_name: false
   card_image: showcase/cards/insight-timer_2x.jpg
 
@@ -105,21 +111,21 @@
   quote: >
     We wanted to democratize music making. It was really important for us to have both versions of the app available as
     soon as possible.
-  quote_writer: Dom Dronska
+  quote_writer: Dom Dronska, Creative Tech-Digital Lead
   logo_has_name: false
   card_image: showcase/cards/abbey-road_2x.jpg
 
 - name: Alibaba
   description: Flutter helped bring new app for the world’s biggest online marketplace to life.
   logo_src: showcase/cards/logo-alibaba_2x.png
-  vide_id: jtYk3gWRSw0
+  video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.taobao.idlefish&e=-EnableAppDetailsPageRedesign
   video_frame_image: showcase/video-frames/alibaba_2x.jpg
   quote_testimonial: true
   quote: >
     Flutter significantly reduced the time we need to develop for new feature from 1 month down to 2 weeks.
-  quote_writer: Bruce Chen - Senior Development Engineer
+  quote_writer: Bruce Chen, Senior Development Engineer
   logo_has_name: true
   card_image: showcase/cards/alibaba_2x.jpg
 
@@ -132,7 +138,7 @@
 
 - name: Byte Dance
   description: >
-    TikTok, Helo, Topbuzz, Watermelon Video, and many other apps that are used by hundreds of millions of users every
+    Helo, Topbuzz, Watermelon Video, and many other apps that are used by hundreds of millions of users every
     day are being developed with Flutter.
   logo_src: showcase/cards/logo-byte-dance_2x.png
   app_store_link: https://apps.apple.com/cn/app/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/id529092160?l=en
@@ -141,7 +147,8 @@
   card_image: showcase/cards/byte-dance_2x.jpg
 
 - name: Dream 11
-  description: Dream 11 made its fantasy sports app a reality with Flutter.
+  description: >
+    India’s largest fantasy sports company with 50M+ users made its fantasy sports app a reality with Flutter.
   logo_src: showcase/cards/logo-dream11_2x.png
   video_id: lCeRZhoqEP8
   app_store_link: https://apps.apple.com/in/app/dream11-fantasy-sports/id1077286074
@@ -181,7 +188,6 @@
   description: JD Finance is JD.com’s finance and investment mobile app with hundreds of millions of users.
   logo_src: showcase/cards/logo-jd_2x.png
   app_store_link: https://itunes.apple.com/cn/app/jing-dong-jin-rong-hui-li/id895682747?mt=8
-  play_store_link: http://storage.jd.com/jdmobile/JDMALL-PC2.apk
   logo_has_name: false
   card_image: showcase/cards/jd_2x.jpg
 
