@@ -60,26 +60,26 @@ body_class: showcase
     </div>
 </section>
 
-<section class="xcarousel showcase__section animate step-last">
+<section class="showcase__carousel showcase__section animate step-last">
   {% assign testimonials = site.data.showcases | where: "quote_testimonial", true %}
-  <div class="xcarousel__bg" style="background-image: url({% asset 'showcase/video-frames/bg_texture_2x.svg' @path %})"></div>
+  <div class="showcase__carousel__texture" style="background-image: url({% asset 'showcase/video-frames/bg_texture_2x.svg' @path %})"></div>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10">
-      <h2 class="title">Learn from developers</h2>
+      <h2 class="showcase__carousel__title">Learn from developers</h2>
 
       <div id="showcaseCarousel" class="carousel slide w-100" data-ride="carousel">
           <div class="carousel-inner">
             {% for case in testimonials %}
               <div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
-                <div class="quote-wrapper">
-                  <div class="quote__image">
-                      {% asset '{{ case.video_frame_image }}' class='' %}
-                      <button class="quote__image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
+                <div class="showcase__carousel__item">
+                  <div class="image">
+                      {% asset '{{ case.video_frame_image }}' %}
+                      <button class="image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
                     </div>
 
-                    <blockquote class="quote__copy">
-                      <p class="quote__copy-text">{{ case.quote }}</p>
-                      <footer class="quote__copy-footer">{{ case.quote_writer }}<cite class="d-block" title="{{case.name}}">{{case.name}}</cite></footer>
+                    <blockquote class="quote">
+                      <p class="copy">{{ case.quote }}</p>
+                      <footer class="copy-footer">{{ case.quote_writer }}<cite class="copy-author" title="{{case.name}}">{{case.name}}</cite></footer>
                     </blockquote>
                 </div>
               </div>
