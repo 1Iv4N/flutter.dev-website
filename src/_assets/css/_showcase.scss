@@ -78,8 +78,8 @@
 
   // Page specific overrides
   .fa-external-link-alt:before {
-    font-size: 1em;
-    margin-left: .5em;
+    font-size: 16px;
+    margin-left: 8px;
     opacity: .8;
     vertical-align: initial;
   }
@@ -89,31 +89,31 @@
     margin-top: 60px;
     text-align: center;
 
-    h1 {
+    .heading {
       color: $site-color-title;
       font-size: 32px;
       letter-spacing: -.4px;
       margin-bottom: 24px;
     }
 
-    p {
+    .subheading {
       color: $site-color-paragraph;
       font-size: 16px;
     }
 
-    span {
+    .highlight-brand {
       color: $flutter-color-blue-500;
     }
 
     @include media-breakpoint-up(md) {
       margin-top: 100px;
 
-      h1 {
+      .heading {
         font-size: 48px;
         letter-spacing: -.6px;
       }
 
-      p {
+      .subheading {
         font-size: 20px;
       }
     }
@@ -121,7 +121,7 @@
     @include media-breakpoint-up(lg) {
       margin-top: 140px;
 
-      h1 {
+      .heading {
         font-size: 64px;
         letter-spacing: -.8px;
       }
