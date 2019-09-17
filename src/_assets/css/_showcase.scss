@@ -238,14 +238,6 @@
       margin: 60px 0 40px;
       text-align: center;
       width: 100%;
-
-      @include media-breakpoint-up(md) {
-        margin: 100px 0 60px;
-      }
-
-      @include media-breakpoint-up(xl) {
-        margin: 100px 0 80px;
-      }
     }
 
     &__item {
@@ -259,10 +251,6 @@
         flex-grow: 1;
         margin: 0;
         padding: 0;
-
-        @include media-breakpoint-up(xl) {
-          padding-right: 80px;
-        }
       }
 
       .copy {
@@ -277,10 +265,6 @@
 
         &::after {
           content: '\201D';
-        }
-
-        @include media-breakpoint-up(xl) {
-          font-size: 28px;
         }
       }
 
@@ -303,24 +287,6 @@
           height: $image_height_sm;
           object-fit: cover;
           width: 100%;
-
-          @include media-breakpoint-up(md) {
-            height: $image_height_md;
-          }
-
-          @include media-breakpoint-up(xl) {
-            height: $image_height_lg;
-            width: 572px;
-          }
-        }
-
-        @include media-breakpoint-up(md) {
-          margin-bottom: 40px;
-        }
-
-        @include media-breakpoint-up(xl) {
-          margin: 0;
-          order: 1;
         }
       }
 
@@ -334,23 +300,11 @@
         position: absolute;
         width: 190px;
       }
-
-      @include media-breakpoint-up(xl) {
-        flex-direction: row;
-      }
     }
 
     // bootstrap overrrides
     .carousel-inner {
       margin-bottom: 40px;
-
-      @include media-breakpoint-up(md) {
-        margin-bottom: 60px;
-      }
-
-      @include media-breakpoint-up(xl) {
-        margin-bottom: 80px;
-      }
     }
 
     .carousel-indicators {
@@ -364,10 +318,6 @@
         height: 8px;
         width: 8px;
       }
-
-      @include media-breakpoint-up(md) {
-        margin-bottom: 100px;
-      }
     }
 
     .carousel-control-prev,
@@ -376,6 +326,29 @@
     }
 
     @include media-breakpoint-up(md) {
+      &__title {
+        margin: 100px 0 60px;
+      }
+
+      &__item {
+        .image {
+          margin-bottom: 40px;
+
+          img {
+            height: $image_height_md;
+          }
+        }
+      }
+
+      // bootstrap overrrides
+      .carousel-inner {
+        margin-bottom: 60px;
+      }
+
+      .carousel-indicators {
+        margin-bottom: 100px;
+      }
+
       .carousel-control-prev,
       .carousel-control-next {
         height: $image_height_md;
@@ -391,12 +364,42 @@
     }
 
     @include media-breakpoint-up(xl) {
+      &__title {
+        margin: 100px 0 80px;
+      }
+
+      &__item {
+        flex-direction: row;
+
+        .quote {
+          padding-right: 80px;
+        }
+
+        .copy {
+          font-size: 28px;
+        }
+
+        .image {
+          margin: 0;
+          order: 1;
+
+          img {
+            height: $image_height_lg;
+            width: 572px;
+          }
+        }
+      }
+
+      // bootstrap overrrides
+      .carousel-inner {
+        margin-bottom: 80px;
+      }
+
       .carousel-control-prev,
       .carousel-control-next {
         height: $image_height_lg;
       }
     }
-
   }
 
   &__company-cases {
