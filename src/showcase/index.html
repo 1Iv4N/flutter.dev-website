@@ -54,8 +54,8 @@ body_class: showcase
     <div class="row">
         <ul class="logo-list col-12 col-lg-10 d-flex flex-wrap mb-n8">
             {% for logo in site.data.company_logos %}
-                <li class="logo col-6 col-md-3 mb-8 mb-lg-10">
-                    {% asset '{{ logo.logo_src }}' %}
+                <li class="logo-item col-6 col-md-3 mb-8 mb-lg-10">
+                    {% asset '{{ logo.logo_src  }}' class="logo-image" %}
                 </li>
             {% endfor %}
         </ul>

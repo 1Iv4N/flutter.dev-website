@@ -182,11 +182,11 @@
       padding: 0;
     }
 
-    .logo {
+    .logo-item {
       list-style: none;
       text-align: center;
 
-      img {
+      .logo-image {
         height: 48px;
         width: 124px;
       }
@@ -197,7 +197,7 @@
         margin-bottom: 60px;
       }
 
-      .logo {
+      .logo-item {
         text-align: right;
       }
     }
@@ -207,8 +207,8 @@
         margin-bottom: 48px;
       }
 
-      .logo {
-        img {
+      .logo-item {
+        .logo-image {
           height: 56px;
           width: 145px;
         }
