@@ -221,6 +221,7 @@
     $image_height_md: 280px;
     $image_height_sm: 200px;
     $texture-bg-color: #232C33;
+    $author-copy-color: #5bc8f8;
     color: $site-color-white;
     position: relative;
 
@@ -273,7 +274,7 @@
       }
 
       .copy-author {
-        color: #5bc8f8;
+        color: $author-copy-color;
         display: block;
         font-style: normal;
       }
@@ -302,7 +303,7 @@
       }
     }
 
-    // bootstrap overrrides
+    // bootstrap overrides
     .carousel-inner {
       margin-bottom: 40px;
     }
