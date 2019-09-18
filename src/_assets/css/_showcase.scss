@@ -1,6 +1,8 @@
 .showcase {
   background-color: $site-color-codeblock-bg;
   font-family: "Google Sans", "Roboto", sans-serif;
+  $site-color-paragraph: #555;
+  $site-color-title: #212C34;
 
   // General styles
   &__section {
