@@ -1,5 +1,54 @@
-- name: Reflectly
+- name: Realtor.com
   featured: true
+  description: >
+    With listings updated in real time, Realtor.com’s award-winning app helps users find the home of their dreams.
+  logo_src: showcase/cards/logo-realtor_2x.png
+  app_store_link: https://apps.apple.com/us/app/realtor-com-real-estate-search/id336698281
+  play_store_link: https://play.google.com/store/apps/details?id=com.move.realtor
+  logo_has_name: false
+  card_image: showcase/cards/realtor_2x.jpg
+
+- name: Tencent
+  featured: true
+  description: >
+    Tencent uses Flutter throughout the company for several apps including AITeacher, Now Live, K12, Mr. Translator,
+    QiDian, and DingDang.
+  logo_src: showcase/cards/logo-tencent_2x.png
+  video_id: DVGIBU109nI
+  learn_more_cta: Learn more
+  learn_more_link: https://www.youtube.com/watch?v=DVGIBU109nI
+  video_frame_image: showcase/video-frames/tencent_2x.jpg
+  quote_testimonial: true
+  quote: >
+    When using Flutter, 90% of the code became multi-platform and only needed to updated once.
+  quote_writer: Fei Song, Senior Software Engineer
+  logo_has_name: true
+  card_image: showcase/cards/tencent_2x.jpg
+
+- name: The New York Times
+  featured: true
+  description: Flutter helped bring the popular Ken Ken puzzle to life on Android, iOS, Mac, Windows, and the Web.
+  logo_src: showcase/cards/logo-tnyt_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/tnyt_2x.jpg
+
+- name: Square
+  featured: true
+  description: >
+    The Flutter plugin for Square Reader SDK enables developers to build apps for merchants that take in-person
+    payments.
+  logo_src: showcase/cards/logo-square_2x.png
+  logo_has_name: true
+  card_image: showcase/cards/square_2x.jpg
+
+- name: Google Assistant
+  featured: true
+  description: Flutter helps power an ever-growing number of Google Assistant apps.
+  logo_src: showcase/cards/logo-g-assistant_2x.png
+  logo_has_name: false
+  card_image: showcase/cards/g-assistant_2x.jpg
+
+- name: Reflectly
   description: >
     An award-winning mindfulness app built with Flutter.
     Artificial intelligence powers Reflectly’s beautiful mindfulness and journal app.
@@ -18,25 +67,7 @@
   logo_has_name: false
   card_image: showcase/cards/reflectly_2x.jpg
 
-- name: Tencent
-  featured: true
-  description: >
-    Tencent uses Flutter throughout the company for several apps including AITeacher, Now Live, K12, Mr. Translator,
-    QiDian, and DingDang.
-  logo_src: showcase/cards/logo-tencent_2x.png
-  video_id: DVGIBU109nI
-  learn_more_cta: Learn more
-  learn_more_link: https://www.youtube.com/watch?v=DVGIBU109nI
-  video_frame_image: showcase/video-frames/alibaba_2x.jpg
-  quote_testimonial: true
-  quote: >
-    Lorem ipsum, video image, quote and quote write TBD.
-  quote_writer: TBD
-  logo_has_name: true
-  card_image: showcase/cards/tencent_2x.png
-
 - name: Google Ads
-  featured: true
   description: >
     The Google Ads app helps users manage, optimize and track ad campaigns all from the convenience of an android device.
   logo_src: showcase/cards/logo-g-ads_2x.png
@@ -46,7 +77,6 @@
   card_image: showcase/cards/g-adds_2x.jpg
 
 - name: Insight Timer
-  featured: true
   description: The Insight timer app provides access to the largest free library of guided meditations on earth.
   logo_src: showcase/cards/logo-insight-timer_2x.png
   video_id: kfd-oLypqFI
@@ -56,7 +86,6 @@
   card_image: showcase/cards/insight-timer_2x.jpg
 
 - name: Hamilton
-  featured: true
   description: >
     Official app of the hit Broadway musical serves up daily lotteries, exclusive news, a trivia
     game a merchandise store, and more.
@@ -74,23 +103,6 @@
   video_frame_image: showcase/video-frames/hamilton_2x.jpg
   logo_has_name: false
   card_image: showcase/cards/hamilton_2x.jpg
-
-- name: Realtor.com
-  description: >
-    With listings updated in real time, Realtor.com’s award-winning app helps users find the home of their dreams.
-  logo_src: showcase/cards/logo-realtor_2x.png
-  app_store_link: https://apps.apple.com/us/app/realtor-com-real-estate-search/id336698281
-  play_store_link: https://play.google.com/store/apps/details?id=com.move.realtor
-  logo_has_name: false
-  card_image: showcase/cards/realtor_2x.jpg
-
-- name: Square
-  description: >
-    The Flutter plugin for in-app Payments SDK lets developers build consumer apps that take payments directly
-    from buyers.
-  logo_src: showcase/cards/logo-square_2x.png
-  logo_has_name: true
-  card_image: showcase/cards/square_2x.jpg
 
 - name: Grab
   description: Flutter helped the growing food delivery service manage the entire lifecycle of their orders.
@@ -199,20 +211,8 @@
   logo_has_name: true
   card_image: showcase/cards/nubank_2x.jpg
 
-- name: The New York Times
-  description: Flutter helped bring the popular Ken Ken puzzle to life on Android, iOS, Mac, Windows, and the Web.
-  logo_src: showcase/cards/logo-tnyt_2x.png
-  logo_has_name: true
-  card_image: showcase/cards/tnyt_2x.jpg
-
 - name: Philips Hue
   description: Flutter helped bring intuitive controls to the Philips Hue smart lights app.
   logo_src: showcase/cards/logo-hue-phillips_2x.png
   logo_has_name: true
   card_image: showcase/cards/philips-hue_2x.jpg
-
-- name: Google Assistant
-  description: Flutter helps power an ever-growing number of Google Assistant apps.
-  logo_src: showcase/cards/logo-g-assistant_2x.png
-  logo_has_name: false
-  card_image: showcase/cards/g-assistant_2x.png
