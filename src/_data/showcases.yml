@@ -55,7 +55,6 @@
 - name: Reflectly
   description: >
     An award-winning mindfulness app built with Flutter.
-    Artificial intelligence powers Reflectly’s beautiful mindfulness and journal app.
   logo_src: showcase/cards/logo-reflectly_2x.png
   video_id: 6ZpETbJjipQ
   learn_more_cta: Learn more
