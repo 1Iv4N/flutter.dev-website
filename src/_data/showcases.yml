@@ -30,6 +30,8 @@
   description: Flutter helped bring the popular Ken Ken puzzle to life on Android, iOS, Mac, Windows, and the Web.
   logo_src: showcase/cards/logo-tnyt_2x.png
   logo_has_name: true
+  learn_more_cta: Try it now
+  learn_more_link: https://www.nytimes.com/games/prototype/kenken#/
   card_image: showcase/cards/tnyt_2x.jpg
 
 - name: Square
@@ -39,6 +41,8 @@
     payments.
   logo_src: showcase/cards/logo-square_2x.png
   logo_has_name: true
+  learn_more_cta: Learn more
+  learn_more_link: https://squareup.com/us/en/flutter
   card_image: showcase/cards/square_2x.jpg
 
 - name: Google Assistant
