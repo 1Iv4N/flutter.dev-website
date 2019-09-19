@@ -56,7 +56,7 @@
       &-footer {
         padding: 0 24px 12px;
 
-        .dropdown, > a:first-child {
+        .link, .video-link, .dropdown {
           display: inline-block;
           margin-bottom: 12px;
         }
@@ -209,16 +209,15 @@
         margin-bottom: 48px;
       }
 
-      .logo-item {
-        .logo-image {
-          height: 56px;
-          width: 145px;
-        }
+      .logo-item .logo-image {
+        height: 56px;
+        width: 145px;
       }
     }
   }
 
   &__carousel {
+    $image_height_xl: 323px;
     $image_height_lg: 350px;
     $image_height_md: 280px;
     $image_height_sm: 200px;
@@ -285,12 +284,12 @@
         align-self: center;
         margin: 0 0 24px;
         position: relative;
+      }
 
-        img {
-          height: $image_height_sm;
-          object-fit: cover;
-          width: 100%;
-        }
+      .image img {
+        height: $image_height_sm;
+        object-fit: cover;
+        width: 100%;
       }
 
       .image-button {
@@ -336,14 +335,14 @@
       &__item {
         .image {
           margin-bottom: 40px;
+        }
 
-          img {
-            height: $image_height_md;
-          }
+        .image img {
+          height: $image_height_md;
         }
       }
 
-      // bootstrap overrrides
+      // bootstrap overrides
       .carousel-inner {
         margin-bottom: 60px;
       }
@@ -366,6 +365,14 @@
       }
     }
 
+    @include media-breakpoint-up(lg) {
+      &__item {
+        .image img {
+          height: $image_height_lg;
+        }
+      }
+    }
+
     @include media-breakpoint-up(xl) {
       &__title {
         margin: 100px 0 80px;
@@ -385,15 +392,15 @@
         .image {
           margin: 0;
           order: 1;
+        }
 
-          img {
-            height: $image_height_lg;
-            width: 572px;
-          }
+        .image img {
+          height: $image_height_xl;
+          width: 572px;
         }
       }
 
-      // bootstrap overrrides
+      // bootstrap overrides
       .carousel-inner {
         margin-bottom: 80px;
       }
@@ -443,7 +450,7 @@
       margin: 0 auto 20px;
     }
 
-    // overrides
+    // bootstrap overrides
     .card-body {
       padding-bottom: 0;
       padding-top: 0;
