@@ -54,7 +54,7 @@
 
 - name: Reflectly
   description: >
-    An award-winning mindfulness app built with Flutter.
+    An award-winning mindfulness app built with Flutter. It was featured on the Apple App Store as 'app of the day'.
   logo_src: showcase/cards/logo-reflectly_2x.png
   video_id: 6ZpETbJjipQ
   learn_more_cta: Learn more
@@ -80,7 +80,8 @@
   card_image: showcase/cards/g-adds_2x.jpg
 
 - name: Insight Timer
-  description: The Insight timer app provides access to the largest free library of guided meditations on earth.
+  description: >
+    The Insight timer app used by 9M+ people provides access to the largest free library of guided meditations on earth.
   logo_src: showcase/cards/logo-insight-timer_2x.png
   video_id: kfd-oLypqFI
   learn_more_cta: Learn more
@@ -131,7 +132,7 @@
   card_image: showcase/cards/abbey-road_2x.jpg
 
 - name: Alibaba
-  description: Flutter helped bring new app for the world’s biggest online marketplace to life.
+  description: Flutter helped bring a new app for the world’s biggest online marketplace to life.
   logo_src: showcase/cards/logo-alibaba_2x.png
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
@@ -153,8 +154,8 @@
 
 - name: Byte Dance
   description: >
-    Helo, Topbuzz, Watermelon Video, and many other apps that are used by hundreds of millions of users every
-    day are being developed with Flutter.
+    Today's Headlines, Xigua Video, Helo, Topbuzz, Watermelon Video, and many other apps used by hundreds of millions of
+    users have been developed with Flutter.
   logo_src: showcase/cards/logo-byte-dance_2x.png
   app_store_link: https://apps.apple.com/cn/app/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/id529092160?l=en
   play_store_link: https://play.google.com/store/apps/details?id=com.ss.android.article.master&hl=en_US
