@@ -15,7 +15,7 @@
     QiDian, and DingDang.
   logo_src: showcase/cards/logo-tencent_2x.png
   video_id: DVGIBU109nI
-  video_frame_image: showcase/video-frames/tencent_2x.jpg
+  video_frame_image: showcase/video-frames/tencent@.jpg
   quote_testimonial: true
   quote: >
     When using Flutter, 90% of the code became multi-platform and only needed to updated once.
@@ -65,7 +65,7 @@
     Getting started with Flutter was truly awesome. The huge power and productivity you get with instant stateful
     Hot Reload was mind-blowing.
   quote_writer: Jacob Kristensen, Co-Founder
-  video_frame_image: showcase/video-frames/reflectly_2x.jpg
+  video_frame_image: showcase/video-frames/reflectly@.jpg
   logo_has_name: false
   card_image: showcase/cards/reflectly@.jpg
 
@@ -103,7 +103,7 @@
     We knew that this app needed to be rock solid both in terms of performance and visual fidelity, and really represent
     the amazing experience that the Hamilton show itself provides.
   quote_writer: Jessica Wagner, Manager, Posse
-  video_frame_image: showcase/video-frames/hamilton_2x.jpg
+  video_frame_image: showcase/video-frames/hamilton@.jpg
   logo_has_name: false
   card_image: showcase/cards/hamilton@.jpg
 
@@ -121,7 +121,7 @@
   video_id: _ACWeGGBP4E
   app_store_link: https://itunes.apple.com/us/app/topline/id1270125833?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.abbeyroadandroid&hl=en_US&e=-EnableAppDetailsPageRedesign
-  video_frame_image: showcase/video-frames/abbey-road_2x.jpg
+  video_frame_image: showcase/video-frames/abbey-road@.jpg
   quote_testimonial: true
   quote: >
     We wanted to democratize music making. It was really important for us to have both versions of the app available as
@@ -136,7 +136,7 @@
   video_id: jtYk3gWRSw0
   app_store_link: https://itunes.apple.com/cn/app/%E9%97%B2%E9%B1%BC-%E6%8C%82%E9%97%B2%E9%B1%BC-%E9%97%B2%E7%BD%AE%E8%83%BD%E6%8D%A2%E9%92%B1/id510909506?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.taobao.idlefish&e=-EnableAppDetailsPageRedesign
-  video_frame_image: showcase/video-frames/alibaba_2x.jpg
+  video_frame_image: showcase/video-frames/alibaba@.jpg
   quote_testimonial: true
   quote: >
     Flutter significantly reduced the time we need to develop for new feature from 1 month down to 2 weeks.
@@ -168,7 +168,7 @@
   video_id: lCeRZhoqEP8
   app_store_link: https://apps.apple.com/in/app/dream11-fantasy-sports/id1077286074
   play_store_link: https://play.google.com/store/apps/details?id=com.powerpredictorapp&hl=en_US
-  video_frame_image: showcase/video-frames/dream11_2x.jpg
+  video_frame_image: showcase/video-frames/dream11@.jpg
   quote_testimonial: true
   quote: With flutter, the iOS version of our app was up and running in two days, which was really amazing.
   quote_writer: Amit Sharma, CTO

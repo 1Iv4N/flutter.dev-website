@@ -85,7 +85,16 @@ body_class: showcase
               <div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
                 <div class="showcase__carousel__item">
                   <div class="image">
-                      {% asset '{{ case.video_frame_image }}' %}
+                      {% capture image_src_1x %}{% asset '{{ case.video_frame_image | replace: "@", "_1x" }}' @path %}{% endcapture %}
+                      {% capture image_src_1-5x %}{% asset '{{ case.video_frame_image | replace: "@", "_1.5x" }}' @path %}{% endcapture %}
+                      {% capture image_src_2x %}{% asset '{{ case.video_frame_image | replace: "@", "_2x" }}' @path %}{% endcapture %}
+                      <img class="card-img-top" src="{{ image_src_2x }}" alt=""
+                           srcset="
+                               {{ image_src_1x }} 400w,
+                               {{ image_src_1-5x }} 800w,
+                               {{ image_src_2x }} 1200w,
+                            "
+                      >
                       <button class="image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
                     </div>
 
