@@ -6,7 +6,7 @@
   app_store_link: https://apps.apple.com/us/app/realtor-com-real-estate-search/id336698281
   play_store_link: https://play.google.com/store/apps/details?id=com.move.realtor
   logo_has_name: true
-  card_image: showcase/cards/realtor_2x.jpg
+  card_image: showcase/cards/realtor@.jpg
 
 - name: Tencent
   featured: true
@@ -21,7 +21,7 @@
     When using Flutter, 90% of the code became multi-platform and only needed to updated once.
   quote_writer: Fei Song, Senior Software Engineer
   logo_has_name: true
-  card_image: showcase/cards/tencent_2x.jpg
+  card_image: showcase/cards/tencent@.jpg
   card_video: DVGIBU109nI
 
 - name: The New York Times
@@ -31,7 +31,7 @@
   logo_has_name: true
   learn_more_cta: Try it now
   learn_more_link: https://www.nytimes.com/games/prototype/kenken#/
-  card_image: showcase/cards/tnyt_2x.jpg
+  card_image: showcase/cards/tnyt@.jpg
 
 - name: Square
   featured: true
@@ -42,14 +42,14 @@
   logo_has_name: true
   learn_more_cta: Learn more
   learn_more_link: https://squareup.com/us/en/flutter
-  card_image: showcase/cards/square_2x.jpg
+  card_image: showcase/cards/square@.jpg
 
 - name: Google Assistant
   featured: true
   description: Flutter helps power an ever-growing number of Google Assistant apps.
   logo_src: showcase/cards/logo-g-assistant_2x.png
   logo_has_name: false
-  card_image: showcase/cards/g-assistant_2x.jpg
+  card_image: showcase/cards/g-assistant@.png
 
 - name: Reflectly
   description: >
