@@ -122,7 +122,14 @@ body_class: showcase
         {% unless case.featured %}
         <div class="col-12 col-md-6 col-xl-3 px-4 mb-8 mb-md-10 showcase__card">
             <div class="card">
-                {% asset '{{ case.card_image }}' class='card-img-top' %}
+                {% capture image_src_1x %}{% asset '{{ case.card_image | replace: "@", "_1x" }}' @path %}{% endcapture %}
+                {% capture image_src_2x %}{% asset '{{ case.card_image | replace: "@", "_2x" }}' @path %}{% endcapture %}
+                <img class="card-img-top" src="{{ image_src_2x }}" alt=""
+                     srcset="
+                        {{ image_src_1x }} 400w,
+                        {{ image_src_2x }} 600w,
+                     "
+                >
                 <div class="card-body">
                     <div class="card-title">
                         {% if case.logo_src %}

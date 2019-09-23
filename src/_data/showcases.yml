@@ -67,7 +67,7 @@
   quote_writer: Jacob Kristensen, Co-Founder
   video_frame_image: showcase/video-frames/reflectly_2x.jpg
   logo_has_name: false
-  card_image: showcase/cards/reflectly_2x.jpg
+  card_image: showcase/cards/reflectly@.jpg
 
 - name: Google Ads
   description: >
@@ -76,7 +76,7 @@
   app_store_link: https://itunes.apple.com/us/app/google-ads/id1037457231?mt=8
   play_store_link: https://play.google.com/store/apps/details?id=com.google.android.apps.adwords
   logo_has_name: false
-  card_image: showcase/cards/g-adds_2x.jpg
+  card_image: showcase/cards/g-ads@.jpg
 
 - name: Insight Timer
   description: >
@@ -86,7 +86,7 @@
   learn_more_cta: Learn more
   learn_more_link: https://insighttimer.com/
   logo_has_name: false
-  card_image: showcase/cards/insight-timer_2x.jpg
+  card_image: showcase/cards/insight-timer@.jpg
 
 - name: Hamilton
   description: >
@@ -105,7 +105,7 @@
   quote_writer: Jessica Wagner, Manager, Posse
   video_frame_image: showcase/video-frames/hamilton_2x.jpg
   logo_has_name: false
-  card_image: showcase/cards/hamilton_2x.jpg
+  card_image: showcase/cards/hamilton@.jpg
 
 - name: Grab
   description: Flutter helped the growing food delivery service manage the entire lifecycle of their orders.
@@ -113,7 +113,7 @@
   app_store_link: https://apps.apple.com/cn/app/grab-app/id647268330?l=en
   play_store_link: https://play.google.com/store/apps/details?id=com.grab.merchant&hl=en
   logo_has_name: true
-  card_image: showcase/cards/grab_2x.jpg
+  card_image: showcase/cards/grab@.jpg
 
 - name: Abbey Road Studios
   description: Abbey Road Studio’s Topline app continues the studio’s tradition of innovation.
@@ -128,7 +128,7 @@
     soon as possible.
   quote_writer: Dom Dronska, Creative Tech-Digital Lead
   logo_has_name: false
-  card_image: showcase/cards/abbey-road_2x.jpg
+  card_image: showcase/cards/abbey-road@.jpg
 
 - name: Alibaba
   description: Flutter helped bring a new app for the world’s biggest online marketplace to life.
@@ -142,14 +142,14 @@
     Flutter significantly reduced the time we need to develop for new feature from 1 month down to 2 weeks.
   quote_writer: Bruce Chen, Senior Development Engineer
   logo_has_name: true
-  card_image: showcase/cards/alibaba_2x.jpg
+  card_image: showcase/cards/alibaba@.jpg
 
 - name: Baidu
   description: Baidu Tieba is the largest Chinese communication platform hosted by Chinese search engine company Baidu.
   logo_src: showcase/cards/logo-baidu_2x.png
   app_store_link: https://apps.apple.com/cn/app/id1464625444
   logo_has_name: false
-  card_image: showcase/cards/baidu_2x.jpg
+  card_image: showcase/cards/baidu@.jpg
 
 - name: Byte Dance
   description: >
@@ -159,7 +159,7 @@
   app_store_link: https://apps.apple.com/cn/app/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/id529092160?l=en
   play_store_link: https://play.google.com/store/apps/details?id=com.ss.android.article.master&hl=en_US
   logo_has_name: true
-  card_image: showcase/cards/byte-dance_2x.jpg
+  card_image: showcase/cards/byte-dance@.jpg
 
 - name: Dream 11
   description: >
@@ -173,7 +173,7 @@
   quote: With flutter, the iOS version of our app was up and running in two days, which was really amazing.
   quote_writer: Amit Sharma, CTO
   logo_has_name: true
-  card_image: showcase/cards/dream11_2x.jpg
+  card_image: showcase/cards/dream11@.jpg
 
 - name: Emaar
   description: >
@@ -181,7 +181,7 @@
     blockchain-based features.
   logo_src: showcase/cards/logo-emaar_2x.png
   logo_has_name: true
-  card_image: showcase/cards/emaar_2x.jpg
+  card_image: showcase/cards/emaar@.jpg
 
 - name: Green Tea
   description: >
@@ -189,7 +189,7 @@
     for tracking sales targets.
   logo_src: showcase/cards/logo-green-tea_2x.png
   logo_has_name: true
-  card_image: showcase/cards/green-tea_2x.jpg
+  card_image: showcase/cards/green-tea@.jpg
 
 - name: Groupon
   description: >
@@ -197,14 +197,14 @@
     existing app used by its merchants.
   logo_src: showcase/cards/logo-groupon_2x.png
   logo_has_name: true
-  card_image: showcase/cards/groupon_2x.jpg
+  card_image: showcase/cards/groupon@.jpg
 
 - name: JD
   description: JD Finance is JD.com’s finance and investment mobile app with hundreds of millions of users.
   logo_src: showcase/cards/logo-jd_2x.png
   app_store_link: https://itunes.apple.com/cn/app/jing-dong-jin-rong-hui-li/id895682747?mt=8
   logo_has_name: false
-  card_image: showcase/cards/jd_2x.jpg
+  card_image: showcase/cards/jd@.jpg
 
 - name: Nubank
   description: >
@@ -212,10 +212,10 @@
     back in the hands of the user.
   logo_src: showcase/cards/logo-nubank_2x.png
   logo_has_name: true
-  card_image: showcase/cards/nubank_2x.jpg
+  card_image: showcase/cards/nubank@.jpg
 
 - name: Philips Hue
   description: Flutter helped bring intuitive controls to the Philips Hue smart lights app.
   logo_src: showcase/cards/logo-hue-phillips_2x.png
   logo_has_name: true
-  card_image: showcase/cards/philips-hue_2x.jpg
+  card_image: showcase/cards/philips-hue@.jpg
