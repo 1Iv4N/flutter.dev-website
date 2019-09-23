@@ -153,7 +153,7 @@
 
 - name: Byte Dance
   description: >
-    Today's Headlines, Xigua Video, Helo, Topbuzz, Watermelon Video, and other apps used by hundreds of millions of
+    Today's Headlines, Xigua Video, Helo, Topbuzz, Watermelon Video, and many other apps used by hundreds of millions of
     users have been developed with Flutter.
   logo_src: showcase/cards/logo-byte-dance_2x.png
   app_store_link: https://apps.apple.com/cn/app/%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1/id529092160?l=en
