@@ -17,12 +17,14 @@ body_class: showcase
             <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-md-10">
                 <div class="card animate{% if forloop.index0 < 2 %} step-{{forloop.index | plus: 2}}{% else %} step-last{% endif %}">
                     {% capture image_src_1x %}{% asset '{{ case.card_image | replace: "@", "_1x" }}' @path %}{% endcapture %}
-                    {% capture image_src_1-5x %}{% asset '{{ case.card_image | replace: "@", "_1.5x" }}' @path %}{% endcapture %}
+                    {% if forloop.index < 2 %}
+                        {% capture image_src_1-5x %}{% asset '{{ case.card_image | replace: "@", "_1.5x" }}' @path %}{% endcapture %}
+                    {% endif %}
                     {% capture image_src_2x %}{% asset '{{ case.card_image | replace: "@", "_2x" }}' @path %}{% endcapture %}
                     <img class="card-img-top" src="{{ image_src_2x }}" alt=""
                          srcset="
                             {{ image_src_1x }} 400w,
-                            {{ image_src_1-5x }} 800w,
+                            {% if forloop.index < 2 %} {{ image_src_1-5x }} 800w, {% endif %}
                             {{ image_src_2x }} 1200w,
                          "
                     >
