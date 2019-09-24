@@ -16,16 +16,22 @@ body_class: showcase
         {% if case.featured %}
             <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-md-10">
                 <div class="card animate{% if forloop.index0 < 2 %} step-{{forloop.index | plus: 2}}{% else %} step-last{% endif %}">
-                    {% capture image_src_1x %}{% asset '{{ case.card_image | replace: "@", "_1x" }}' @path %}{% endcapture %}
+                    {% capture image_src_400 %}{% asset '{{ case.card_image | replace: "@", "-400" }}' @path %}{% endcapture %}
                     {% if forloop.index < 2 %}
-                        {% capture image_src_1-5x %}{% asset '{{ case.card_image | replace: "@", "_1.5x" }}' @path %}{% endcapture %}
+                        {% capture image_src_600 %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
+                        {% capture image_src_full_size %}{% asset '{{ case.card_image | replace: "@", "-1200" }}' @path %}{% endcapture %}
+                    {% else %}
+                        {% capture image_src_full_size %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
                     {% endif %}
-                    {% capture image_src_2x %}{% asset '{{ case.card_image | replace: "@", "_2x" }}' @path %}{% endcapture %}
-                    <img class="card-img-top" src="{{ image_src_2x }}" alt=""
+                    <img class="card-img-top" src="{{ image_src_full_size }}" alt=""
                          srcset="
-                            {{ image_src_1x }} 400w,
-                            {% if forloop.index < 2 %} {{ image_src_1-5x }} 800w, {% endif %}
-                            {{ image_src_2x }} 1200w,
+                            {{ image_src_400 }} 400w,
+                            {% if forloop.index < 2 %}
+                                {{ image_src_600}} 600w,
+                                {{ image_src_full_size }} 1200w
+                            {% else %}
+                                {{ image_src_full_size }} 600w
+                            {% endif %}
                          "
                     >
                     <div class="card-body">
@@ -76,7 +82,7 @@ body_class: showcase
 
 <section class="showcase__carousel showcase__section animate step-last">
   {% assign testimonials = site.data.showcases | where: "quote_testimonial", true %}
-  <div class="showcase__carousel__texture" style="background-image: url({% asset 'showcase/video-frames/bg_texture_2x.svg' @path %})"></div>
+  <div class="showcase__carousel__texture" style="background-image: url({% asset 'showcase/video-frames/bg_texture.svg' @path %})"></div>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10">
       <h2 class="showcase__carousel__title">Learn from developers</h2>
@@ -87,14 +93,14 @@ body_class: showcase
               <div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
                 <div class="showcase__carousel__item">
                   <div class="image">
-                      {% capture image_src_1x %}{% asset '{{ case.video_frame_image | replace: "@", "_1x" }}' @path %}{% endcapture %}
-                      {% capture image_src_1-5x %}{% asset '{{ case.video_frame_image | replace: "@", "_1.5x" }}' @path %}{% endcapture %}
-                      {% capture image_src_2x %}{% asset '{{ case.video_frame_image | replace: "@", "_2x" }}' @path %}{% endcapture %}
-                      <img class="card-img-top" src="{{ image_src_2x }}" alt=""
+                      {% capture image_src_400 %}{% asset '{{ case.video_frame_image | replace: "@", "-400" }}' @path %}{% endcapture %}
+                      {% capture image_src_800 %}{% asset '{{ case.video_frame_image | replace: "@", "-800" }}' @path %}{% endcapture %}
+                      {% capture image_src_1200 %}{% asset '{{ case.video_frame_image | replace: "@", "-1200" }}' @path %}{% endcapture %}
+                      <img class="card-img-top" src="{{ image_src_1200 }}" alt=""
                            srcset="
-                               {{ image_src_1x }} 400w,
-                               {{ image_src_1-5x }} 800w,
-                               {{ image_src_2x }} 1200w,
+                               {{ image_src_400 }} 400w,
+                               {{ image_src_800 }} 800w,
+                               {{ image_src_1200 }} 1200w,
                             "
                       >
                       <button class="image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
@@ -133,12 +139,12 @@ body_class: showcase
         {% unless case.featured %}
         <div class="col-12 col-md-6 col-xl-3 px-4 mb-8 mb-md-10 showcase__card">
             <div class="card">
-                {% capture image_src_1x %}{% asset '{{ case.card_image | replace: "@", "_1x" }}' @path %}{% endcapture %}
-                {% capture image_src_2x %}{% asset '{{ case.card_image | replace: "@", "_2x" }}' @path %}{% endcapture %}
-                <img class="card-img-top" src="{{ image_src_2x }}" alt=""
+                {% capture image_src_400 %}{% asset '{{ case.card_image | replace: "@", "-400" }}' @path %}{% endcapture %}
+                {% capture image_src_600 %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
+                <img class="card-img-top" src="{{ image_src_600 }}" alt=""
                      srcset="
-                        {{ image_src_1x }} 400w,
-                        {{ image_src_2x }} 600w,
+                        {{ image_src_400 }} 400w,
+                        {{ image_src_600 }} 600w,
                      "
                 >
                 <div class="card-body">
