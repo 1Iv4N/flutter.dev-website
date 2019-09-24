@@ -121,7 +121,6 @@
     Flutter helped the growing food delivery service manage the entire lifecycle
     of their orders.
   logo_src: showcase/cards/grab-logo.png
-  app_store_link: https://apps.apple.com/cn/app/grab-app/id647268330?l=en
   play_store_link: https://play.google.com/store/apps/details?id=com.grab.merchant&hl=en
   logo_has_name: true
   card_image: showcase/cards/grab-top@.jpg
@@ -186,8 +185,8 @@
     sports app a reality with Flutter.
   logo_src: showcase/cards/dream11-logo.png
   video_id: lCeRZhoqEP8
-  app_store_link: https://apps.apple.com/in/app/dream11-fantasy-sports/id1077286074
-  play_store_link: https://play.google.com/store/apps/details?id=com.powerpredictorapp&hl=en_US
+  learn_more_cta: Learn more
+  learn_more_link: https://www.powerpredictorapp.com/
   video_frame_image: showcase/video-frames/dream11@.jpg
   quote_testimonial: true
   quote: >
