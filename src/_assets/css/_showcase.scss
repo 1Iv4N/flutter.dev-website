@@ -324,6 +324,7 @@
 
     .carousel-control-prev,
     .carousel-control-next {
+      display: none;
       height: $image_height_sm;
     }
 
@@ -353,6 +354,7 @@
 
       .carousel-control-prev,
       .carousel-control-next {
+        display: flex;
         height: $image_height_md;
       }
 
