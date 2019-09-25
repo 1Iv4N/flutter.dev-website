@@ -17,23 +17,21 @@ body_class: showcase
             <div class="col-12{% if forloop.index0 < 2 %} col-lg-6{% else %} col-lg-4{% endif %} px-4 mb-8 mb-md-10">
                 <div class="card animate{% if forloop.index0 < 2 %} step-{{forloop.index | plus: 2}}{% else %} step-last{% endif %}">
                     {% capture image_src_400 %}{% asset '{{ case.card_image | replace: "@", "-400" }}' @path %}{% endcapture %}
-                    {% if forloop.index < 2 %}
-                        {% capture image_src_600 %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
-                        {% capture image_src_full_size %}{% asset '{{ case.card_image | replace: "@", "-1200" }}' @path %}{% endcapture %}
-                    {% else %}
-                        {% capture image_src_full_size %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
+                    {% capture image_src_600 %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
+                    {% assign image_src_full_size = image_src_600 %}
+
+                    {% if forloop.index0 < 2 %}
+                        {% capture image_src_1200 %}{% asset '{{ case.card_image | replace: "@", "-1200" }}' @path %}{% endcapture %}
+                        {% assign image_src_full_size = image_src_1200 %}
                     {% endif %}
+
                     <img class="card-img-top" src="{{ image_src_full_size }}" alt=""
                          srcset="
                             {{ image_src_400 }} 400w,
-                            {% if forloop.index < 2 %}
-                                {{ image_src_600}} 600w,
-                                {{ image_src_full_size }} 1200w
-                            {% else %}
-                                {{ image_src_full_size }} 600w
-                            {% endif %}
-                         "
-                    >
+                            {{ image_src_600}} 600w
+                            {% if forloop.index0 < 2 %}
+                              , {{ image_src_1200 }} 1200w
+                            {% endif %}">
                     <div class="card-body">
                         <div class="card-title">
                             {% if case.logo_src %}
@@ -93,23 +91,17 @@ body_class: showcase
               <div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
                 <div class="showcase__carousel__item">
                   <div class="image">
-                      {% capture image_src_400 %}{% asset '{{ case.video_frame_image | replace: "@", "-400" }}' @path %}{% endcapture %}
-                      {% capture image_src_800 %}{% asset '{{ case.video_frame_image | replace: "@", "-800" }}' @path %}{% endcapture %}
-                      {% capture image_src_1200 %}{% asset '{{ case.video_frame_image | replace: "@", "-1200" }}' @path %}{% endcapture %}
-                      <img class="card-img-top" src="{{ image_src_1200 }}" alt=""
-                           srcset="
-                               {{ image_src_400 }} 400w,
-                               {{ image_src_800 }} 800w,
-                               {{ image_src_1200 }} 1200w,
-                            "
-                      >
-                      <button class="image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
-                    </div>
-
-                    <blockquote class="quote">
-                      <p class="copy">{{ case.quote }}</p>
-                      <footer class="copy-footer">{{ case.quote_writer }}<cite class="copy-author" title="{{case.name}}">{{case.name}}</cite></footer>
-                    </blockquote>
+                    {% capture image_src_400 %}{% asset '{{ case.video_frame_image | replace: "@", "-400" }}' @path %}{% endcapture %}
+                    {% capture image_src_800 %}{% asset '{{ case.video_frame_image | replace: "@", "-800" }}' @path %}{% endcapture %}
+                    {% capture image_src_1200 %}{% asset '{{ case.video_frame_image | replace: "@", "-1200" }}' @path %}{% endcapture %}
+                    <img class="card-img-top" src="{{ image_src_1200 }}" alt=""
+                         srcset="{{ image_src_400 }} 400w, {{ image_src_800 }} 800w, {{ image_src_1200 }} 1200w">
+                    <button class="image-button btn btn-primary" data-video="{{ case.video_id }}" data-toggle="modal" data-target="#videoModal"><i class="material-icons">play_circle_filled</i>&nbsp;Watch the video</button>
+                  </div>
+                  <blockquote class="quote">
+                    <p class="copy">{{ case.quote }}</p>
+                    <footer class="copy-footer">{{ case.quote_writer }}<cite class="copy-author" title="{{case.name}}">{{case.name}}</cite></footer>
+                  </blockquote>
                 </div>
               </div>
             {% endfor %}
@@ -142,11 +134,7 @@ body_class: showcase
                 {% capture image_src_400 %}{% asset '{{ case.card_image | replace: "@", "-400" }}' @path %}{% endcapture %}
                 {% capture image_src_600 %}{% asset '{{ case.card_image | replace: "@", "-600" }}' @path %}{% endcapture %}
                 <img class="card-img-top" src="{{ image_src_600 }}" alt=""
-                     srcset="
-                        {{ image_src_400 }} 400w,
-                        {{ image_src_600 }} 600w,
-                     "
-                >
+                     srcset="{{ image_src_400 }} 400w, {{ image_src_600 }} 600w" >
                 <div class="card-body">
                     <div class="card-title">
                         {% if case.logo_src %}
