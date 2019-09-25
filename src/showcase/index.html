@@ -88,7 +88,7 @@ body_class: showcase
       <div id="showcaseCarousel" class="carousel slide w-100" data-ride="carousel">
           <div class="carousel-inner">
             {% for case in testimonials %}
-              <div class="carousel-item{% if forloop.index == 1 %} active{% endif %}">
+              <div class="carousel-item{% if forloop.index0 == 0 %} active{% endif %}">
                 <div class="showcase__carousel__item">
                   <div class="image">
                     {% capture image_src_400 %}{% asset '{{ case.video_frame_image | replace: "@", "-400" }}' @path %}{% endcapture %}
@@ -108,7 +108,7 @@ body_class: showcase
           </div>
           <ol class="carousel-indicators">
             {% for case in testimonials %}
-              <li data-target="#showcaseCarousel" data-slide-to="{{ forloop.index }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+              <li data-target="#showcaseCarousel" data-slide-to="{{ forloop.index0 }}" {% if forloop.index0 == 0 %}class="active"{% endif %}></li>
             {% endfor %}
           </ol>
           <a class="carousel-control-prev" href="#showcaseCarousel" role="button" data-slide="prev">
