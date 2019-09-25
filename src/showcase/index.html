@@ -35,7 +35,7 @@ body_class: showcase
                     <div class="card-body">
                         <div class="card-title">
                             {% if case.logo_src %}
-                                {% asset '{{ case.logo_src }}' class='logo' %}
+                                {% asset '{{ case.logo_src }}' class='logo' alt="{{ case.name }}" %}
                                 {% unless case.logo_has_name %} <span class="name">{{ case.name }}</span>{% endunless -%}
                             {% endif %}
                         </div>
@@ -71,7 +71,7 @@ body_class: showcase
         <ul class="logo-list col-12 col-lg-10 d-flex flex-wrap mb-n8">
             {% for logo in site.data.company_logos %}
                 <li class="logo-item col-6 col-md-3 mb-8 mb-lg-10">
-                    {% asset '{{ logo.logo_src  }}' class="logo-image" %}
+                    {% asset '{{ logo.logo_src  }}' class="logo-image" alt="{{ logo.alt_text }}"%}
                 </li>
             {% endfor %}
         </ul>
