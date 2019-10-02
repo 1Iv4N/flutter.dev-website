@@ -1,0 +1,102 @@
+---
+title: Updates
+layout: landing
+show_banner: True
+body_class: updates
+---
+
+<section class="updates-container">
+    <h1 class="heading">Subscribe to developer updates</h1>
+    <p class="subheading">Stay in the loop on important Flutter updates and announcements.</p>
+    <form aria-label="update form"
+          action="https://services.google.com/fb/submissions/flutter-updates/"
+          class="updates-container__form"
+          method="post" data-wrapper-anchor="subscribe">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label class="" for="firstName">First name</label>
+                <input name="firstname" type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="lastname">Last name</label>
+                <input name="lastname" type="text" class="form-control" id="lastname">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <label for="email">Your e-mail address <span class="field-required">*</span></label>
+                <input name="email" type="email" class="form-control" id="email" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="country">Country</label>
+                <select class="custom-select mr-sm-2" id="country" name="country">
+                    <option value="usa" selected>UNITED STATES</option>
+                    <option value="co">COLOMBIA</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-8">
+                <p>Flutter news & updates</p>
+                <input type="checkbox" id="updates" name="updates">
+                <label class="form-check-label" for="updates">
+                    Get the latest Flutter developer product news.
+                </label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="language">Language <span class="field-required">*</span></label>
+                <select class="custom-select mr-sm-2" id="language" name="language" required>
+                    <option value="en" selected>English</option>
+                    <option value="sp">Spanish</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row">
+            <fieldset class="consent-field-group form-group col-md-8" data-is-initialized="false" id="tales">
+                <legend class="consent-legend">
+                    Provide your consent <span class="field-required">*</span>
+                </legend>
+                <div>
+                    <input class="consent-item" id="mailingList" name="mailingList" type="checkbox">
+                    <label for="mailingList">Add me to the mailing list</label>
+                </div>
+                <div>
+                    <input class="consent-item" id="gPrivacyPolicy" name="gPrivacyPolicy" type="checkbox">
+                    <label class="d-inline" for="gPrivacyPolicy">
+                        By using this service, you agree to be bound by our <a href="#">Google Terms of Service</a>.
+                        I acknowledge that the information provided in this form will be subject to
+                        <a href="#">Google's Privacy Policy</a>.
+                    </label>
+                </div>
+            </fieldset>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+    <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
+    <script>
+        new gweb.analytics.AutoTrack({
+            profile: 'UA-5436354-2'
+        });
+    </script>
+    <script>
+        const consentItems = Array.from(document.querySelectorAll('.consent-item'));
+        const firstConsentItem = document.querySelector('.consent-item');
+        firstConsentItem.setCustomValidity("Please select at least one item");
+
+        consentItems.forEach(item => item.addEventListener('change', () => {
+            firstConsentItem.required = !(consentItems[0].checked || consentItems[1].checked);
+
+            if (!firstConsentItem.required) {
+                firstConsentItem.setCustomValidity("");
+            }
+        }));
+
+        document.querySelector('.updates-container__form').onsubmit = function() {
+            return !!consentItems.filter(item => item.checked).length;
+        };
+    </script>
+</section>
