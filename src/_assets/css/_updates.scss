@@ -1,21 +1,35 @@
 .updates {
   &-container {
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 80px 0 0 0;
+    $updates-color-subheading: #5E5E5E;
+    $updates-background-color: #E1EAF2;
 
     .heading {
-      margin-bottom: 20px;
+      color: $site-color-black;
+      font-size: 32px;
+      margin-bottom: 16px;
       text-align: center;
     }
 
     .subheading {
-      margin-bottom: 50px;
+      color: $updates-color-subheading;
+      margin-bottom: 40px;
       text-align: center;
     }
 
     &__form {
-      background-color: #E3EAF1;
-      padding: 60px 50px;
+      background-color: $updates-background-color;
+      margin: 0 -25px;
+      padding: 40px 25px 80px;
+
+      .updates-input, .updates-select {
+        height: 48px;
+      }
+
+      .updates-checkbox {
+        margin-right: 5px;
+      }
 
       .consent-legend {
         font-size: 16px;
@@ -24,6 +38,29 @@
 
       .field-required {
         color: red;
+      }
+
+      .form-group {
+        margin-bottom: 32px;
+      }
+
+      @include media-breakpoint-up(md) {
+        margin: 0;
+        padding: 60px 40px 165px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: 0;
+        padding: 60px 40px 60px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      .heading {
+        font-size: 48px;
+      }
+
+      .subheading {
+        margin-bottom: 60px;
       }
     }
   }

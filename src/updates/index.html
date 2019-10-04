@@ -1,7 +1,7 @@
 ---
 title: Updates
 layout: landing
-show_banner: True
+show_banner: False
 body_class: updates
 ---
 
@@ -13,25 +13,25 @@ body_class: updates
           class="updates-container__form"
           method="post" data-wrapper-anchor="subscribe">
         <div class="form-row">
-            <div class="form-group col-md-4">
-                <label class="" for="firstName">First name</label>
-                <input name="firstname" type="text" class="form-control" id="firstName">
+            <div class="form-group col-md-6 col-lg-4">
+                <label for="firstName">First name</label>
+                <input class="form-control updates-input" name="firstname" type="text" id="firstName">
             </div>
-            <div class="form-group col-md-4">
+            <div class="form-group col-md-6 col-lg-4">
                 <label for="lastname">Last name</label>
-                <input name="lastname" type="text" class="form-control" id="lastname">
+                <input class="form-control updates-input" name="lastname" type="text" id="lastname">
             </div>
         </div>
         <div class="form-row">
-            <div class="form-group col-md-8">
+            <div class="form-group col-md-12 col-lg-8">
                 <label for="email">Your e-mail address <span class="field-required">*</span></label>
-                <input name="email" type="email" class="form-control" id="email" required>
+                <input class="form-control updates-input" name="email" type="email" id="email" required>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label for="country">Country</label>
-                <select class="custom-select mr-sm-2" id="country" name="country">
+                <select class="custom-select mr-sm-2 updates-select" id="country" name="country">
                     {% include countries.html -%}
                 </select>
             </div>
