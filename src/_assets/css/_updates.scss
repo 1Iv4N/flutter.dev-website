@@ -8,6 +8,7 @@
     .heading {
       color: $site-color-black;
       font-size: 32px;
+      letter-spacing: -0.4px;
       margin-bottom: 16px;
       text-align: center;
     }
@@ -20,11 +21,20 @@
 
     &__form {
       background-color: $updates-background-color;
+      border-radius: 4px;
       margin: 0 -25px;
       padding: 40px 25px 80px;
 
-      .updates-input, .updates-select {
+      .updates-input {
         height: 48px;
+      }
+
+      .updates-select {
+        height: 36px;
+      }
+
+      .updates-input, .updates-select {
+        border-color: #D8D8D8;
       }
 
       .updates-checkbox {
@@ -37,26 +47,38 @@
       }
 
       .field-required {
-        color: red;
+        color: #FF0000;
       }
 
       .form-group {
         margin-bottom: 32px;
       }
 
+      .form-label {
+        margin-bottom: 16px;
+      }
+
+      .form-submit-button {
+        width: 170px;
+      }
+
       @include media-breakpoint-up(md) {
-        margin: 0;
+        margin: 0 0 120px;
         padding: 60px 40px 165px;
+
+        .form-group {
+          margin-bottom: 40px;
+        }
       }
 
       @include media-breakpoint-up(lg) {
-        margin: 0;
-        padding: 60px 40px 60px;
+        padding-bottom: 60px;
       }
     }
     @include media-breakpoint-up(md) {
       .heading {
         font-size: 48px;
+        letter-spacing: -0.6px;
       }
 
       .subheading {
