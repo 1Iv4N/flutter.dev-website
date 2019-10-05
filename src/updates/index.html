@@ -66,21 +66,4 @@ body_class: updates
             profile: 'UA-5436354-2'
         });
     </script>
-    <script>
-        const consentItems = Array.from(document.querySelectorAll('.consent-item'));
-        const firstConsentItem = document.querySelector('.consent-item');
-        firstConsentItem.setCustomValidity("Please select at least one item");
-
-        consentItems.forEach(item => item.addEventListener('change', () => {
-            firstConsentItem.required = !(consentItems[0].checked || consentItems[1].checked);
-
-            if (!firstConsentItem.required) {
-                firstConsentItem.setCustomValidity("");
-            }
-        }));
-
-        document.querySelector('.updates-container__form').onsubmit = function() {
-            return !!consentItems.filter(item => item.checked).length;
-        };
-    </script>
 </section>
