@@ -1,52 +1,56 @@
 ---
-title: Updates
+title: Subscribe
 layout: landing
 show_banner: False
-body_class: updates
+body_class: subscribe
 ---
 
-<section class="updates-container">
+<section class="subscribe-container">
     <h1 class="heading">Subscribe to developer updates</h1>
     <p class="subheading">Stay in the loop on important Flutter updates and announcements.</p>
     <form aria-label="update form"
           action="https://services.google.com/fb/submissions/flutter-updates/"
-          class="updates-container__form"
+          class="subscribe-container__form"
           method="post" data-wrapper-anchor="subscribe">
         <div class="form-row">
             <div class="form-group col-md-6 col-lg-4">
                 <label class="form-label" for="firstName">First name</label>
-                <input class="form-control updates-input" name="firstname" type="text" id="firstName">
+                <input class="form-control subscribe-input" name="firstName" type="text" id="firstName">
             </div>
             <div class="form-group col-md-6 col-lg-4">
-                <label class="form-label" for="lastname">Last name</label>
-                <input class="form-control updates-input" name="lastname" type="text" id="lastname">
+                <label class="form-label" for="lastName">Last name</label>
+                <input class="form-control subscribe-input" name="lastName" type="text" id="lastName">
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-12 col-lg-8">
                 <label class="form-label" for="email">Your e-mail address <span class="field-required">*</span></label>
-                <input class="form-control updates-input" name="email" type="email" id="email" required>
+                <input class="form-control subscribe-input" name="email" type="email" id="email" required>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label class="form-label" for="language">Language <span class="field-required">*</span></label>
-                <select class="custom-select mr-sm-2 updates-select" id="language" name="language" required>
+                <select class="custom-select mr-sm-2 subscribe-select" id="language" name="language" required>
                     <option value="en" selected>English</option>
+                    <option value="chi">Chinese</option>
                     <option value="sp">Spanish</option>
+                    <option value="por">Portuguese</option>
+                    <option value="ger">German</option>
+                    <option value="jpn">Japanese</option>
                 </select>
             </div>
             <div class="form-group col-md-4">
                 <label class="form-label" for="country">Country</label>
-                <select class="custom-select mr-sm-2 updates-select" id="country" name="country">
+                <select class="custom-select mr-sm-2 subscribe-select" id="country" name="country">
                     {% include countries.html -%}
                 </select>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-10 col-lg-8">
-                <label class="form-label" for="sign-me-up">
-                    <input class="updates-checkbox" name="sign-me-up" type="checkbox" id="sign-me-up" required>
+                <label class="form-label" for="signMeUp">
+                    <input class="subscribe-checkbox" name="signMeUp" type="checkbox" id="signMeUp" required>
                     Sign me up for the latest Flutter developer product news. <span class="field-required">*</span>
                 </label>
                 <p>
