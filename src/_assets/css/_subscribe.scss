@@ -1,12 +1,14 @@
 .subscribe {
+  $required-input-color: #C53929;
+  color: $site-color-paragraph;
+
   &-container {
     margin: 0 auto;
     padding: 80px 0 0 0;
-    $subscribe-color-subheading: #5E5E5E;
     $subscribe-background-color: #E1EAF2;
 
     .heading {
-      color: $site-color-black;
+      color: $site-color-title;
       font-size: 32px;
       letter-spacing: -0.4px;
       margin-bottom: 16px;
@@ -14,7 +16,6 @@
     }
 
     .subheading {
-      color: $subscribe-color-subheading;
       margin-bottom: 40px;
       text-align: center;
     }
@@ -30,11 +31,16 @@
       }
 
       .subscribe-select {
+        display: block;
         height: 36px;
+        font-size: 14px;
+        max-width: 242px;
+        text-transform: uppercase;
       }
 
       .subscribe-input, .subscribe-select {
         border-color: #D8D8D8;
+        color: $site-color-paragraph;
       }
 
       .subscribe-checkbox {
@@ -42,7 +48,7 @@
       }
 
       .field-required {
-        color: #FF0000;
+        color: $required-input-color;
       }
 
       .form-group {
@@ -50,24 +56,52 @@
       }
 
       .form-label {
-        margin-bottom: 16px;
+        font-family: "Google Sans", "Roboto", sans-serif;
+        margin-bottom: 12px;
+      }
+
+      .form-label-tos {
+        margin-bottom: 20px;
+      }
+
+      .tos-paragraph {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .invalid-field-text {
+        color: $required-input-color;
+        display: none;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+
+      .invalid-field ~ .invalid-field-text {
+        display: block;
+      }
+
+      .form-label-tos + .invalid-field-text {
+        margin: -12px 0 20px 0;
       }
 
       .form-submit-button {
-        width: 170px;
+        height: 45px;
+        width: 190px;
+      }
+
+      .form-submit-button__disabled {
+        background-color: #C6C6C5;
+        border: none;
+        color: $site-color-white;
       }
 
       @include media-breakpoint-up(md) {
         margin: 0 0 120px;
         padding: 60px 40px 165px;
-
-        .form-group {
-          margin-bottom: 40px;
-        }
       }
 
       @include media-breakpoint-up(lg) {
-        padding-bottom: 60px;
+        padding-bottom: 160px;
       }
     }
 

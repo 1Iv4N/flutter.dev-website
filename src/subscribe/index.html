@@ -23,6 +23,7 @@ body_class: subscribe
             <div class="form-group col-md-12 col-lg-8">
                 <label class="form-label" for="email">Your e-mail address <span class="field-required">*</span></label>
                 <input class="form-control subscribe-input" name="email" type="email" id="email" required>
+                <span class="invalid-field-text">Email address required</span>
             </div>
         </div>
         <div class="form-row">
@@ -36,21 +37,23 @@ body_class: subscribe
                     <option value="de">German</option>
                     <option value="ja">Japanese</option>
                 </select>
+                <span class="invalid-field-text">Language is required</span>
             </div>
             <div class="form-group col-md-4">
                 <label class="form-label" for="country">Country</label>
-                <select class="custom-select mr-sm-2 subscribe-select" id="country" name="country" required>
+                <select class="custom-select mr-sm-2 subscribe-select" id="country" name="country">
                     {% include countries.html -%}
                 </select>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-md-10 col-lg-8">
-                <label class="form-label" for="signMeUp">
-                    <input class="subscribe-checkbox" name="signMeUp" type="checkbox" id="signMeUp" required>
-                    Sign me up for the latest Flutter developer product news. <span class="field-required">*</span>
+                <input class="subscribe-checkbox" name="signMeUp" type="checkbox" id="signMeUp" required>
+                <label class="form-label form-label-tos" for="signMeUp">
+                    Sign me up for the latest Flutter developer product news <span class="field-required">*</span>
                 </label>
-                <p>
+                <span class="invalid-field-text">Sign me up is required</span>
+                <p class="tos-paragraph">
                     <em>
                         By using this service, you agree to be bound by our <a href="#">Google Terms of Service</a>.
                         I acknowledge that the information provided in this form will be subjected to
@@ -59,15 +62,15 @@ body_class: subscribe
                 </p>
             </div>
         </div>
-        <button type="button" class="btn btn-primary form-submit-button">Subscribe</button>
+        <button type="button" class="btn form-submit-button form-submit-button__disabled" disabled>Subscribe</button>
     </form>
     <iframe class="d-none" name="successMessage"></iframe>
     <div class="success-message d-none">
-        <h1 class="heading">You're in</h1>
-        <p class="">You have successfully signed up for the latest Flutter updates and announcements.</p>
+        <h1 class="success-message__heading">You're in</h1>
+        <p class="success-message__paragraph">You have successfully signed up for the latest Flutter updates and announcements.</p>
     </div>
     <div class="error-message d-none">
-        <p>There was a problem sending the form.</p>
+        <p class="error-message__paragraph">There was a problem sending the form.</p>
     </div>
     <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
     <script>
