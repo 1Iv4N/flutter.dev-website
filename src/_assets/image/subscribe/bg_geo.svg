@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="395px" height="210px" viewBox="0 0 395 210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>BG graphic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="396" height="210"></rect>
+    </defs>
+    <g id="R4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Subscribe_Desktop_Default_R4" transform="translate(-855.000000, -891.000000)">
+            <g id="Form" transform="translate(190.000000, 307.000000)">
+                <g id="BG-graphic" transform="translate(664.000000, 584.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Rectangle"></g>
+                    <circle id="Oval" stroke="#B8D6F5" mask="url(#mask-2)" cx="140" cy="261" r="147"></circle>
+                    <rect id="Rectangle" stroke="#B8D6F5" mask="url(#mask-2)" x="303" y="105" width="873.8128" height="513"></rect>
+                    <rect id="Rectangle-Copy-3" stroke="#B8D6F5" mask="url(#mask-2)" x="140" y="1" width="338" height="293"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

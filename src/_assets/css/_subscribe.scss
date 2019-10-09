@@ -22,6 +22,7 @@
 
     &__form {
       background-color: $subscribe-background-color;
+      background-blend-mode: color; //TODO: check if this works for all browsers - temporal approach
       border-radius: 4px;
       margin: 0 -25px;
       padding: 40px 25px 80px;
@@ -95,7 +96,16 @@
         color: $site-color-white;
       }
 
+      .flutter-logo {
+        height: 172px;
+        position: absolute;
+        right: 40px;
+        width: 138px;
+      }
+
       @include media-breakpoint-up(md) {
+        background: $subscribe-background-color none no-repeat bottom right;
+        background-blend-mode: unset; //TODO: check if this works for all browsers - temporal approach
         margin: 0 0 120px;
         padding: 60px 40px 165px;
       }
