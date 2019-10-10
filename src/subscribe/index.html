@@ -8,7 +8,7 @@ body_class: subscribe
 <section class="subscribe-container">
     <h1 class="heading">Subscribe to developer updates</h1>
     <p class="subheading">Stay in the loop on important Flutter updates and announcements.</p>
-    <form aria-label="update form" class="subscribe-container__form"  style="background-image: url({% asset 'subscribe/bg_geo.svg' @path %})">
+    <form aria-label="update form" class="subscribe-container__form">
         <div class="form-row">
             <div class="form-group col-md-6 col-lg-4">
                 <label class="form-label" for="firstName">First name</label>
@@ -17,9 +17,6 @@ body_class: subscribe
             <div class="form-group col-md-6 col-lg-4">
                 <label class="form-label" for="lastName">Last name</label>
                 <input class="form-control subscribe-input" name="lastName" type="text" id="lastName">
-            </div>
-            <div class="offset-lg-2 col-lg-2 d-xs-none d-lg-block">
-                {% asset 'subscribe/flutter_logo.svg' class="flutter-logo" %}
             </div>
         </div>
         <div class="form-row">
@@ -67,7 +64,6 @@ body_class: subscribe
         </div>
         <button type="button" class="btn form-submit-button form-submit-button__disabled" disabled>Subscribe</button>
     </form>
-    <iframe class="d-none" name="successMessage"></iframe>
     <div class="success-message d-none">
         <h1 class="success-message__heading">You're in</h1>
         <p class="success-message__paragraph">You have successfully signed up for the latest Flutter updates and announcements.</p>
@@ -75,11 +71,12 @@ body_class: subscribe
     <div class="error-message d-none">
         <p class="error-message__paragraph">There was a problem sending the form.</p>
     </div>
-    <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
-    <script>
-        new gweb.analytics.AutoTrack({
-            profile: 'UA-5436354-2'
-        });
-    </script>
-    {% asset subscribe_form.js %}
 </section>
+
+{% asset subscribe_form.js %}
+<script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
+<script>
+    new gweb.analytics.AutoTrack({
+        profile: 'UA-5436354-2'
+    });
+</script>

@@ -22,7 +22,6 @@
 
     &__form {
       background-color: $subscribe-background-color;
-      background-blend-mode: color; //TODO: check if this works for all browsers - temporal approach
       border-radius: 4px;
       margin: 0 -25px;
       padding: 40px 25px 80px;
@@ -96,21 +95,17 @@
         color: $site-color-white;
       }
 
-      .flutter-logo {
-        height: 172px;
-        position: absolute;
-        right: 40px;
-        width: 138px;
-      }
-
       @include media-breakpoint-up(md) {
-        background: $subscribe-background-color none no-repeat bottom right;
-        background-blend-mode: unset; //TODO: check if this works for all browsers - temporal approach
+        background-image: asset_url('subscribe/bg_geo.svg');
+        background-position: bottom right, top 60px right 80px;
+        background-repeat: no-repeat;
+        background-size: auto, 140px;
         margin: 0 0 120px;
         padding: 60px 40px 165px;
       }
 
       @include media-breakpoint-up(lg) {
+        background-image: asset_url('subscribe/bg_geo.svg'), asset_url('subscribe/flutter_logo.svg');
         padding-bottom: 160px;
       }
     }
