@@ -1,3 +1,4 @@
+
 // Form elements
 const subscribeForm = document.querySelector('.subscribe-container__form');
 const errorMessage = document.querySelector('.error-message');
