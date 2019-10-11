@@ -120,7 +120,9 @@
   }
   // Success message section
   .success-message {
-    margin: 40px 0 433px 0; // TODO: Need to check with design what should be the margin-bottom.
+    height: calc(100vh - 246px);
+    margin-top: 40px;
+    min-height: 500px;
 
     &__heading {
       color: $site-color-title;
@@ -132,13 +134,25 @@
 
     &__paragraph {
       font-size: 16px;
+      margin-bottom: 40px;
       text-align: center;
     }
 
     &__flutter-logo {
       display: block;
-      height: 70px; // TODO: Sizes need to be defined by design.
+      height: 66px;
       margin: 0 auto 28px;
+      width: 54px;
+    }
+
+    .back-to-home__link {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
+
+    @include media-breakpoint-only(xs) {
+      height: calc(100vh - 369px);
     }
   }
 }
