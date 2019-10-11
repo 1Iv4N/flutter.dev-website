@@ -1,6 +1,7 @@
 .subscribe {
   $required-input-color: #C53929;
-  $subscribe-background-color: #E1EAF2;
+  $form-background-color: #E1EAF2;
+  $fields-border-color: #D8D8D8;
   color: $site-color-paragraph;
 
   &-container {
@@ -20,8 +21,21 @@
       text-align: center;
     }
 
-    &__form {
-      background-color: $subscribe-background-color;
+    @include media-breakpoint-up(md) {
+      padding-top: 80px;
+
+      .heading {
+        font-size: 48px;
+        letter-spacing: -0.6px;
+      }
+
+      .subheading {
+        margin-bottom: 60px;
+      }
+    }
+
+    .subscribe-container__form {
+      background-color: $form-background-color;
       border-radius: 4px;
       margin: 0 -25px;
       padding: 40px 25px 120px;
@@ -38,20 +52,20 @@
         text-transform: uppercase;
       }
 
-      .subscribe-input, .subscribe-select {
-        border-color: #D8D8D8;
-        color: $site-color-paragraph;
-      }
-
       .subscribe-checkbox {
         margin-right: 5px;
+      }
+
+      .subscribe-input, .subscribe-select {
+        border-color: $fields-border-color;
+        color: $site-color-paragraph;
       }
 
       .field-required {
         color: $required-input-color;
       }
 
-      .form-group {
+      .subscribe-form-group {
         margin-bottom: 32px;
       }
 
@@ -67,21 +81,6 @@
       .tos-paragraph {
         font-size: 14px;
         margin-bottom: 20px;
-      }
-
-      .invalid-field-text {
-        color: $required-input-color;
-        display: none;
-        font-size: 14px;
-        margin-top: 8px;
-      }
-
-      .invalid-field ~ .invalid-field-text {
-        display: block;
-      }
-
-      .form-label-tos + .invalid-field-text {
-        margin: -12px 0 20px 0;
       }
 
       .form-submit-button {
@@ -107,24 +106,15 @@
         background-size: auto, 140px;
         margin: 0 0 120px;
         padding: 60px 40px 165px;
+
+        .subscribe-form-group {
+          margin-bottom: 40px;
+        }
       }
 
       @include media-breakpoint-up(lg) {
         background-image: asset_url('subscribe/bg_geo.svg'), asset_url('subscribe/flutter_logo.svg');
         padding-bottom: 160px;
-      }
-    }
-
-    @include media-breakpoint-up(md) {
-      padding-top: 80px;
-
-      .heading {
-        font-size: 48px;
-        letter-spacing: -0.6px;
-      }
-
-      .subheading {
-        margin-bottom: 60px;
       }
     }
   }
