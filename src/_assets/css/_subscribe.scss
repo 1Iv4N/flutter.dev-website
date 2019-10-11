@@ -1,11 +1,11 @@
 .subscribe {
   $required-input-color: #C53929;
+  $subscribe-background-color: #E1EAF2;
   color: $site-color-paragraph;
 
   &-container {
     margin: 0 auto;
     padding: 60px 0 0 0;
-    $subscribe-background-color: #E1EAF2;
 
     .heading {
       color: $site-color-title;
@@ -22,7 +22,6 @@
 
     &__form {
       background-color: $subscribe-background-color;
-      background-blend-mode: color; //TODO: check if this works for all browsers - temporal approach
       border-radius: 4px;
       margin: 0 -25px;
       padding: 40px 25px 120px;
@@ -96,41 +95,23 @@
         color: $site-color-white;
       }
 
-      .flutter-logo {
-        height: 172px;
-        position: absolute;
-        right: 40px;
-        width: 138px;
+      .error-message {
+        color: $required-input-color;
+        margin-top: 20px;
       }
 
       @include media-breakpoint-up(md) {
-        background: $subscribe-background-color none no-repeat bottom right;
-        background-blend-mode: unset; //TODO: check if this works for all browsers - temporal approach
+        background-image: asset_url('subscribe/bg_geo.svg');
+        background-position: bottom right, top 60px right 80px;
+        background-repeat: no-repeat;
+        background-size: auto, 140px;
         margin: 0 0 120px;
-        padding: 60px 40px 160px;
-      }
-    }
-
-    .success-message {
-      margin: 40px 0 433px 0; // TODO: Need to check with design what should be the margin-bottom.
-
-      &__heading {
-        color: $site-color-title;
-        font-size: 28px;
-        letter-spacing: 0.3px;
-        margin-bottom: 16px;
-        text-align: center;
+        padding: 60px 40px 165px;
       }
 
-      &__paragraph {
-        font-size: 16px;
-        text-align: center;
-      }
-
-      &__flutter-logo {
-        display: block;
-        height: 70px; // TODO: Sizes need to be defined by design.
-        margin: 0 auto 28px;
+      @include media-breakpoint-up(lg) {
+        background-image: asset_url('subscribe/bg_geo.svg'), asset_url('subscribe/flutter_logo.svg');
+        padding-bottom: 160px;
       }
     }
 
@@ -145,6 +126,29 @@
       .subheading {
         margin-bottom: 60px;
       }
+    }
+  }
+  // Success message section
+  .success-message {
+    margin: 40px 0 433px 0; // TODO: Need to check with design what should be the margin-bottom.
+
+    &__heading {
+      color: $site-color-title;
+      font-size: 28px;
+      letter-spacing: 0.3px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    &__paragraph {
+      font-size: 16px;
+      text-align: center;
+    }
+
+    &__flutter-logo {
+      display: block;
+      height: 70px; // TODO: Sizes need to be defined by design.
+      margin: 0 auto 28px;
     }
   }
 }
