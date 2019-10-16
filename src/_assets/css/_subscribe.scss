@@ -1,17 +1,18 @@
 .subscribe {
-  $required-input-color: #C53929;
-  $form-background-color: #E1EAF2;
-  $fields-border-color: #D8D8D8;
+  $required-input-color: #c53929;
+  $form-background-color: #e1eaf2;
+  $fields-border-color: #d8d8d8;
+  $submit-button-disabled-background: #c6c6c5;
   color: $site-color-paragraph;
 
   &-container {
     margin: 0 auto;
-    padding: 60px 0 0 0;
+    padding-top: 60px;
 
     .heading {
       color: $site-color-title;
       font-size: 32px;
-      letter-spacing: -0.4px;
+      letter-spacing: -.4px;
       margin-bottom: 16px;
       text-align: center;
     }
@@ -26,7 +27,7 @@
 
       .heading {
         font-size: 48px;
-        letter-spacing: -0.6px;
+        letter-spacing: -.6px;
       }
 
       .subheading {
@@ -34,7 +35,7 @@
       }
     }
 
-    .subscribe-container__form {
+    &__form {
       background-color: $form-background-color;
       border-radius: 4px;
       margin: 0 -25px;
@@ -46,8 +47,8 @@
 
       .subscribe-select {
         display: block;
-        height: 36px;
         font-size: 14px;
+        height: 36px;
         margin-bottom: 20px;
         max-width: 242px;
         padding: 8px;
@@ -91,7 +92,7 @@
       }
 
       .form-submit-button__disabled {
-        background-color: #C6C6C5;
+        background-color: $submit-button-disabled-background;
         border: none;
         color: $site-color-white;
       }
@@ -129,7 +130,7 @@
     &__heading {
       color: $site-color-title;
       font-size: 28px;
-      letter-spacing: 0.3px;
+      letter-spacing: .3px;
       margin-bottom: 16px;
       text-align: center;
     }
