@@ -8,62 +8,59 @@
     const formSubmitButton = document.querySelector('.form-submit-button');
 
     // Add change eventListener to required fields
-    requiredFields.forEach(item => item.addEventListener('change', submitButtonHandler));
+    for (let item of requiredFields) {
+        item.addEventListener('change', submitButtonHandler);
+    }
 
     // Check request after clicking the submit button
-    formSubmitButton.addEventListener('click', () => checkRequest());
+    formSubmitButton.addEventListener('click',  submitForm);
 
     //  Create an XMLHttpRequest to get formbox response
-    function checkRequest() {
-        const url = 'https://services.google.com/fb/submissions/flutter-updates/';
+    function submitForm() {
         const request = new XMLHttpRequest();
 
         request.onreadystatechange = () => {
             // readyState 4 means that the operation is complete.
             if (request.readyState === 4) {
-                if (request.status >= 400) {
-                    errorMessage.classList.add('d-block');
-                } else if (subscribeForm.reportValidity() === false) {
-                    return false;
+                if (request.status === 200) {
+                    successHandler(request);
                 } else {
-                    const response = request.response ? JSON.parse(request.response).result : null;
-                    successHandler(response);
+                    errorHandler();
                 }
             }
         };
 
-        request.open('post', url);
+        request.open('post', subscribeForm.action);
         if (request) {
             request.send(new FormData(subscribeForm));
         }
     }
 
     // Show error/success message given the response
-    function successHandler(response) {
+    function successHandler(request) {
+        const response = request.response ? JSON.parse(request.response).result : null;
         const errorMessageClass = errorMessage.classList;
 
         if (response === 'accepted') {
             subscribeContainer.classList.add('d-none');
             subscribeForm.classList.add('d-none');
             successMessage.classList.add('d-block');
-
-            if (errorMessageClass.contains('d-block')) {
-                errorMessageClass.remove('d-block');
-                errorMessageClass.add('d-none');
-            }
+            errorMessageClass.remove('d-block');
         } else {
-            errorMessage.classList.add('d-block');
+            errorHandler();
         }
+    }
+
+    // Show errormessage when there is an error in the server response
+    function errorHandler() {
+        errorMessage.classList.add('d-block');
     }
 
     // Validation made when required inputs change
     function submitButtonHandler () {
-        const requiredFieldsChecked = requiredFields.every(item => item.checkValidity() === true);
         const submitButtonClass = formSubmitButton.classList;
 
-        subscribeForm.reportValidity();
-
-        if (requiredFieldsChecked) {
+        if (subscribeForm.reportValidity()) {
             submitButtonClass.add('btn-primary');
             submitButtonClass.remove('form-submit-button__disabled');
             formSubmitButton.disabled = false;

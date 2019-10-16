@@ -8,7 +8,7 @@ body_class: subscribe
 <section class="subscribe-container">
     <h1 class="heading">Subscribe to developer updates</h1>
     <p class="subheading">Stay in the loop on important Flutter updates and announcements.</p>
-    <form aria-label="update form" class="subscribe-container__form">
+    <form aria-label="update form" class="subscribe-container__form" action="https://services.google.com/fb/submissions/flutter-updates/">
         <div class="form-row">
             <div class="subscribe-form-group form-group col-md-6 col-lg-4 pr-md-2">
                 <label class="form-label" for="firstName">First name</label>
@@ -60,10 +60,10 @@ body_class: subscribe
             </div>
         </div>
         <button type="button" class="btn form-submit-button form-submit-button__disabled" disabled>Subscribe</button>
-        <p class="error-message d-none">There was a problem sending the form.</p>
+        <p class="error-message">There was a problem sending the form.</p>
     </form>
 </section>
-<section class="success-message d-none">
+<section class="success-message">
     {% asset 'subscribe/flutter_logo.svg' class="success-message__flutter-logo" %}
     <h1 class="success-message__heading">You're in!</h1>
     <p class="success-message__paragraph">You have successfully signed up for the latest Flutter updates and announcements.</p>

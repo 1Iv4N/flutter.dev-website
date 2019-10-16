@@ -99,6 +99,7 @@
 
       .error-message {
         color: $required-input-color;
+        display: none;
         margin-top: 20px;
       }
 
@@ -123,6 +124,7 @@
   }
   // Success message section
   .success-message {
+    display: none;
     height: calc(100vh - 246px);
     margin-top: 40px;
     min-height: 500px;
