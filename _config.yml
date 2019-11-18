@@ -25,6 +25,7 @@ social:
 dart-site: https://dart.dev
 news: https://news.dartlang.org
 api: https://api.flutter.dev
+master-api: https://master-api.flutter.dev
 pub: https://pub.dev
 pub-api: https://pub.dev/documentation
 pub-pkg: https://pub.dev/packages
@@ -34,6 +35,7 @@ dartpad: https://dartpad.dev
 material: https://material.io
 so: https://stackoverflow.com
 github: https://github.com
+flutter-assets: https://flutter.github.io/assets-for-api-docs/assets
 android-dev: https://developer.android.com
 codelabs: https://codelabs.developers.google.com
 groups: https://groups.google.com
@@ -49,6 +51,7 @@ defaults:
     # below. To selectively enable a banner (say, on the homepage) add
     # `show_banner: true` to the page's frontmatter.
     show_banner: true
+    show_footer: true
 - scope:
     path: 'docs'
   values:

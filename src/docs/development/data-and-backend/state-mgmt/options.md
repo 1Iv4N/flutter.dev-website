@@ -14,6 +14,8 @@ by the Flutter community:
 
 ## General overview
 
+* [This very section](/docs/development/data-and-backend/state-mgmt/intro), for those of you who arrived
+  directly to this _Options_ page and missed the previous pages
 * [Build reactive mobile apps with Flutter](https://www.youtube.com/watch?v=RS36gBEp8OI&feature=youtu.be),
   a video from Google I/O 2018, and an
   [accompanying article]({{site.flutter-medium}}/build-reactive-mobile-apps-in-flutter-companion-article-13950959e381)
@@ -26,7 +28,7 @@ by the Flutter community:
 * [Basic state management in Google Flutter]({{site.medium}}/@agungsurya/basic-state-management-in-google-flutter-6ee73608f96d),
   by Agung Surya
 
-## InheritedWidget &amp; InheritedModel 
+## InheritedWidget &amp; InheritedModel
 
 * [InheritedWidget docs](https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html)
 * [Managing Flutter Application State With InheritedWidgets]({{site.flutter-medium}}/managing-flutter-application-state-with-inheritedwidgets-1140452befe1),
@@ -55,6 +57,7 @@ by the Flutter community:
   a video by MTechViral
 * [Flutter state management&mdash;scoped
   model](https://www.youtube.com/watch?v=Oql5bU-Uvso)
+* [Making sense all of those Flutter Providers](https://medium.com/flutter-community/making-sense-all-of-those-flutter-providers-e842e18f45dd)
 
 ## Redux
 

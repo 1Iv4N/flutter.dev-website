@@ -35,7 +35,11 @@ dependencies:
 ```
 
 Import the http package.
-```import 'package:http/http.dart' as http;```
+
+<!-- skip -->
+```dart
+import 'package:http/http.dart' as http;
+```
 
 ## 2. Make a network request
 
@@ -68,7 +72,7 @@ convert the `http.Response` into a Dart object.
 ### Create a `Post` class
 
 First, create a `Post` class that contains the data from the
-network request. It includes a factory constructor that 
+network request. It includes a factory constructor that
 creates a `Post` from JSON.
 
 Converting JSON by hand is only one option. For more information,
