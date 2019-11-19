@@ -6,6 +6,11 @@
     const successMessage = document.querySelector('.success-message');
     const requiredFields = Array.from(subscribeForm.querySelectorAll("[required]"));
     const formSubmitButton = document.querySelector('.form-submit-button');
+    const countrySelect = document.querySelector('.subscribe-country_select');
+    const subscribeCheckbox = document.querySelector('.subscribe-checkbox');
+
+    // List of countries that need a reconfirmation email
+    const unconfirmedCountries = ['AT: Austria', 'DE: Germany', 'GR: Greece', 'LU: Luxembourg', 'NO: Norway'];
 
     // Add change eventListener to required fields
     for (let item of requiredFields) {
@@ -68,6 +73,11 @@
             submitButtonClass.remove('btn-primary');
             submitButtonClass.add('form-submit-button__disabled');
             formSubmitButton.disabled = true;
+        }
+
+        // Change sign me up value to 'unconfirmed' it country selected needs a reconfirmation email.
+        if (unconfirmedCountries.includes(countrySelect.value)) {
+            subscribeCheckbox.value = "UNCONFIRMED";
         }
     }
 }());
