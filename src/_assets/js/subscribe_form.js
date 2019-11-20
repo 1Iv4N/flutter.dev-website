@@ -1,13 +1,14 @@
 (function() {
     // Form elements
     const subscribeContainer = document.querySelector('.subscribe-container');
-    const subscribeForm = document.querySelector('.subscribe-container__form');
-    const errorMessage = document.querySelector('.error-message');
     const successMessage = document.querySelector('.success-message');
+    // querySelector from the subscribeContainer allows only for one instance of the form per page
+    const subscribeForm = subscribeContainer.querySelector('.subscribe-container__form');
+    const errorMessage = subscribeContainer.querySelector('.error-message');
+    const formSubmitButton = subscribeContainer.querySelector('.form-submit-button');
+    const countrySelect = subscribeContainer.querySelector('.subscribe-country_select');
+    const subscribeCheckbox = subscribeContainer.querySelector('.subscribe-checkbox');
     const requiredFields = Array.from(subscribeForm.querySelectorAll("[required]"));
-    const formSubmitButton = document.querySelector('.form-submit-button');
-    const countrySelect = document.querySelector('.subscribe-country_select');
-    const subscribeCheckbox = document.querySelector('.subscribe-checkbox');
 
     // List of countries that need a reconfirmation email
     const unconfirmedCountries = ['AT: Austria', 'DE: Germany', 'GR: Greece', 'LU: Luxembourg', 'NO: Norway'];

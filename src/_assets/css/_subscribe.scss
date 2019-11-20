@@ -1,7 +1,6 @@
 .subscribe {
   $required-input-color: #c53929;
   $form-background-color: #e1eaf2;
-  $fields-border-color: #d8d8d8;
   $submit-button-disabled-background: #c6c6c5;
   color: $site-color-paragraph;
 
@@ -60,7 +59,7 @@
       }
 
       .subscribe-input, .subscribe-select {
-        border-color: $fields-border-color;
+        border-color: $site-color-light-grey;
         color: $site-color-paragraph;
       }
 
