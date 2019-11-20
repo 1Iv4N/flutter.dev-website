@@ -228,8 +228,8 @@
 
 - name: Philips Hue
   description: >
-    Flutter brought intuitive controls to Philips Hue apps, allowing users to set the mood in their
-    homes and sync their smart lights to their media quickly and easily.
+    Flutter brought intuitive controls to Philips Hue apps, allowing users to set the mood and sync their smart lights
+    to their media quickly and easily.
   logo_src: showcase/cards/philips_hue-logo.png
   logo_has_name: true
   learn_more_dropdown: true
