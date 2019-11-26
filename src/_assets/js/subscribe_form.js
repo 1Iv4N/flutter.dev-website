@@ -2,7 +2,7 @@
     // Form elements
     const subscribeContainer = document.querySelector('.subscribe-container');
     const successMessage = document.querySelector('.success-message');
-    // querySelector from the subscribeContainer allows only for one instance of the form per page
+    // Select form elements directly from the subscribeContainer to avoid pass through the entire document
     const subscribeForm = subscribeContainer.querySelector('.subscribe-container__form');
     const errorMessage = subscribeContainer.querySelector('.error-message');
     const formSubmitButton = subscribeContainer.querySelector('.form-submit-button');

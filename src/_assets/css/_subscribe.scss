@@ -124,7 +124,7 @@
   // Success message section
   .success-message {
     display: none;
-    height: calc(100vh - 246px);
+    height: calc(100vh - 369px);
     margin-top: 40px;
     min-height: 500px;
 
@@ -155,8 +155,8 @@
       width: 200px;
     }
 
-    @include media-breakpoint-only(xs) {
-      height: calc(100vh - 369px);
+    @include media-breakpoint-up(sm) {
+      height: calc(100vh - 246px);
     }
   }
 }
